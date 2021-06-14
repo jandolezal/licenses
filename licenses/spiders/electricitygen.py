@@ -37,7 +37,7 @@ class ElectricityGenSpider(scrapy.Spider):
                 except ValueError:
                     el = None
                 try: 
-                    tep = float(row_data[1].replace(' ', ''))
+                    tep = float(row_data[2].replace(' ', ''))
                 except ValueError:
                     tep = None
 
@@ -46,7 +46,7 @@ class ElectricityGenSpider(scrapy.Spider):
                     lic.vykony.append(el_cap)
 
                 if tep and (tep > 0):
-                    tep_cap = CapacityItem(druh='tepelný', technologie=tech, mw=el)
+                    tep_cap = CapacityItem(druh='tepelný', technologie=tech, mw=tep)
                     lic.vykony.append(tep_cap)
 
             # Dva sloupce má Počet zdrojů, Řícní tok a Říční km
