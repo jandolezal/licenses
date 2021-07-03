@@ -1,14 +1,24 @@
-from pathlib import Path
+import pathlib
 
 from scrapy.http import HtmlResponse
 
 from licenses.spiders import electricitygen
 
 
+def test_prepare_start_urls():
+    json_path = pathlib.Path('tests/sample_holders.json')
+
+    start_urls = electricitygen.prepare_start_urls(holders=json_path)
+
+    assert len(start_urls) == 9
+    assert start_urls[0] == 'http://licence.eru.cz/detail.php?lic-id=112136764'
+    assert start_urls[-1] == 'http://licence.eru.cz/detail.php?lic-id=112136806'
+
+
 def test_parse_license():
     response = HtmlResponse(
         'https://domain.com/something?lic-id=110100129',
-        body=Path('tests/plzen.html').read_bytes(),
+        body=pathlib.Path('tests/plzen.html').read_bytes(),
         )
     
     lic_list = list(electricitygen.ElectricityGenSpider().parse(response))

@@ -1,22 +1,63 @@
+"""Spider for scraping licenses for electricity generation (i.e. výroba elektřiny).
+
+Expects json file with metadata about holders scraped with holders spider.
+
+One of this metadata, license id (číslo licence), is used to prepare list of start urls.
+"""
+
+import json
+
+import pathlib
 import scrapy
+from typing import List, Union
+
 from licenses.items import ElectricityGenItem, CapacityItem
 
 
+def prepare_start_urls(
+    base_url: str = 'http://licence.eru.cz/detail.php?lic-id=',
+    holders: Union[str, pathlib.Path] = 'holders.json',
+    ) -> List:
+    """Prepare list of start urls from a json file with data about holders.
+
+    First run `scrapy crawl holders -O holders.json` to obtain data about license holders
+    to obtain license ids to construct start urls.
+
+    Args:
+        holders (Union[str, pathlib.Path], optional): [description]. Defaults to 'holders.json'.
+
+    Returns:
+        List: [description]
+    """
+    if not isinstance(holders, pathlib.Path):
+        holders_path = pathlib.Path(holders)
+    else:
+        holders_path = holders
+
+    with holders_path.open() as json_file:
+        json_content = json.load(json_file)
+        return [base_url + row['id'] for row in json_content if row['predmet'] == '11']  # 11: výroba elektřiny
+
+
 class ElectricityGenSpider(scrapy.Spider):
+    """Spider to crawl licenses for electricity generation (i.e. výroba elektřiny)."""
+
     name = 'electricitygen'
 
-    start_urls = [
-        'http://licence.eru.cz/detail.php?lic-id=110100129',
-        'http://licence.eru.cz/detail.php?lic-id=110100072',
-        'http://licence.eru.cz/detail.php?lic-id=110100106',
-        'http://licence.eru.cz/detail.php?lic-id=110100146',
-    ]
+    start_urls = prepare_start_urls()
 
-    def parse(self, response):
-        """Parse license.
+    def parse(self, response: scrapy.http.Response):
+        """Parse license for electricity generation.
 
-        Page with license can have many capacities and many facilities.
-        Facilities can have many capacities (výkony).
+        TODO: Implement parsing facilities and their capacities. 
+        Page with license can have many capacities and many facilities and
+        facilities can have many capacities (výkony).
+
+        Args:
+            response (scrapy.http.Response): Scrapy Response object.
+
+        Yields:
+            ElectricityGenItem: Item with scraped data for single license for electricity generation.
         """
         lic_id = response.url[-9:]
 
