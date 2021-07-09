@@ -6,18 +6,20 @@ One of this metadata, license id (číslo licence), is used to prepare list of s
 """
 
 import json
-
+import re
+import unicodedata
 import pathlib
-import scrapy
-from typing import List, Union
+from typing import List, Tuple, Union
 
-from licenses.items import ElectricityGenItem, CapacityItem
+import scrapy
+
+from licenses.items import ElectricityGenItem, CapacityItem, FacilityItem
 
 
 def prepare_start_urls(
-    base_url: str = 'http://licence.eru.cz/detail.php?lic-id=',
-    holders: Union[str, pathlib.Path] = 'holders.json',
-    ) -> List:
+    base_url: str = "http://licence.eru.cz/detail.php?lic-id=",
+    holders: Union[str, pathlib.Path] = "holders.json",
+) -> List:
     """Prepare list of start urls from a json file with data about holders.
 
     First run `scrapy crawl holders -O holders.json` to obtain data about license holders
@@ -27,7 +29,7 @@ def prepare_start_urls(
         holders (Union[str, pathlib.Path], optional): [description]. Defaults to 'holders.json'.
 
     Returns:
-        List: [description]
+        List: List of urls for licenses for electicity generation.
     """
     if not isinstance(holders, pathlib.Path):
         holders_path = pathlib.Path(holders)
@@ -36,20 +38,81 @@ def prepare_start_urls(
 
     with holders_path.open() as json_file:
         json_content = json.load(json_file)
-        return [base_url + row['id'] for row in json_content if row['predmet'] == '11']  # 11: výroba elektřiny
+        return [
+            base_url + row["id"] for row in json_content if row["predmet"] == "11"
+        ]  # 11: výroba elektřiny
 
 
 class ElectricityGenSpider(scrapy.Spider):
     """Spider to crawl licenses for electricity generation (i.e. výroba elektřiny)."""
 
-    name = 'electricitygen'
+    name = "electricitygen"
 
-    start_urls = prepare_start_urls()
+    start_urls = prepare_start_urls()[:10]
 
-    def parse(self, response: scrapy.http.Response):
+    # Helper functions to parse address string
+    @staticmethod
+    def _adjust_address(address: str) -> List[str]:
+        normalized = unicodedata.normalize("NFKC", address)
+        adjusted = []
+        for cast in normalized.split(","):
+            adjusted.append(cast.strip())
+        return adjusted
+
+    @staticmethod
+    def _split_address(address: List[str]) -> Tuple[str]:
+        psc = address[0][:6].rstrip().replace(" ", "")
+        obec = address[0][6:].strip()
+
+        ulice_cp = address[1]
+        re.search(re.compile("[0-9]+"), ulice_cp)
+        match = re.search("[0-9]+/*[0-9]*", ulice_cp)
+        if match:
+            ulice = ulice_cp[: match.start() - 1]
+            cp = match.group()
+        else:
+            ulice = ulice_cp
+            cp = None
+
+        okres = address[2].replace("okres ", "") if "okres" in address[2] else ""
+        try:
+            kraj = address[3].replace("kraj ", "") if "kraj" in address[3] else ""
+        except IndexError:
+            kraj = None
+
+        return psc, obec, ulice, cp, okres, kraj
+
+    @staticmethod
+    def _process_capacity_row(item, row_data):
+        # Tři sloupce mají výkony
+        if len(row_data) == 3:
+            tech = row_data[0].strip().lower()
+
+            try:
+                el = float(row_data[1].replace(" ", ""))
+                if el > 0:
+                    item.vykony.append(
+                        CapacityItem(druh="elektrický", technologie=tech, mw=el)
+                    )
+            except ValueError:
+                pass
+            try:
+                tep = float(row_data[2].replace(" ", ""))
+                if tep > 0:
+                    item.vykony.append(
+                        CapacityItem(druh="tepelný", technologie=tech, mw=tep)
+                    )
+            except ValueError:
+                pass
+
+        # Dva sloupce má Počet zdrojů, Řícní tok a Říční km
+        elif len(row_data) == 2:
+            if "počet zdrojů" in row_data[0].strip().lower():
+                item.pocet_zdroju = int(row_data[1])
+
+    def parse(self, response: scrapy.http.Response) -> ElectricityGenItem:
         """Parse license for electricity generation.
 
-        TODO: Implement parsing facilities and their capacities. 
         Page with license can have many capacities and many facilities and
         facilities can have many capacities (výkony).
 
@@ -67,33 +130,38 @@ class ElectricityGenSpider(scrapy.Spider):
         total_table = response.xpath('//table[@class="lic-tez-total-table"]/tr')
 
         for row in total_table[2:]:  # První dva řádky jsou hlavičky
-            row_data = row.xpath('*/text()').getall()
+            row_data = row.xpath("*/text()").getall()
+            self._process_capacity_row(lic, row_data)
 
-            # Tři sloupce mají výkony
-            if len(row_data) == 3:
-                tech = row_data[0].strip().lower()
+        # Data o jednotlivých provozovnách
+        # Název, adresa, katastr
+        facilities_headers = response.xpath('//table[@class="lic-tez-header-table"]')
+        # Výkony
+        facilities_capacities = response.xpath('//table[@class="lic-tez-data-table"]')
 
-                try: 
-                    el = float(row_data[1].replace(' ', ''))
-                except ValueError:
-                    el = None
-                try: 
-                    tep = float(row_data[2].replace(' ', ''))
-                except ValueError:
-                    tep = None
+        for header, capacity in zip(facilities_headers, facilities_capacities):
 
-                if el and (el > 0):
-                    el_cap = CapacityItem(druh='elektrický', technologie=tech, mw=el)
-                    lic.vykony.append(el_cap)
+            raw_number, name, raw_address = header.xpath("tr/td/div/text()").getall()
+            number = raw_number.split(" ")[-1]
+            psc, obec, ulice, cp, okres, kraj = self._split_address(
+                self._adjust_address(raw_address)
+            )
 
-                if tep and (tep > 0):
-                    tep_cap = CapacityItem(druh='tepelný', technologie=tech, mw=tep)
-                    lic.vykony.append(tep_cap)
+            facility = FacilityItem(
+                id=number,
+                nazev=name,
+                psc=psc,
+                obec=obec,
+                ulice=ulice,
+                cp=cp,
+                okres=okres,
+                kraj=kraj,
+            )
 
-            # Dva sloupce má Počet zdrojů, Řícní tok a Říční km
-            elif len(row_data) == 2:
-                if 'počet zdrojů' in row_data[0].strip().lower():
-                    num = row_data[1]
-                    lic.pocet_zdroju = int(num)
+            for row in capacity.xpath("tr")[2:]:  # První dva řádky jsou hlavičky
+                row_data = row.xpath("*/text()").getall()
+                self._process_capacity_row(facility, row_data)
+
+            lic.provozovny.append(facility)
 
         yield lic

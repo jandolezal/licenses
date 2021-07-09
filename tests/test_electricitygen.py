@@ -42,3 +42,21 @@ def test_parse_license():
     assert lic.vykony[5].technologie == 'plynový a spalovací'
     assert lic.vykony[4].mw == 19.690
     assert lic.vykony[5].mw == 0.185
+
+    assert len(lic.provozovny) == 5
+    assert lic.provozovny[4].id == '5'
+    assert lic.provozovny[4].nazev == 'ENERGETIKA - Motorgenerátory'
+    assert lic.provozovny[4].psc == '30100'
+    assert lic.provozovny[4].ulice == 'Tylova'
+    assert lic.provozovny[4].cp is None
+    assert lic.provozovny[4].okres == 'Plzeň-město'
+    assert lic.provozovny[4].kraj == 'Plzeňský'
+
+    assert lic.provozovny[0].vykony[0].druh == 'elektrický'
+    assert lic.provozovny[0].vykony[0].technologie == 'celkový'
+    assert lic.provozovny[0].vykony[0].mw == 150.5
+    assert lic.provozovny[0].vykony[-1].druh == 'tepelný'
+    assert lic.provozovny[0].vykony[-1].technologie == 'parní'
+    assert lic.provozovny[0].vykony[-1].mw == 434.6
+    assert lic.provozovny[0].pocet_zdroju == 3
+

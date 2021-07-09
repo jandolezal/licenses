@@ -9,11 +9,10 @@ from typing import List
 from datetime import date
 
 
-
 @dataclass
 class HolderItem:
-    """
-    Represents a holder of a licence (držitel licence).
+    """Represents a holder of a licence (držitel licence).
+
     id is a licence number (číslo licence) and not ičo (ic)
     because many of the holders are private citizens lacking ičo
     and many other details.
@@ -43,6 +42,7 @@ class HolderItem:
 
 @dataclass
 class CapacityItem:
+    """Represents capacity for license or facility."""
 
     druh: str
     technologie: str
@@ -50,8 +50,26 @@ class CapacityItem:
 
 
 @dataclass
+class FacilityItem:
+    """Represents facility listed on the license."""
+
+    id: str
+    nazev: str
+    psc: str
+    obec: str
+    ulice: str
+    cp: str
+    okres: str
+    kraj: str
+    pocet_zdroju: int = None
+    vykony: List[CapacityItem] = field(default_factory=list)
+
+
+@dataclass
 class ElectricityGenItem:
+    """Represents one license for electricity generation."""
 
     id: str
     pocet_zdroju: int = None
     vykony: List[CapacityItem] = field(default_factory=list)
+    provozovny: List[FacilityItem] = field(default_factory=list)
