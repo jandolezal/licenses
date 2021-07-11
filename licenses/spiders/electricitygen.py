@@ -48,7 +48,7 @@ class ElectricityGenSpider(scrapy.Spider):
 
     name = "electricitygen"
 
-    start_urls = prepare_start_urls()[:10]
+    start_urls = prepare_start_urls()
 
     # Helper functions to parse address string
     @staticmethod
@@ -74,9 +74,9 @@ class ElectricityGenSpider(scrapy.Spider):
             ulice = ulice_cp
             cp = None
 
-        okres = address[2].replace("okres ", "") if "okres" in address[2] else ""
+        okres = address[2].replace("okres ", "") if "okres" in address[2] else None
         try:
-            kraj = address[3].replace("kraj ", "") if "kraj" in address[3] else ""
+            kraj = address[3].replace("kraj ", "") if "kraj" in address[3] else None
         except IndexError:
             kraj = None
 
@@ -134,13 +134,14 @@ class ElectricityGenSpider(scrapy.Spider):
             self._process_capacity_row(lic, row_data)
 
         # Data o jednotlivých provozovnách
-        # Název, adresa, katastr
+        # Tabulka pro každou provozovnu a proměnné: název, adresa, katastr
         facilities_headers = response.xpath('//table[@class="lic-tez-header-table"]')
-        # Výkony
+        # Tabulka s výkony pro každou provozovnu
         facilities_capacities = response.xpath('//table[@class="lic-tez-data-table"]')
 
         for header, capacity in zip(facilities_headers, facilities_capacities):
-
+            
+            # Zpracovat evidenční číslo, název a adresu provozovny
             raw_number, name, raw_address = header.xpath("tr/td/div/text()").getall()
             number = raw_number.split(" ")[-1]
             psc, obec, ulice, cp, okres, kraj = self._split_address(
@@ -158,6 +159,7 @@ class ElectricityGenSpider(scrapy.Spider):
                 kraj=kraj,
             )
 
+            # Zpracovat tabulku s výkony pro provozovnu
             for row in capacity.xpath("tr")[2:]:  # První dva řádky jsou hlavičky
                 row_data = row.xpath("*/text()").getall()
                 self._process_capacity_row(facility, row_data)
