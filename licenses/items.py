@@ -73,3 +73,13 @@ class ElectricityGenItem:
     pocet_zdroju: int = None
     vykony: List[CapacityItem] = field(default_factory=list)
     provozovny: List[FacilityItem] = field(default_factory=list)
+
+
+@dataclass
+class HeatGenItem:
+    """Represents one license for heat generation."""
+
+    id: str
+    pocet_zdroju: int = None
+    vykony: List[CapacityItem] = field(default_factory=list)
+    provozovny: List[FacilityItem] = field(default_factory=list)
