@@ -9,7 +9,7 @@ Scraping of [licenses](http://licence.eru.cz/) and data about [license holders](
 
 Complete spider scraping xml files about license holders (for any business like electricity generation, heat generation or gas distribution).
 
-`scrapy crawl holders -O holders.csv`
+`scrapy crawl holders -O holders.json`
 
 ### Licenses
 
