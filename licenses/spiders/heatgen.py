@@ -11,7 +11,7 @@ import re
 import sys
 import unicodedata
 import pathlib
-from typing import List, Tuple, Union
+from typing import List, Tuple
 
 import scrapy
 
@@ -43,7 +43,7 @@ def prepare_start_urls(
         logging.critical(
             "File holders.json not found. Cannot build licenses urls to scrape."
         )
-        sys.exit()
+        return []
 
 
 class HeatGenSpider(scrapy.Spider):

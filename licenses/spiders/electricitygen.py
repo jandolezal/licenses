@@ -43,7 +43,7 @@ def prepare_start_urls(
         logging.critical(
             "File holders.json not found. Cannot build licenses urls to scrape."
         )
-        sys.exit()
+        return []
 
 
 class ElectricityGenSpider(scrapy.Spider):

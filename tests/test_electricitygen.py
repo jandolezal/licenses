@@ -6,9 +6,9 @@ from licenses.spiders import electricitygen
 
 
 def test_prepare_start_urls():
-    json_path = pathlib.Path('tests/sample_holders.json')
+    # json_path = pathlib.Path('tests/sample_holders.json')
 
-    start_urls = electricitygen.prepare_start_urls(holders=json_path)
+    start_urls = electricitygen.prepare_start_urls(holders="tests/sample_holders.json")
 
     assert len(start_urls) == 9
     assert start_urls[0] == 'http://licence.eru.cz/detail.php?lic-id=112136764'
