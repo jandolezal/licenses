@@ -78,7 +78,7 @@ class HoldersSpider(scrapy.Spider):
 
             data_dict = data.attrib
 
-            l = HolderLoader(item=HolderItem(), response=response)
+            l = HolderLoader(item=HolderItem())
             l.add_value("id", data_dict["cislo_licence"])
             l.add_value("version", data_dict["version"])
             l.add_value("status", data_dict["version_status"])
