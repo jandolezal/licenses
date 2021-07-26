@@ -6,7 +6,9 @@ One of this metadata, license id (číslo licence), is used to prepare list of s
 """
 
 import json
+import logging
 import re
+import sys
 import unicodedata
 import pathlib
 from typing import List, Tuple, Union
@@ -18,7 +20,7 @@ from licenses.items import HeatGenItem, CapacityItem, FacilityItem
 
 def prepare_start_urls(
     base_url: str = "http://licence.eru.cz/detail.php?lic-id=",
-    holders: Union[str, pathlib.Path] = "holders.json",
+    holders: str = "holders.json",
 ) -> List:
     """Prepare list of start urls from a json file with data about holders.
 
@@ -26,21 +28,22 @@ def prepare_start_urls(
     to obtain license ids to construct start urls.
 
     Args:
-        holders (Union[str, pathlib.Path], optional): [description]. Defaults to 'holders.json'.
+        holders (str): JSON file with holders data. Defaults to 'holders.json'.
 
     Returns:
         List: List of urls for licenses for heat generation.
     """
-    if not isinstance(holders, pathlib.Path):
-        holders_path = pathlib.Path(holders)
-    else:
-        holders_path = holders
-
-    with holders_path.open() as json_file:
-        json_content = json.load(json_file)
-        return [
-            base_url + row["id"] for row in json_content if row["predmet"] == "31"
-        ]  # 31: výroba tepelné energie
+    try:
+        with open(holders) as json_file:
+            json_content = json.load(json_file)
+            return [
+                base_url + row["id"] for row in json_content if row["predmet"] == "31"
+            ]  # 31: výroba tepelné energie
+    except FileNotFoundError:
+        logging.critical(
+            "File holders.json not found. Cannot build licenses urls to scrape."
+        )
+        sys.exit()
 
 
 class HeatGenSpider(scrapy.Spider):
