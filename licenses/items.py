@@ -18,26 +18,26 @@ class HolderItem:
     and many other details.
     """
 
-    id: str
-    version: int
-    status: str
-    ic: str
-    nazev: str
-    cislo_dom: str
-    cislo_or: str
-    ulice: str
-    obec: str
-    obec_cast: str
-    psc: str
-    okres: str
-    kraj: str
-    zeme: str
-    den_opravneni: date
-    den_zahajeni: date
-    den_zaniku: date
-    den_nabyti: date
-    osoba: str
-    predmet: str = None
+    id: str = field(default=None)
+    version: int = field(default=None)
+    status: str = field(default=None)
+    ic: str = field(default=None)
+    nazev: str = field(default=None)
+    cislo_dom: str = field(default=None)
+    cislo_or: str = field(default=None)
+    ulice: str = field(default=None)
+    obec: str = field(default=None)
+    obec_cast: str = field(default=None)
+    psc: str = field(default=None)
+    okres: str = field(default=None)
+    kraj: str = field(default=None)
+    zeme: str = field(default=None)
+    den_opravneni: date = field(default=None)
+    den_zahajeni: date = field(default=None)
+    den_zaniku: date = field(default=None)
+    den_nabyti: date = field(default=None)
+    osoba: str = field(default=None)
+    predmet: str = field(default=None)
 
 
 @dataclass
