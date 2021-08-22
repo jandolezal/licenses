@@ -18,7 +18,7 @@ class HolderItem:
     and many other details.
     """
 
-    id: str = field(default=None)
+    id: int = field(default=None)
     version: int = field(default=None)
     status: str = field(default=None)
     ic: str = field(default=None)
@@ -38,6 +38,7 @@ class HolderItem:
     den_nabyti: date = field(default=None)
     osoba: str = field(default=None)
     predmet: str = field(default=None)
+    pridano: date = field(default=date.today().isoformat())
 
 
 @dataclass

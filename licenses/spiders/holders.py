@@ -23,7 +23,8 @@ def convert_to_date(x):
 class HolderLoader(ItemLoader):
 
     default_output_processor = TakeFirst()
-
+    
+    id_in = MapCompose(lambda x: int(x) if x else None)
     version_in = MapCompose(lambda x: int(x) if x else None)
     ic_in = MapCompose(remove_fluff)
     nazev_in = MapCompose(remove_fluff)
