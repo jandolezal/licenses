@@ -43,7 +43,7 @@ class Holder(Base):
     pridano = Column(Date)
 
     def __repr__(self):
-        return f"Holder(id={id}, name={nazev})"
+        return f"Holder(id={self.id}, nazev={self.nazev})"
 
 
 class LicensesHoldersPipeline:
