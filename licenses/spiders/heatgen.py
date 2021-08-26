@@ -37,7 +37,7 @@ def prepare_start_urls(
         with open(holders) as json_file:
             json_content = json.load(json_file)
             return [
-                base_url + row["id"] for row in json_content if row["predmet"] == "31"
+                base_url + str(row["id"]) for row in json_content if row["predmet"] == "31"
             ]  # 31: výroba tepelné energie
     except FileNotFoundError:
         logging.critical(
