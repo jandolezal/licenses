@@ -38,7 +38,7 @@ class HolderItem:
     den_nabyti: date = field(default=None)
     osoba: str = field(default=None)
     predmet: str = field(default=None)
-    pridano: date = field(default=date.today().isoformat())
+    pridano: date = field(default=None)
 
 
 @dataclass

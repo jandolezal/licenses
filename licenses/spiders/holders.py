@@ -1,4 +1,6 @@
+import csv
 from datetime import date
+import re
 
 import scrapy
 from itemloaders.processors import MapCompose, TakeFirst
@@ -20,10 +22,18 @@ def convert_to_date(x):
     return date.fromisoformat(x)
 
 
+def extract_business_code(url: str) -> str:
+    """Extract code of the business type from the xml filename."""
+    start = int(url.index("LIC_")) + 4
+    end = start + 2
+    predmet = url[start:end]
+    return predmet
+
+
 class HolderLoader(ItemLoader):
 
     default_output_processor = TakeFirst()
-    
+
     id_in = MapCompose(lambda x: int(x) if x else None)
     version_in = MapCompose(lambda x: int(x) if x else None)
     ic_in = MapCompose(remove_fluff)
@@ -53,12 +63,30 @@ class HoldersSpider(scrapy.Spider):
 
     def parse(self, response):
         """Parse initial page which contains list of links to xml files.
-        Generate requests for these urls.
+        Extract vocabulary of business types. Generate requests for these urls.
         """
+        # Capture elements of interest from the page
+        xml_paras = response.xpath('//p[contains(text(), "XML")]/a/@href')
+        business_strings = response.xpath('//p[contains(text(), "XML")]/a/text()')
+
+        # Get business types strings from filenames(urs)
+        business_list = []
+
+        # Create vocabulary of codes and business descriptions and export them to csv
+        for xml_href, business in zip(xml_paras, business_strings):
+            code = extract_business_code(xml_href.get())
+            description = business.get()
+            business_list.append({"kod": code, "predmet": description})
+
+        with open("predmety.csv", "w") as csvf:
+            writer = csv.DictWriter(csvf, fieldnames=["kod", "predmet"])
+            writer.writeheader()
+            writer.writerows(business_list)
 
         # Get urls to xml files
         xml_urls = []
-        xml_paras = response.xpath('//p[contains(text(), "XML")]/a/@href')
+
+        # Extract urls for future requests for each XML file
         for xml_href in xml_paras:
             xml_urls.append("https://www.eru.cz" + xml_href.get())
 
@@ -71,9 +99,11 @@ class HoldersSpider(scrapy.Spider):
         data_list = response.xpath("*")
 
         # Předmět podnikání z názvu xml souboru, např. 11 výroba elektřiny
-        start = int(response.url.index("LIC_")) + 4
-        end = start + 2
-        predmet = response.url[start:end]
+        predmet = extract_business_code(response.url)
+
+        # Date of the file export is included in the filename
+        file_date_string = re.search(r"\d{4}-\d{2}-\d{2}", response.url).group(0)
+        pridano = convert_to_date(file_date_string)
 
         for data in data_list:
 
@@ -100,5 +130,6 @@ class HoldersSpider(scrapy.Spider):
             l.add_value("den_nabyti", data_dict["subjekt_den_nabyti_pravni_moci"])
             l.add_value("osoba", data_dict["odpovedny_zast"])
             l.add_value("predmet", predmet)
+            l.add_value("pridano", pridano)
 
             yield l.load_item()
