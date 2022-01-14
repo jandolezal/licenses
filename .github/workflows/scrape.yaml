@@ -1,0 +1,42 @@
+
+# https://simonwillison.net/2020/Oct/9/git-scraping/
+
+name: Scrape data every Friday
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 15 * * 5"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout this repo
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |-
+        python3 -m pip install --upgrade pip
+        python3 -m pip install -r requirements.txt
+    - name: Scrape data from Energy Regulatory Office
+      run: |-
+        scrapy crawl drzitel -O data/drzitel.csv
+        scrapy crawl vyroba_tepla -O data/vyroba_tepla.json
+        scrapy crawl vyroba_elektriny -O data/vyroba_elektriny.json
+    - name: Convert .json files to .csv
+      run: |-
+        python3 -m licenses.make_csvs vyroba_tepla
+        python3 -m licenses.make_csvs vyroba_elektriny
+    - name: Commit and push if it changed
+      run: |-
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+        git add -A
+        timestamp=$(date -u)
+        git commit -m "Latest actual data: ${timestamp}" || exit 0
+        git push
