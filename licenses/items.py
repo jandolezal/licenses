@@ -18,8 +18,8 @@ class HolderItem:
     and many other details.
     """
 
-    id: int = field(default=None)
-    version: int = field(default=None)
+    cislo_licence: int = field(default=None)
+    verze: int = field(default=None)
     status: str = field(default=None)
     ic: str = field(default=None)
     nazev: str = field(default=None)
@@ -37,8 +37,6 @@ class HolderItem:
     den_zaniku: date = field(default=None)
     den_nabyti: date = field(default=None)
     osoba: str = field(default=None)
-    predmet: str = field(default=None)
-    pridano: date = field(default=None)
 
 
 @dataclass
@@ -70,7 +68,7 @@ class FacilityItem:
 class ElectricityGenItem:
     """Represents one license for electricity generation."""
 
-    id: str
+    cislo_licence: int
     pocet_zdroju: int = None
     vykony: List[CapacityItem] = field(default_factory=list)
     provozovny: List[FacilityItem] = field(default_factory=list)
@@ -80,7 +78,7 @@ class ElectricityGenItem:
 class HeatGenItem:
     """Represents one license for heat generation."""
 
-    id: str
+    cislo_licence: int
     pocet_zdroju: int = None
     vykony: List[CapacityItem] = field(default_factory=list)
     provozovny: List[FacilityItem] = field(default_factory=list)

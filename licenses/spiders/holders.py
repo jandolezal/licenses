@@ -1,5 +1,6 @@
 import csv
 from datetime import date
+import pathlib
 import re
 
 import scrapy
@@ -55,7 +56,7 @@ class HolderLoader(ItemLoader):
 
 
 class HoldersSpider(scrapy.Spider):
-    name = "holders"
+    name = "drzitel"
 
     start_urls = [
         "https://www.eru.cz/licence/informace-o-drzitelich",
@@ -78,7 +79,9 @@ class HoldersSpider(scrapy.Spider):
             description = business.get()
             business_list.append({"kod": code, "predmet": description})
 
-        with open("predmety.csv", "w") as csvf:
+        pathlib.Path('data').mkdir(exist_ok=True)
+
+        with pathlib.Path('data/druh.csv').open(mode='w') as csvf:
             writer = csv.DictWriter(csvf, fieldnames=["kod", "predmet"])
             writer.writeheader()
             writer.writerows(business_list)
@@ -94,12 +97,9 @@ class HoldersSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse_xml, encoding="utf-8")
 
     def parse_xml(self, response):
-        """Parse xml file with actual data about license holders."""
+        """Parse single xml file with actual data about license holders."""
 
         data_list = response.xpath("*")
-
-        # Předmět podnikání z názvu xml souboru, např. 11 výroba elektřiny
-        predmet = extract_business_code(response.url)
 
         # Date of the file export is included in the filename
         file_date_string = re.search(r"\d{4}-\d{2}-\d{2}", response.url).group(0)
@@ -110,8 +110,8 @@ class HoldersSpider(scrapy.Spider):
             data_dict = data.attrib
 
             l = HolderLoader(item=HolderItem())
-            l.add_value("id", data_dict["cislo_licence"])
-            l.add_value("version", data_dict["version"])
+            l.add_value("cislo_licence", data_dict["cislo_licence"])
+            l.add_value("verze", data_dict["version"])
             l.add_value("status", data_dict["version_status"])
             l.add_value("ic", data_dict["subjekt_IC"])
             l.add_value("nazev", data_dict["subjekt_nazev"])
@@ -129,7 +129,5 @@ class HoldersSpider(scrapy.Spider):
             l.add_value("den_zaniku", data_dict["subjekt_den_zaniku"])
             l.add_value("den_nabyti", data_dict["subjekt_den_nabyti_pravni_moci"])
             l.add_value("osoba", data_dict["odpovedny_zast"])
-            l.add_value("predmet", predmet)
-            l.add_value("pridano", pridano)
 
             yield l.load_item()

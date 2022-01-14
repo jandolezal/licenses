@@ -9,12 +9,12 @@ def test_parse_license():
     response = HtmlResponse(
         'https://domain.com/something?lic-id=310100053',
         body=pathlib.Path('tests/hlinsko.html').read_bytes(),
-        )
-    
+    )
+
     lic_list = list(heatgen.HeatGenSpider().parse(response))
     lic = lic_list[0]
 
-    assert lic.id == '310100053'
+    assert lic.cislo_licence == '310100053'
     assert lic.pocet_zdroju == 11
     assert len(lic.vykony) == 5
     assert len(lic.provozovny) == 2

@@ -20,36 +20,33 @@ from licenses.items import HeatGenItem, CapacityItem, FacilityItem
 
 def prepare_start_urls(
     base_url: str = "http://licence.eru.cz/detail.php?lic-id=",
-    holders: str = "holders.json",
+    filepath: str = "data/drzitel.csv",
 ) -> List:
     """Prepare list of start urls from a json file with data about holders.
 
-    First run `scrapy crawl holders -O holders.json` to obtain data about license holders
+    First run e.g. `scrapy crawl holders -O data/drzitel.csv` to obtain data about license holders
     to obtain license ids to construct start urls.
 
     Args:
-        holders (str): JSON file with holders data. Defaults to 'holders.json'.
+        filepath (str): CSV file with holders data. Defaults to 'data/drzitel.csv'.
 
     Returns:
         List: List of urls for licenses for heat generation.
     """
     try:
-        with open(holders) as json_file:
-            json_content = json.load(json_file)
+        with open(filepath) as file:
             return [
-                base_url + str(row["id"]) for row in json_content if row["predmet"] == "31"
+                base_url + line.split(',')[0] for line in file.readlines()[1:] if line.split(',')[0][:2] == '31'
             ]  # 31: výroba tepelné energie
     except FileNotFoundError:
-        logging.critical(
-            "File holders.json not found. Cannot build licenses urls to scrape."
-        )
+        logging.critical("File {filepath} not found. Cannot build licenses urls to scrape.")
         return []
 
 
 class HeatGenSpider(scrapy.Spider):
     """Spider to crawl licenses for heat generation (i.e. výroba tepelné energie)."""
 
-    name = "heatgen"
+    name = "vyroba_tepla"
 
     start_urls = prepare_start_urls()
 
@@ -94,17 +91,13 @@ class HeatGenSpider(scrapy.Spider):
             try:
                 el = float(row_data[1].replace(" ", ""))
                 if el > 0:
-                    item.vykony.append(
-                        CapacityItem(druh="elektrický", technologie=tech, mw=el)
-                    )
+                    item.vykony.append(CapacityItem(druh="elektrický", technologie=tech, mw=el))
             except ValueError:
                 pass
             try:
                 tep = float(row_data[2].replace(" ", ""))
                 if tep > 0:
-                    item.vykony.append(
-                        CapacityItem(druh="tepelný", technologie=tech, mw=tep)
-                    )
+                    item.vykony.append(CapacityItem(druh="tepelný", technologie=tech, mw=tep))
             except ValueError:
                 pass
 
@@ -127,7 +120,7 @@ class HeatGenSpider(scrapy.Spider):
         """
         lic_id = response.url[-9:]
 
-        lic = HeatGenItem(id=lic_id)
+        lic = HeatGenItem(cislo_licence=lic_id)
 
         # Výkony za celou licenci (agregace za všechny provozovny)
         total_table = response.xpath('//table[@id="lic-tez-total-table"]/tr')
@@ -147,9 +140,7 @@ class HeatGenSpider(scrapy.Spider):
             # Zpracovat evidenční číslo, název a adresu provozovny
             raw_number, name, raw_address = header.xpath("tr/td/div/text()").getall()
             number = raw_number.split(" ")[-1]
-            psc, obec, ulice, cp, okres, kraj = self._split_address(
-                self._adjust_address(raw_address)
-            )
+            psc, obec, ulice, cp, okres, kraj = self._split_address(self._adjust_address(raw_address))
 
             facility = FacilityItem(
                 id=number,

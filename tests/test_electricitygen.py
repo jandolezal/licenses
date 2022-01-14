@@ -8,30 +8,30 @@ from licenses.spiders import electricitygen
 def test_prepare_start_urls():
     # json_path = pathlib.Path('tests/sample_holders.json')
 
-    start_urls = electricitygen.prepare_start_urls(holders="tests/sample_holders.json")
+    start_urls = electricitygen.prepare_start_urls(filepath="tests/test_drzitel.csv")
 
-    assert len(start_urls) == 9
-    assert start_urls[0] == 'http://licence.eru.cz/detail.php?lic-id=112136764'
-    assert start_urls[-1] == 'http://licence.eru.cz/detail.php?lic-id=112136806'
+    assert len(start_urls) == 4
+    assert start_urls[0] == 'http://licence.eru.cz/detail.php?lic-id=112137235'
+    assert start_urls[-1] == 'http://licence.eru.cz/detail.php?lic-id=112137250'
 
 
 def test_parse_license():
     response = HtmlResponse(
         'https://domain.com/something?lic-id=110100129',
         body=pathlib.Path('tests/plzen.html').read_bytes(),
-        )
-    
+    )
+
     lic_list = list(electricitygen.ElectricityGenSpider().parse(response))
     lic = lic_list[0]
 
-    assert lic.id == '110100129'
+    assert lic.cislo_licence == '110100129'
     assert lic.pocet_zdroju == 11
     assert len(lic.vykony) == 6
 
     assert lic.vykony[0].technologie == 'celkový'
     assert lic.vykony[0].mw == 274.190
     assert lic.vykony[1].mw == 725.825
-    assert lic.vykony[1].druh ==  'tepelný'
+    assert lic.vykony[1].druh == 'tepelný'
     assert lic.vykony[1].technologie == 'celkový'
 
     assert lic.vykony[2].druh == 'elektrický'
@@ -59,4 +59,3 @@ def test_parse_license():
     assert lic.provozovny[0].vykony[-1].technologie == 'parní'
     assert lic.provozovny[0].vykony[-1].mw == 434.6
     assert lic.provozovny[0].pocet_zdroju == 3
-
