@@ -2,6 +2,8 @@
 
 Scraping of [licenses](http://licence.eru.cz/) and data about [license holders](https://www.eru.cz/licence/informace-o-drzitelich) and learning working with Scrapy.
 
+Explore with Datasette at [licence-eru](https://licence-eru.herokuapp.com/).
+
 
 ## Use
 
@@ -38,10 +40,13 @@ python3 -m licenses.make_csvs vyroba_tepla
 python3 -m licenses.make_csvs vyroba_elektriny
 
 # Use Datasette to convert .csv files to sqlite database
-datasette data/*.csv licence.dbv
+datasette data/*.csv licence.db
 
 # Explore locally with Datasette
 datasette licence.db
+
+# Publish to Heroku with Datasette
+datasette publish heroku licence.db -n licence-eru
 ```
 
 ## Test
