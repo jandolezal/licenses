@@ -28,7 +28,7 @@ def extract_business_code(url: str) -> str:
     start = int(url.index("LIC_")) + 4
     end = start + 2
     predmet = url[start:end]
-    return predmet
+    return int(predmet)
 
 
 class HolderLoader(ItemLoader):
@@ -84,6 +84,7 @@ class HoldersSpider(scrapy.Spider):
         with pathlib.Path('data/druh.csv').open(mode='w') as csvf:
             writer = csv.DictWriter(csvf, fieldnames=["kod", "predmet"])
             writer.writeheader()
+            business_list.sort(key=lambda x: x['kod'])
             writer.writerows(business_list)
 
         # Get urls to xml files

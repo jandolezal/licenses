@@ -28,8 +28,9 @@ jobs:
         scrapy crawl drzitel -O data/drzitel.csv
         scrapy crawl vyroba_tepla -O data/vyroba_tepla.json
         scrapy crawl vyroba_elektriny -O data/vyroba_elektriny.json
-    - name: Convert .json files to .csv
+    - name: Make .csv files sorted by cislo_licence
       run: |-
+        python3 -m licenses.make_csvs drzitel
         python3 -m licenses.make_csvs vyroba_tepla
         python3 -m licenses.make_csvs vyroba_elektriny
     - name: Commit and push if it changed
