@@ -473,6 +473,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100832,1,"Teplárna Liberec, a.s.",46001,Liberec,Dr. Milady Horákové,641/34,Liberec,Liberecký,4
 310100832,2,Plynová kotelna LVZ-GEA VESEC,46312,Liberec,Vesecká,25/1,Liberec,Liberecký,1
 310100832,4,Zdroj Františkov,46001,Liberec,Vilová,,Liberec,Liberecký,3
+310100832,5,KJ2 Teplárna Liberec,46001,Liberec,Dr. Milady Horákové,,Liberec,Liberecký,1
 310100839,3,K - 12,39003,Tábor,Fügnerova,2211,Tábor,Jihočeský,3
 310100839,4,K - 17,39002,Tábor,Kollárova,2155,Tábor,Jihočeský,3
 310100839,5,K - 18,39002,Tábor,Vančurova,2202,Tábor,Jihočeský,3

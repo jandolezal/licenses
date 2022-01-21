@@ -1961,6 +1961,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 110604986,1,MVE Nové Město nad Metují,54901,Nové Město nad Metují,Pod Výrovem,1058,Náchod,Královéhradecký,1
 110604987,1,Šmidingrová MVE,33301,Stod,U Elektrárny,,Plzeň-jih,Plzeňský,2
 110604999,1,Aquacentrum BOSPOR spol. s r.o.,73581,Bohumín,Koperníkova,1174,Karviná,Moravskoslezský,2
+110604999,2,bospor,73581,Bohumín,Koperníkova,1222,Karviná,Moravskoslezský,1
 110605002,1,MVE - Petříkovice,54103,Chvaleč,Chvaleč,,Trutnov,Královéhradecký,2
 110605007,1,"Cukrovar Prosenice, areál závodu",75121,Prosenice,Prosenice,,Přerov,Olomoucký,1
 110605011,1,MVE Herbertov,38273,Vyšší Brod,Herbertov,16,Český Krumlov,Jihočeský,1
@@ -10153,7 +10154,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 110912533,3,MVE Stružnice-Mlýn,47002,Stružnice,Stružnice,122,Česká Lípa,Liberecký,1
 110912534,1,"FVE 4,87kWp Zámecká, Slavkov",68401,Slavkov u Brna,Zámecká,1383,Vyškov,Jihomoravský,1
 110912535,1,FTV - Sedláček,28401,Svatý Mikuláš,Svatý Mikuláš,33,Kutná Hora,Středočeský,1
-110912535,2,FTV - Sedláček Vinařice,28126,Týnec nad Labem,Týnec nad Labem,51,Kolín,Středočeský,1
 110912537,1,MAPE,33003,Chrást,Široká,462,Plzeň-sever,Plzeňský,1
 110912538,1,FVE Naďa Volencová,25101,Babice,Ke Hřišti,307,Praha-východ,Středočeský,1
 110912539,1,"Fotovoltaický systém 14,39 kWp, Albrechtice nad Vltavou 18, 398 16 Albrechtice nad Vltavou",39811,Albrechtice nad Vltavou,Albrechtice nad Vltavou,18,Písek,Jihočeský,1
@@ -13869,6 +13869,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111015948,1,FVE BRENDLOVÁ,50327,Praskačka,Praskačka,14,Hradec Králové,Královéhradecký,1
 111015949,1,FVE Zdeněk Larva,79849,Malé Hradisko,Malé Hradisko,125,Prostějov,Olomoucký,1
 111015950,1,FVE Ostravice,73914,Ostravice,Ostravice,792,Frýdek-Místek,Moravskoslezský,2
+111015950,2,FVE Krátká,55101,Jaroměř,Krátká,927,Náchod,Královéhradecký,1
 111015951,1,FVE Stará Ves 220,75002,Stará Ves,Stará Ves,220,Přerov,Olomoucký,1
 111015952,1,FVE Praha Suchdol,16500,Praha,Stehlíkova,928,,,1
 111015953,1,FVE - Bezděčín,39175,Želeč,Želeč,17,Tábor,Jihočeský,1
@@ -14499,7 +14500,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111016459,1,FVE - M. HARBÁČKOVÁ BÍLÁ HORA K+B,30100,Plzeň,Senecká,,Plzeň-město,Plzeňský,1
 111016460,1,FVE Záboj,76812,Rataje,Rataje,,Kroměříž,Zlínský,1
 111016461,1,FVE Podlešín,40002,Stebno,Stebno,27,Ústí nad Labem,Ústecký,1
-111016462,1,FVE Raková,79857,Raková u Konice,Raková u Konice,,Prostějov,Olomoucký,1
+111016462,1,FVE - Raková u Konice I. a II.,79857,Raková u Konice,Raková u Konice,,Prostějov,Olomoucký,1
 111016463,1,FVE - Klečanský,30100,Plzeň,Meduňková,221/40,Plzeň-město,Plzeňský,1
 111016464,1,FVE Rejčkov,58401,Dolní Město,Dolní Město,22,Havlíčkův Brod,Vysočina,1
 111016465,1,FVE - Zbyněk Dvořák,71500,Ostrava,Obecní,64/15,Ostrava-město,Moravskoslezský,1
@@ -21202,7 +21203,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111222603,2,Opaz II.,53009,Pardubice,Lonkova,535,Pardubice,Pardubický,1
 111222604,1,FVE Racková,25243,Čestlice,Čestlice,278,Praha-východ,Středočeský,1
 111222605,1,FVE Horoušánky,25082,Úvaly,Glücksmannova,1067,Praha-východ,Středočeský,1
-111222606,1,FVE RD Šídlo,73923,Stará Ves nad Ondřejnicí,Do Potoka,667,Ostrava-město,Moravskoslezský,1
+111222606,1,FVE RD Šídlo,73923,Stará Ves nad Ondřejnicí,Do Potoka,667,Ostrava-město,Moravskoslezský,2
 111222607,1,HALÁS I,40747,Varnsdorf,Smetanova,3246,Děčín,Ústecký,1
 111222608,1,RD Nové Heřminovy,79201,Nové Heřminovy,Nové Heřminovy,185,Bruntál,Moravskoslezský,1
 111222609,1,FVE MLČÁK ŽENKLAVA,74267,Ženklava,Ženklava,285,Nový Jičín,Moravskoslezský,1
@@ -22998,6 +22999,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111224147,1,fotovoltaika,54901,Nové Město nad Metují,Vrchovinská,955,Náchod,Královéhradecký,1
 111224148,1,Matouš Sockel,53901,Hlinsko,Májová,1537,Chrudim,Pardubický,1
 111224149,1,"FVE Květná 961 10,57 kWp",33023,Nýřany,Květná,961,Plzeň-sever,Plzeňský,1
+111224149,2,Tovární 1062,33023,Nýřany,Tovární,1062,Plzeň-sever,Plzeňský,1
+111224149,3,Tovární 1062 II,33023,Nýřany,Tovární,,Plzeň-sever,Plzeňský,1
 111224150,1,Šťáhlavy 620,33203,Šťáhlavy,Nezvěstnická,620,Plzeň-město,Plzeňský,1
 111224151,1,FVE BOLEBOŘSKÁ,18400,Praha,Bolebořská,1103/14,,,1
 111224152,1,"Ing. Jana Celbová, U vinice 865, 164 00 Nebušice",16400,Praha,U vinice,,,,1
@@ -31751,6 +31754,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111332314,1,FVE Pavel Cihlář,34901,Stříbro,Ořechová,1531,Tachov,Plzeňský,1
 111332315,1,FVE Janov Kužel,39201,Roudná,Roudná,33,Tábor,Jihočeský,1
 111332316,1,DC Znojmo,66902,Znojmo,Mládeže,1020/10,Znojmo,Jihomoravský,1
+111332316,2,FVT č.2,66902,Znojmo,Mládeže,1020/10,Znojmo,Jihomoravský,1
 111332317,1,Fve Fixa,78353,Velká Bystřice,ČSA,1,Olomouc,Olomoucký,1
 111332318,1,Pavel Dvořák,38773,Bavorov,Netolická,31,Strakonice,Jihočeský,1
 111332319,1,"FV6-281 Nový Malín, p. Ospálek, 8 kWp",78803,Nový Malín,Nový Malín,527,Šumperk,Olomoucký,1
@@ -33873,7 +33877,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111734831,1,Efranke 1,35132,Hazlov,Hazlov,469,Cheb,Karlovarský,1
 111734832,1,FVE Šťáhlavy,33203,Šťáhlavy,Na Boru,359,Plzeň-město,Plzeňský,1
 111734833,1,FVE Černý Ivan,39501,Obrataň,Obrataň,1,Pelhřimov,Vysočina,1
-111734836,1,BIOMASA,38501,Vimperk,1. máje 63,1,Prachatice,Jihočeský,1
+111734836,1,BIOMASA,38501,Vimperk,1. máje 63,1,Prachatice,Jihočeský,2
 111734838,1,FVE Malkusová Olga,38901,Vodňany,Mokrého,210,Strakonice,Jihočeský,1
 111834834,1,BPS Suchdol nad Odrou,74201,Suchdol nad Odrou,Suchdol nad Odrou,,Nový Jičín,Moravskoslezský,2
 111834837,1,KUROSLEPY,67575,Kuroslepy,Kuroslepy,,Třebíč,Vysočina,1
@@ -35870,6 +35874,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112137190,1,Václav Koliandr,39101,Sezimovo Ústí,Soukeník č.e.,3010,Tábor,Jihočeský,1
 112137191,1,FVE Plenkovice,67151,Kravsko,Kravsko,,Znojmo,Jihomoravský,1
 112137192,1,FVE Martina Prajková,69151,Lanžhot,Luční,632/9,Břeclav,Jihomoravský,1
+112137193,1,FVE Horosedly,38481,Čkyně,Čkyně,,Prachatice,Jihočeský,1
 112137194,1,MVE BÍLÝ POTOK 79,46362,Bílý Potok,Bílý Potok,79,Liberec,Liberecký,2
 112137196,1,FVE Jiří Uhlík,56924,Kunčina,Kunčina,318,Svitavy,Pardubický,1
 112137198,1,Bílina,41801,Bílina,M. Švabinského,652,,,1
@@ -35878,6 +35883,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112137201,1,POLACH,78820,Dolní Studénky,Dolní Studénky,140,Šumperk,Olomoucký,1
 112137204,1,FVE Zebetin,64100,Brno,Kohoutovická,798/87,Brno-město,Jihomoravský,1
 112137204,2,FVE Napajedla,76361,Napajedla,Komenského,630,Zlín,Zlínský,1
+112137206,1,FVE Slunečko1,39175,Dražičky,Dražičky,,Tábor,Jihočeský,1
+112137206,2,FVE Slunečko,39175,Dražičky,Dražičky,71,Tábor,Jihočeský,1
 112137207,1,FVE Van Tiep Than,25721,Poříčí nad Sázavou,Pražská,21,Benešov,Středočeský,1
 112137209,1,"FVE Kuneš 2,45 kW",34401,Domažlice,Fügnerova,396,Domažlice,Plzeňský,1
 112137210,1,"FVE Brloh - pila, 200 kWp - II",39701,Drhovle,Drhovle,,Písek,Jihočeský,1
@@ -35885,14 +35892,25 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112137215,1,MVE č. 4 - JEZ BOLELOUC,78375,Dub nad Moravou,Dub nad Moravou,,Olomouc,Olomoucký,1
 112137218,1,"FVE - ALBENA RENT, s.r.o.",47006,Česká Lípa,Žitavská,2991,Česká Lípa,Liberecký,1
 112137219,1,"Družstevní 646/42, Troubsko 664 41",66441,Troubsko,Družstevní,686/42,Brno-venkov,Jihomoravský,1
+112137220,1,SSH,54376,Chotěvice,Chotěvice,,Trutnov,Královéhradecký,1
 112137222,1,BPS Nový Dvůr,77900,Olomouc,Olomouc,,Olomouc,Olomoucký,6
 112137224,1,SEDMIHORKY,51101,Karlovice,Karlovice,74,Semily,Liberecký,1
+112137225,1,Fotovotaický systém 123. budovy,76001,Zlín,třída Tomáše Bati,,Zlín,Zlínský,1
+112137225,2,Fotovoltaický systém 64/2 budovy,76001,Zlín,Sedmdesátá,7055,Zlín,Zlínský,1
 112137227,1,MVE Řevnice Praha západ,25230,Řevnice,Řevnice,,Praha-západ,Středočeský,2
 112137228,1,FVE - Bagári,53843,Třemošnice,Nad Zámkem,468,Chrudim,Pardubický,1
+112137232,1,Beranová Vinařice 51,28126,Týnec nad Labem,Týnec nad Labem,51,Kolín,Středočeský,1
 112137234,1,FVE Pekárna BACHAN,69671,Blatnice pod Svatým Antonínkem,Blatnice pod Svatým Antonínkem,864,Hodonín,Jihomoravský,1
 112137235,1,Malá vodní elektrárna Dubí,41701,Dubí,Myslbeková,,Teplice,Ústecký,1
 112137241,1,FVE-LPAV 1,56501,Kosořín,Kosořín,,Ústí nad Orlicí,Pardubický,1
+112137247,1,Fotovoltaický systém 64/1 budovy,76001,Zlín,třída Tomáše Bati,7015,Zlín,Zlínský,1
 112137250,1,FVE - Luboš Zoul,26401,Sedlčany,Na Potůčku,38,Příbram,Středočeský,1
+112137251,1,"FVS 29,7 kWp",69501,Hodonín,Velkomoravská,3652/91,Hodonín,Jihomoravský,1
+112137252,1,FRANK ROMAN - STARÁ BĚLÁ,72400,Ostrava,Na Zámčiskách,1215/63,Ostrava-město,Moravskoslezský,1
+112137253,1,"Střední škola obchodní a technická Dačice, Strojírenská 304",38001,Dačice,Strojírenská,304,Jindřichův Hradec,Jihočeský,1
+112137257,1,MVE Hejnice II.,46362,Hejnice,Petra Bezruče,260,Liberec,Liberecký,1
 112137259,1,"FVE 19,2 KWp JUDr. NĚMCOVÁ",16200,Praha,Na Petřinách,310/82,,,1
 112137260,1,FVE - Dobiáš,41301,Roudnice nad Labem,Potoční,,Litoměřice,Ústecký,1
+112137267,1,"Řeznictví H+H, s.r.o",74247,Hladké Životice,Hlavní,46,Nový Jičín,Moravskoslezský,1
 112237286,1,Výroba pelet,39137,Chotoviny,Táborská,214,Tábor,Jihočeský,1
+112237292,1,Za Střelnicí - Domov Hortenzie,74401,Frenštát pod Radhoštěm,Za Střelnicí,,Nový Jičín,Moravskoslezský,1

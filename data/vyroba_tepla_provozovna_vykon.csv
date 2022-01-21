@@ -1217,6 +1217,10 @@ cislo_licence,ev_cislo,druh,technologie,mw
 310100832,4,tepelný,celkový,7.68
 310100832,4,tepelný,teplovodní,7.68
 310100832,4,tepelný,výkon kvet,1.68
+310100832,5,elektrický,celkový,0.999
+310100832,5,tepelný,celkový,1.162
+310100832,5,tepelný,horkovodní,1.162
+310100832,5,tepelný,výkon kvet,1.162
 310100839,3,tepelný,celkový,0.675
 310100839,3,tepelný,teplovodní,0.675
 310100839,4,tepelný,celkový,0.54
