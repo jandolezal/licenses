@@ -219,7 +219,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 110100792,1,Aktivní verze,,,,,,,,,,,,2002-01-01,2002-01-01,2027-01-16,2020-12-11,
 110100794,,Aktivní verze,,,,,,,,,,,,2002-01-01,2002-01-01,2027-01-16,2002-01-01,
 110100796,,Zrušena,,,,,,,,,,,,2002-01-01,2002-01-01,2017-01-27,2002-01-01,
-110100797,1,Aktivní verze,,,,,,,,,,,,2002-01-01,2002-01-01,2027-01-16,2004-11-06,
+110100797,3,Aktivní verze,,,,,,,,,,,,2002-01-01,2002-01-01,2027-01-16,2022-01-21,
 110100798,2,Aktivní verze,,,,,,,,,,,,2002-01-01,2002-01-01,2027-01-01,2021-10-21,
 110100799,1,Aktivní verze,,,,,,,,,,,,2002-01-01,2002-01-01,2027-01-16,2013-08-20,
 110100802,,Aktivní verze,49966260,"JILANA, a.s.",6,,,Malý Beranov,Malý Beranov,586 03,Jihlava,Vysočina,CZ,2002-01-01,2002-01-01,2027-01-16,2002-01-01,František Podhorský
@@ -2828,7 +2828,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 110807166,2,Aktivní verze,45192944,Model Obaly a.s.,2675,102,Těšínská,Opava,Předměstí,746 01,Opava,Moravskoslezský,CZ,2008-12-19,2008-12-19,2033-12-18,2019-01-01,Ing. Jan Glomb
 110807167,,Aktivní verze,,,,,,,,,,,,2009-01-08,2009-01-08,2034-01-08,2009-01-08,
 110807169,,Zrušena,64244873,Ekocentrum PALETA,2665,,Štolbova,Pardubice,,530 02,Pardubice,Pardubický,CZ,2009-01-24,2009-01-24,2013-08-13,2009-01-24,
-110807170,4,Aktivní verze,00872466,Stauner Verwaltungs s.r.o.,143,,,Mrákov,Starý Klíčov,345 01,Domažlice,Plzeňský,CZ,2008-12-23,2008-12-23,2033-12-23,2012-12-27,Miroslav Zuna
+110807170,5,Aktivní verze,00872466,Stauner Verwaltungs s.r.o.,143,,,Mrákov,Starý Klíčov,345 01,Domažlice,Plzeňský,CZ,2008-12-23,2008-12-23,2033-12-23,2012-12-27,Miroslav Zuna
 110807171,,Zrušena,,,,,,,,,,,,2008-12-23,2008-12-23,2012-07-24,2008-12-23,
 110807172,,Aktivní verze,,,,,,,,,,,,2008-12-23,2008-12-23,2033-12-23,2008-12-23,
 110807173,,Aktivní verze,,,,,,,,,,,,2008-12-23,2008-12-23,2033-12-23,2008-12-23,
@@ -3175,7 +3175,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 110907575,,Aktivní verze,,,,,,,,,,,,2009-06-12,2009-06-12,2034-06-12,2009-06-12,Milan Donát
 110907576,,Aktivní verze,,,,,,,,,,,,2009-05-30,2009-05-30,2034-05-30,2009-05-30,
 110907577,,Aktivní verze,,,,,,,,,,,,2009-05-30,2009-05-30,2034-05-30,2009-05-30,
-110907578,,Aktivní verze,,,,,,,,,,,,2009-05-30,2009-05-30,2034-05-30,2009-05-30,
+110907578,1,Aktivní verze,,,,,,,,,,,,2009-05-30,2009-05-30,2034-05-30,2021-01-19,
 110907579,,Zaniklá,,,,,,,,,,,,2009-05-19,2009-05-19,2016-03-19,2009-05-19,
 110907580,1,Aktivní verze,,,,,,,,,,,,2009-05-20,2009-05-20,2034-05-20,2011-01-08,
 110907581,,Aktivní verze,,,,,,,,,,,,2009-06-05,2009-06-05,2034-06-05,2009-06-05,
@@ -6849,7 +6849,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 110911488,1,Aktivní verze,29078474,PPDP v.o.s.,1136,147,Sokolovská,Plzeň,,323 00,Plzeň-město,Plzeňský,CZ,2009-12-11,2009-12-11,2034-12-11,2010-10-06,Vladimír Kozák
 110911489,,Zaniklá,,,,,,,,,,,,2009-12-15,2009-12-15,2018-01-29,2009-12-15,
 110911490,1,Aktivní verze,25153668,"Rovyna, s.r.o.",42,,,Brloh,Rojšín,382 03,Český Krumlov,Jihočeský,CZ,2009-12-22,2009-12-22,2034-12-22,2011-01-01,Vít Valent
-110911491,1,Aktivní verze,26173182,PIN 292 s.r.o.,236,,,Krhanice,Krhanice,257 42,Benešov,Středočeský,CZ,2009-12-11,2009-12-11,2034-12-11,2010-08-10,Ing. František Jůza
+110911491,2,Aktivní verze,26173182,PIN 292 s.r.o.,236,,,Krhanice,Krhanice,257 42,Benešov,Středočeský,CZ,2009-12-11,2009-12-11,2034-12-11,2022-01-21,Ing. František Jůza
 110911492,,Aktivní verze,,,,,,,,,,,,2010-01-05,2010-01-05,2035-01-05,2010-01-05,
 110911493,,Aktivní verze,,,,,,,,,,,,2010-01-05,2010-01-05,2035-01-05,2010-01-05,
 110911494,,Aktivní verze,,,,,,,,,,,,2009-12-18,2009-12-18,2034-12-18,2009-12-18,
@@ -8702,7 +8702,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111013505,,Aktivní verze,,,,,,,,,,,,2010-05-20,2010-05-20,2035-05-20,2010-05-20,
 111013506,,Aktivní verze,,,,,,,,,,,,2010-05-15,2010-05-15,2035-05-15,2010-05-15,
 111013507,,Aktivní verze,,,,,,,,,,,,2010-05-15,2010-05-15,2035-05-15,2010-05-15,
-111013508,,Aktivní verze,,,,,,,,,,,,2010-05-19,2010-05-19,2035-05-19,2010-05-19,
+111013508,1,Aktivní verze,,,,,,,,,,,,2010-05-19,2010-05-19,2035-05-19,2022-01-27,
 111013509,,Aktivní verze,,,,,,,,,,,,2010-05-03,2010-05-03,2035-05-03,2010-05-03,
 111013510,,Aktivní verze,00297852,Město Frenštát pod Radhoštěm,1,,nám. Míru,Frenštát pod Radhoštěm,,744 01,Nový Jičín,Moravskoslezský,CZ,2010-05-21,2010-05-21,2035-05-21,2010-05-21,Karel Kolář
 111013511,,Aktivní verze,,,,,,,,,,,,2010-05-19,2010-05-19,2035-05-19,2010-05-19,
@@ -10259,7 +10259,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111015130,4,Aktivní verze,,,,,,,,,,,,2010-07-16,2010-07-16,2035-07-15,2013-12-23,
 111015131,,Aktivní verze,,,,,,,,,,,,2010-07-20,2010-07-20,2035-07-20,2010-07-20,
 111015132,,Aktivní verze,,,,,,,,,,,,2010-07-14,2010-07-14,2035-07-14,2010-07-14,
-111015133,,Aktivní verze,28776658,"Správa nemovitostí města Jičína, a.s.",1074,,17. listopadu,Jičín,Valdické Předměstí,506 01,Jičín,Královéhradecký,CZ,2010-06-21,2010-06-21,2035-06-21,2010-06-21,Ing. Pavel Bílek
+111015133,2,Aktivní verze,28776658,"Správa nemovitostí města Jičína, a.s.",1074,,17. listopadu,Jičín,Valdické Předměstí,506 01,Jičín,Královéhradecký,CZ,2010-06-21,2010-06-21,2035-06-21,2022-01-22,Ing. Pavel Bílek
 111015137,1,Aktivní verze,,,,,,,,,,,,2010-07-10,2010-07-10,2035-07-10,2020-11-11,Jiří Kříž
 111015138,,Aktivní verze,,,,,,,,,,,,2010-07-24,2010-07-24,2035-07-24,2010-07-24,
 111015139,,Aktivní verze,,,,,,,,,,,,2010-07-20,2010-07-20,2035-07-20,2010-07-20,
@@ -10970,7 +10970,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111015904,,Aktivní verze,,,,,,,,,,,,2010-09-15,2010-09-15,2035-09-15,2010-09-15,
 111015906,,Aktivní verze,,,,,,,,,,,,2010-09-03,2010-09-03,2035-09-03,2010-09-03,
 111015907,,Aktivní verze,,,,,,,,,,,,2010-09-16,2010-09-16,2035-09-16,2010-09-16,
-111015908,,Aktivní verze,25555308,LABARA s.r.o.,20,,,Velká Bíteš,Jindřichov,595 01,Žďár nad Sázavou,Vysočina,CZ,2010-08-04,2010-08-04,2035-08-04,2010-08-04,Martin Koláčný
+111015908,2,Aktivní verze,25555308,LABARA s.r.o.,33,,,Velká Bíteš,Jindřichov,595 01,Žďár nad Sázavou,Vysočina,CZ,2010-08-04,2010-08-04,2035-08-04,2022-01-19,Martin Koláčný
 111015909,,Aktivní verze,29193885,IDEAL ENERGY s.r.o.,404,16,Masarykova,Brno,Brno-město,602 00,Brno-město,Jihomoravský,CZ,2010-08-09,2010-08-09,2035-08-09,2010-08-09,"Ing. Josef Soldán, CSc."
 111015910,6,Aktivní verze,29183057,"Almando, s.r.o.",1231,6,Výhledová,Praha,Hlubočepy,152 00,Hlavní město Praha,Hlavní město Praha,CZ,2010-08-09,2010-08-09,2035-08-08,2021-11-10,Ing. Zdeněk Cerhák
 111015911,,Aktivní verze,,,,,,,,,,,,2010-08-10,2010-08-10,2035-08-10,2010-08-10,
@@ -11744,7 +11744,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111016728,,Aktivní verze,28110773,Solar Jarošov s.r.o.,44,,,Sousedovice,Sousedovice,386 01,Strakonice,Jihočeský,CZ,2010-10-05,2010-10-05,2035-10-05,2010-10-05,Ing. Zuzana Nepustilová
 111016730,,Aktivní verze,28120531,TEKOM ENERGY spol. s r.o.,726,50,Čechova,České Budějovice,,370 01,České Budějovice,Jihočeský,CZ,2010-10-01,2010-10-01,2035-10-01,2010-10-01,Vladimír Troup
 111016731,,Aktivní verze,25399560,"SK mont NJ, spol. s r.o.",28,,Sv. Čecha,Nový Jičín,,741 01,Nový Jičín,Moravskoslezský,CZ,2010-10-19,2010-10-19,2035-10-19,2010-10-19,Ing. Jan Heralt
-111016732,,Aktivní verze,,,,,,,,,,,,2010-11-02,2010-11-02,2035-11-02,2010-11-02,Stanislav Ovčačík
+111016732,,Zrušena,,,,,,,,,,,,2010-11-02,2010-11-02,2022-01-21,2010-11-02,
 111016733,1,Aktivní verze,,,,,,,,,,,,2010-10-21,2010-10-21,2035-10-20,2012-06-05,
 111016734,,Zrušena,,,,,,,,,,,,2010-11-04,2010-11-04,2018-12-31,2010-11-04,
 111016735,,Aktivní verze,,,,,,,,,,,,2010-10-26,2010-10-26,2035-10-26,2010-10-26,
@@ -12297,7 +12297,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111017324,,Aktivní verze,28600932,FOVODO s.r.o.,47,,Hradčany,Hradčany,Hradčany,751 11,Přerov,Olomoucký,CZ,2010-11-19,2010-11-19,2035-11-19,2010-11-19,Pavel Doležal
 111017325,2,Aktivní verze,28619391,ADAVAL solaris s.r.o.,3236,103,1. máje,Ostrava,Moravská Ostrava,703 00,Ostrava-město,Moravskoslezský,CZ,2010-10-27,2010-10-27,2035-10-27,2017-01-31,Zbyněk Paták
 111017326,,Aktivní verze,28422937,SARMENTINA s.r.o.,159,4,Mariánské náměstí,Praha 1,,110 00,,Hlavní město Praha,CZ,2010-11-12,2010-11-12,2035-11-12,2010-11-12,Ing. Vojtěch Skřivan
-111017327,2,Aktivní verze,28482123,Photon SPV 1 s.r.o.,661,4,Karolinská,Praha,Karlín,186 00,Hlavní město Praha,Hlavní město Praha,CZ,2010-12-21,2010-12-21,2035-12-21,2021-02-20,Radek Culek
+111017327,3,Aktivní verze,28482123,Photon SPV 1 s.r.o.,661,4,Karolinská,Praha,Karlín,186 00,Hlavní město Praha,Hlavní město Praha,CZ,2010-12-21,2010-12-21,2035-12-21,2022-01-18,Josef Pražák
 111017328,6,Aktivní verze,28539249,Exit 90 SPV s.r.o.,1716,2b,Hvězdova,Praha,Nusle,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2010-12-07,2010-12-07,2035-12-07,2022-01-04,Josef Pražák
 111017329,,Aktivní verze,62957406,Licoměrsko spol. s r.o.,15,,,Tichonice,Kácovec,257 63,Benešov,Středočeský,CZ,2010-11-11,2010-11-11,2035-11-11,2010-11-11,Miloš Jágr
 111017330,1,Aktivní verze,25953281,SOLENTE s.r.o.,168,,,Dobřenice,Dobřenice,503 25,Hradec Králové,Královéhradecký,CZ,2010-11-25,2010-11-25,2035-11-25,2011-04-07,Karel Fišera
@@ -12487,7 +12487,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111017529,,Zrušena,28217853,eEnergy Hodonín a.s.,4250,17,Smetanova,Hodonín,,695 01,Hodonín,Jihomoravský,CZ,2010-11-26,2010-11-26,2012-11-01,2010-11-26,
 111017530,1,Aktivní verze,29055741,IDRONESAN a.s.,833,1,Arkalycká,Praha,Háje,149 00,Hlavní město Praha,Hlavní město Praha,CZ,2010-11-23,2010-11-23,2035-11-23,2016-08-01,Jiří Novák
 111017531,,Aktivní verze,,,,,,,,,,,,2010-11-26,2010-11-26,2035-11-26,2010-11-26,
-111017532,5,Aktivní verze,29015936,Photon SPV 10 s.r.o.,1716,2b,Hvězdova,Praha,Nusle,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2010-12-07,2010-12-07,2035-12-06,2021-02-13,Radek Culek
+111017532,6,Aktivní verze,29015936,Photon SPV 10 s.r.o.,1716,2b,Hvězdova,Praha,Nusle,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2010-12-07,2010-12-07,2035-12-06,2022-01-18,Josef Pražák
 111017533,2,Aktivní verze,29218454,Farma SOLAR s.r.o.,2317,12,Dr. Šmerala,Ostrava,Moravská Ostrava,702 00,Ostrava-město,Moravskoslezský,CZ,2010-12-08,2010-12-08,2035-12-07,2013-04-16,Josef Dědic
 111017534,,Zaniklá,28693191,PROFIT ENERGY RALSKO I s.r.o.,701,,Kuřívody,Ralsko,,471 24,Česká Lípa,Liberecký,CZ,2010-11-30,2010-11-30,2019-07-01,2010-11-30,
 111017535,1,Aktivní verze,28310292,SolarEnergia Czech s.r.o.,2722,,Nemanická,České Budějovice,České Budějovice 3,370 10,České Budějovice,Jihočeský,CZ,2010-12-21,2010-12-21,2035-12-20,2015-04-28,Ing. Jan Dichtl
@@ -13217,7 +13217,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111118418,,Zaniklá,24743526,MGP 2 s.r.o.,409,,K. Mašity,Všenory,,252 31,Praha-západ,Středočeský,CZ,2011-02-23,2011-02-23,2015-07-07,2011-02-23,
 111118420,,Aktivní verze,46678450,"REPROGEN, a.s.",607,,Husova,Planá nad Lužnicí,,391 11,Tábor,Jihočeský,CZ,2011-03-17,2011-03-17,2036-03-16,2011-03-17,Jan Poslušný
 111118421,2,Aktivní verze,,,,,,,,,,,,2011-06-02,2011-06-02,2036-06-01,2014-01-10,Václav Kosnar
-111118422,1,Aktivní verze,27514650,DEVELOPMENT - Pardubice  s.r.o.,807,5,U České besedy,Ústí nad Labem,,400 01,Ústí nad Labem,Ústecký,CZ,2011-03-28,2011-03-28,2036-03-27,2011-05-09,Miroslav Masopust
+111118422,1,Zrušena,27514650,DEVELOPMENT - Pardubice  s.r.o.,807,5,U České besedy,Ústí nad Labem,,400 01,Ústí nad Labem,Ústecký,CZ,2011-03-28,2011-03-28,2022-01-19,2011-05-09,
 111118423,,Aktivní verze,24798126,"FVE 400, s.r.o.",107,3,Husitská,Praha 3,Žižkov,130 00,,Hlavní město Praha,CZ,2011-03-29,2011-03-29,2036-03-29,2011-03-29,Pavel Kůla
 111118424,1,Aktivní verze,25346008,AVEKO Energie s.r.o.,234,22,Lipová,Brno,Pisárky,602 00,Brno-město,Jihomoravský,CZ,2011-03-29,2011-03-29,2036-03-29,2021-03-26,Ing. Daneš Grula
 111118425,2,Aktivní verze,28807928,ALT POHLEDY s.r.o.,1716,2b,Hvězdova,Praha,Nusle,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2011-02-28,2011-02-28,2036-02-27,2014-08-27,Petr Švec
@@ -17649,7 +17649,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111223209,,Aktivní verze,,,,,,,,,,,,2012-12-07,2012-12-07,2037-12-06,2012-12-07,
 111223210,,Aktivní verze,,,,,,,,,,,,2012-11-06,2012-11-06,2037-11-05,2012-11-06,
 111223211,,Aktivní verze,,,,,,,,,,,,2012-11-16,2012-11-16,2037-11-15,2012-11-16,
-111223212,,Aktivní verze,,,,,,,,,,,,2012-11-06,2012-11-06,2037-11-05,2012-11-06,
+111223212,1,Aktivní verze,,,,,,,,,,,,2012-11-06,2012-11-06,2037-11-05,2022-01-19,
 111223213,,Aktivní verze,,,,,,,,,,,,2012-11-28,2012-11-28,2037-11-27,2012-11-28,
 111223214,,Aktivní verze,,,,,,,,,,,,2012-11-27,2012-11-27,2037-11-26,2012-11-27,
 111223215,,Aktivní verze,,,,,,,,,,,,2012-11-21,2012-11-21,2037-11-20,2012-11-21,
@@ -21404,7 +21404,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111327147,,Aktivní verze,,,,,,,,,,,,2013-04-27,2013-04-27,2038-04-26,2013-04-27,
 111327148,,Aktivní verze,,,,,,,,,,,,2013-04-27,2013-04-27,2038-04-26,2013-04-27,
 111327149,,Aktivní verze,,,,,,,,,,,,2013-05-04,2013-05-04,2038-05-03,2013-05-04,
-111327150,2,Aktivní verze,46509755,SVITAP s.r.o.,499,10,Boženy Němcové,Svitavy,Předměstí,568 02,Svitavy,Pardubický,CZ,2013-05-01,2013-05-01,2038-04-30,2021-07-08,Jiří Veretin
+111327150,3,Aktivní verze,46509755,SVITAP s.r.o.,499,10,Boženy Němcové,Svitavy,Předměstí,568 02,Svitavy,Pardubický,CZ,2013-05-01,2013-05-01,2038-04-30,2022-01-20,Jiří Veretin
 111327151,,Aktivní verze,,,,,,,,,,,,2013-04-30,2013-04-30,2038-04-29,2013-04-30,
 111327152,,Aktivní verze,,,,,,,,,,,,2013-04-30,2013-04-30,2038-04-29,2013-04-30,
 111327153,,Zrušena,,,,,,,,,,,,2013-04-26,2013-04-26,2019-05-29,2013-04-26,
@@ -22939,7 +22939,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111328724,,Zaniklá,,,,,,,,,,,,2013-06-18,2013-06-21,2018-05-01,2013-06-18,
 111328725,,Aktivní verze,,,,,,,,,,,,2013-06-14,2013-06-14,2038-06-13,2013-06-14,
 111328726,,Aktivní verze,,,,,,,,,,,,2013-06-05,2013-06-05,2038-06-04,2013-06-05,
-111328727,,Aktivní verze,,,,,,,,,,,,2013-06-10,2013-06-10,2038-06-09,2013-06-10,
+111328727,,Zaniklá,,,,,,,,,,,,2013-06-10,2013-06-10,2022-01-20,2013-06-10,
 111328728,,Aktivní verze,,,,,,,,,,,,2013-06-21,2013-06-21,2038-06-20,2013-06-21,
 111328729,,Aktivní verze,,,,,,,,,,,,2013-08-27,2013-08-27,2038-08-26,2013-08-27,
 111328730,,Aktivní verze,,,,,,,,,,,,2013-06-18,2013-06-18,2038-06-17,2013-06-18,
@@ -24147,7 +24147,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111329994,,Aktivní verze,,,,,,,,,,,,2013-10-01,2013-10-01,2038-09-30,2013-10-01,
 111329995,2,Aktivní verze,,,,,,,,,,,,2013-09-17,2013-09-17,2038-09-16,2015-11-06,Zdeněk Králik
 111329996,2,Zrušena,26034166,NOVAK SOFTWARE s.r.o.,697,1,Mantovská,Praha,Horní Měcholupy,109 00,Hlavní město Praha,Hlavní město Praha,CZ,2013-09-18,2013-09-30,2020-11-25,2020-02-27,
-111329997,,Aktivní verze,,,,,,,,,,,,2013-09-10,2013-09-10,2038-09-09,2013-09-10,
+111329997,,Zaniklá,,,,,,,,,,,,2013-09-10,2013-09-10,2022-01-05,2013-09-10,
 111329998,2,Aktivní verze,,,,,,,,,,,,2013-09-14,2013-09-14,2038-09-13,2019-11-16,
 111329999,,Aktivní verze,,,,,,,,,,,,2013-08-12,2013-08-12,2038-08-12,2013-08-12,
 111330000,,Aktivní verze,,,,,,,,,,,,2013-09-10,2013-09-10,2038-09-09,2013-09-10,
@@ -25193,7 +25193,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111331106,,Aktivní verze,,,,,,,,,,,,2013-11-22,2013-11-22,2038-11-21,2013-11-22,
 111331107,,Aktivní verze,,,,,,,,,,,,2013-11-25,2013-11-25,2038-11-24,2013-11-25,
 111331108,,Aktivní verze,,,,,,,,,,,,2013-12-13,2013-12-13,2038-12-12,2013-12-13,
-111331109,,Aktivní verze,,,,,,,,,,,,2013-12-30,2013-12-30,2038-12-29,2013-12-30,Petr Šafka
+111331109,,Zrušena,,,,,,,,,,,,2013-12-30,2013-12-30,2022-01-21,2013-12-30,
 111331110,,Aktivní verze,,,,,,,,,,,,2013-11-12,2013-11-12,2038-11-11,2013-11-12,
 111331111,1,Aktivní verze,,,,,,,,,,,,2013-11-13,2013-11-13,2038-11-13,2021-06-18,
 111331112,,Aktivní verze,,,,,,,,,,,,2013-12-06,2013-12-06,2038-12-05,2013-12-06,
@@ -27872,7 +27872,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111734567,,Aktivní verze,26953757,Stav Šimanský s.r.o.,702,,,Bánov,Bánov,687 54,Uherské Hradiště,Zlínský,CZ,2017-07-13,2017-07-13,2042-07-13,2017-07-13,Jan Švehlík
 111734568,,Aktivní verze,04847776,MANETR s.r.o.,896,,Sídliště Za Chlumem,Bílina,Teplické Předměstí,418 01,Teplice,Ústecký,CZ,2017-07-25,2017-08-01,2042-07-25,2017-07-25,Jan Trojovský
 111734570,,Aktivní verze,,,,,,,,,,,,2017-07-31,2017-07-31,2042-07-31,2017-07-31,
-111734571,1,Aktivní verze,29030684,MY DVA group a.s.,1053,28,Osadní,Praha,Holešovice,170 00,Hlavní město Praha,Hlavní město Praha,CZ,2017-08-01,2017-08-01,2042-08-01,2018-11-05,Ing. Miloslav Pašek
+111734571,1,Zaniklá,29030684,MY DVA group a.s.,1053,28,Osadní,Praha,Holešovice,170 00,Hlavní město Praha,Hlavní město Praha,CZ,2017-08-01,2017-08-01,2022-01-21,2018-11-05,
 111734572,,Aktivní verze,06199429,MBNS s.r.o.,2984,68f,Křižíkova,Brno,Královo Pole,612 00,Brno-město,Jihomoravský,CZ,2017-07-31,2017-07-31,2042-07-31,2017-07-31,Ing. David Vinkler
 111734573,,Aktivní verze,,,,,,,,,,,,2017-09-20,2017-09-20,2042-09-20,2017-09-20,
 111734574,,Aktivní verze,,,,,,,,,,,,2017-07-28,2017-07-28,2042-07-28,2017-07-28,
@@ -28282,7 +28282,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111835173,,Aktivní verze,25945017,"Josef Škrkoň - Techplast, a.s.",13,,,Rybník,Rybník,560 02,Ústí nad Orlicí,Pardubický,CZ,2018-12-13,2018-12-13,2043-12-13,2018-12-13,Václav Kopecký
 111835177,1,Aktivní verze,,,,,,,,,,,,2018-10-31,2018-10-31,2043-10-31,2019-05-06,
 111835178,,Aktivní verze,,,,,,,,,,,,2018-10-30,2018-10-30,2043-10-30,2018-10-30,
-111835179,,Aktivní verze,46961062,Rybníkářství Pohořelice a.s.,717,,Vídeňská,Pohořelice,Pohořelice,691 23,Břeclav,Jihomoravský,CZ,2018-10-30,2018-10-30,2043-10-30,2018-10-30,František Mezuláník
+111835179,1,Aktivní verze,46961062,Rybníkářství Pohořelice a.s.,717,,Vídeňská,Pohořelice,Pohořelice,691 23,Břeclav,Jihomoravský,CZ,2018-10-30,2018-10-30,2043-10-30,2022-01-21,Milan Taraba
 111835181,,Aktivní verze,,,,,,,,,,,,2018-10-31,2018-11-01,2043-10-31,2018-10-31,
 111835182,,Zrušena,,,,,,,,,,,,2018-12-28,2018-12-28,2020-09-26,2018-12-28,
 111835183,,Aktivní verze,06806937,POINT FACTORY s.r.o.,2000,78,Rašínovo nábřeží,Praha,Nové Město,120 00,Hlavní město Praha,Hlavní město Praha,CZ,2018-11-01,2018-11-01,2043-11-01,2018-11-01,Tomáš Císař
@@ -28370,7 +28370,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 111835306,,Aktivní verze,60071346,Reno Šumava a.s.,326,,Pražská,Vlachovo Březí,Vlachovo Březí,384 22,Prachatice,Jihočeský,CZ,2019-01-25,2019-01-25,2044-01-25,2019-01-25,Miroslav Klomfar
 111835308,5,Aktivní verze,29369886,"PORTA SPES, a.s.",1899,1,Maříkova,Brno,Řečkovice,621 00,Brno-město,Jihomoravský,CZ,2019-02-21,2019-02-21,2044-02-21,2021-04-01,Bc. Martin Lev
 111835309,,Aktivní verze,27665933,"Lékárna Rájec, s.r.o.",508,,Ol. Blažka,Rájec-Jestřebí,Rájec,679 02,Blansko,Jihomoravský,CZ,2019-03-15,2019-03-15,2044-03-15,2019-03-15,Mgr. Petr Havelka
-111835310,,Aktivní verze,,,,,,,,,,,,2019-02-05,2019-02-05,2044-02-05,2019-02-05,
+111835310,,Zaniklá,,,,,,,,,,,,2019-02-05,2019-02-05,2021-12-17,2019-02-05,
 111835311,,Zaniklá,25152858,"ARDEAPHARMA, a.s.",229,,Třeboňská,Ševětín,Ševětín,373 63,České Budějovice,Jihočeský,CZ,2019-02-20,2019-02-20,2020-12-31,2019-02-20,
 111835312,,Aktivní verze,,,,,,,,,,,,2019-01-18,2019-01-18,2044-01-18,2019-01-18,
 111835313,,Aktivní verze,,,,,,,,,,,,2019-03-08,2019-03-08,2044-03-08,2019-03-08,
@@ -29712,6 +29712,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 112137061,,Aktivní verze,27676552,"MOD elektronik, s.r.o.",1386,,Bělisko,Nové Město na Moravě,Nové Město na Moravě,592 31,Žďár nad Sázavou,Vysočina,CZ,2021-10-16,2021-10-16,2046-10-16,2021-10-16,Světlana Konečná
 112137062,,Aktivní verze,47310910,EKOS-Žitenice s.r.o.,17,,Litoměřická,Žitenice,Žitenice,411 41,Litoměřice,Ústecký,CZ,2021-11-15,2021-11-15,2046-11-15,2021-11-15,Ing. Michal Bednařík
 112137063,,Aktivní verze,,,,,,,,,,,,2021-10-08,2021-10-08,2046-10-08,2021-10-08,
+112137064,,Aktivní verze,00008648,"Chart Ferox, a.s.",1335,30,Ústecká,Děčín,Děčín V-Rozbělesy,405 02,Děčín,Ústecký,CZ,2022-01-26,2022-01-26,2047-01-26,2022-01-26,Jan Cikán
 112137065,,Aktivní verze,28262026,LAMA energy a.s.,763,,Gudrichova,Hradec nad Moravicí,Hradec nad Moravicí,747 41,Opava,Moravskoslezský,CZ,2021-10-29,2021-10-29,2046-10-29,2021-10-29,Petr Mareta
 112137066,,Aktivní verze,,,,,,,,,,,,2021-10-22,2021-10-22,2046-10-22,2021-10-22,Radek Lamberský
 112137067,,Aktivní verze,,,,,,,,,,,,2021-11-02,2021-11-02,2046-11-02,2021-11-02,
@@ -29719,7 +29720,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 112137069,,Aktivní verze,70981531,"Základní škola a Mateřská škola, Rychnov u Jablonce nad Nisou, příspěvková organizace",488,,Školní,Rychnov u Jablonce nad Nisou,Rychnov u Jablonce nad Nisou,468 02,Jablonec nad Nisou,Liberecký,CZ,2021-11-19,2021-11-19,2046-11-19,2021-11-19,Ing. Miroslav Fadrhons
 112137070,,Aktivní verze,25475584,"BOHEMIAN SMITHERY TRADE, s.r.o.",973,,Huťská,Kamenický Šenov,Kamenický Šenov,471 14,Česká Lípa,Liberecký,CZ,2021-12-04,2021-12-04,2046-12-04,2021-12-04,Luděk Vošahlík
 112137071,,Aktivní verze,60708948,"T. I. Com, s.r.o.",1104,,I. Olbrachta,Třebíč,Nové Dvory,674 01,Třebíč,Vysočina,CZ,2021-11-05,2021-11-05,2046-11-05,2021-11-05,Antonín Štancl
-112137072,,Aktivní verze,,,,,,,,,,,,2021-11-13,2021-11-13,2046-11-13,2021-11-13,
+112137072,1,Aktivní verze,,,,,,,,,,,,2021-11-13,2021-11-13,2046-11-13,2022-01-21,
 112137073,,Aktivní verze,,,,,,,,,,,,2021-10-15,2021-10-15,2046-10-15,2021-10-15,Zdeňka Görglová
 112137074,,Aktivní verze,,,,,,,,,,,,2021-11-19,2021-11-19,2046-11-19,2021-11-19,
 112137075,,Aktivní verze,71177108,"CPA DELFÍN, příspěvková organizace",2377,,Slovácké nám.,Uherský Brod,Uherský Brod,688 01,Uherské Hradiště,Zlínský,CZ,2021-10-15,2021-12-10,2046-10-15,2021-10-15,Ivan Manda
@@ -29756,6 +29757,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 112137122,,Aktivní verze,,,,,,,,,,,,2021-12-23,2021-12-23,2046-12-23,2021-12-23,
 112137123,,Aktivní verze,46901621,"MVD, spol. s r.o.",35,7,Svatopetrská,Brno,Komárov,617 00,Brno-město,Jihomoravský,CZ,2021-11-12,2021-11-30,2046-11-12,2021-11-12,Ing. Vít Čechovský
 112137124,,Aktivní verze,,,,,,,,,,,,2022-01-05,2022-01-05,2047-01-05,2022-01-05,
+112137125,,Aktivní verze,28879295,"Solar Solution, s.r.o.",1849,,Soukenická,Chotěboř,Chotěboř,583 01,Havlíčkův Brod,Vysočina,CZ,2022-01-22,2022-01-22,2047-01-22,2022-01-22,Ing. Jiří Urbánek
 112137126,,Aktivní verze,,,,,,,,,,,,2021-11-02,2021-11-02,2046-11-02,2021-11-02,
 112137127,,Aktivní verze,09144536,Solareng Znojmo s.r.o.,61,,,Nový Šaldorf-Sedlešovice,Nový Šaldorf,671 81,Znojmo,Jihomoravský,CZ,2021-12-17,2021-12-17,2046-12-17,2021-12-17,Ing. Miroslav Plíšek
 112137128,,Aktivní verze,28787153,"TH&amp;S, s.r.o.",252,,,Lukavice,Lukavice,516 03,Rychnov nad Kněžnou,Královéhradecký,CZ,2021-11-23,2021-11-23,2046-11-23,2021-11-23,Vlastimil Herman
@@ -29775,6 +29777,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 112137150,,Aktivní verze,00031950,"COOP - Jednota Toužim, spotřební družstvo",106,,náměstí Jiřího z Poděbrad,Toužim,Toužim,364 01,Karlovy Vary,Karlovarský,CZ,2021-11-23,2021-11-30,2046-11-23,2021-11-23,Josef Reiter
 112137151,,Aktivní verze,,,,,,,,,,,,2021-12-08,2021-12-08,2046-12-08,2021-12-08,
 112137152,,Aktivní verze,,,,,,,,,,,,2021-12-02,2021-12-02,2046-12-02,2021-12-02,
+112137153,,Aktivní verze,29126126,PRENOL Consulting SE,538,46,Poděbradská,Praha,Vysočany,190 00,Hlavní město Praha,Hlavní město Praha,CZ,2022-01-20,2022-01-20,2047-01-20,2022-01-20,Ing. Martin Kubíček
 112137154,,Aktivní verze,25557718,ENVA s.r.o.,535,,Školní,Křenovice,Křenovice,683 52,Vyškov,Jihomoravský,CZ,2021-11-23,2021-12-01,2035-11-23,2021-11-23,Ing. Lubomír Šmerda
 112137155,,Aktivní verze,70890692,Moravskoslezský kraj,2771,117,28. října,Ostrava,Moravská Ostrava,702 00,Ostrava-město,Moravskoslezský,CZ,2021-11-24,2021-12-01,2046-11-24,2021-11-24,Ing. Tomáš Kaleta
 112137158,,Aktivní verze,26496224,"VODA Želivka, a.s.",16,23,K Horkám,Praha,Hostivař,102 00,Hlavní město Praha,Hlavní město Praha,CZ,2021-12-03,2021-12-03,2046-12-03,2021-12-03,Zdeněk Štěpánek
@@ -29807,6 +29810,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 112137204,,Aktivní verze,,,,,,,,,,,,2021-12-18,2021-12-18,2046-12-18,2021-12-18,
 112137206,,Aktivní verze,,,,,,,,,,,,2022-01-14,2022-01-14,2047-01-14,2022-01-14,
 112137207,,Aktivní verze,,,,,,,,,,,,2022-01-12,2022-01-12,2047-01-12,2022-01-12,
+112137208,,Aktivní verze,46508201,AUTOŠKOLA Chrudim  spol. s r. o.,57,,Masarykovo náměstí,Chrudim,Chrudim IV,537 01,Chrudim,Pardubický,CZ,2022-01-21,2022-01-21,2047-01-21,2022-01-21,Tomáš Zavřel
 112137209,,Aktivní verze,,,,,,,,,,,,2021-12-28,2021-12-28,2046-12-28,2021-12-28,
 112137210,,Aktivní verze,02272946,"Holzpack CZ, s.r.o.",56,,,Drhovle,Brloh,397 01,Písek,Jihočeský,CZ,2021-12-09,2021-12-09,2046-12-09,2021-12-09,Miroslav Kropáček
 112137211,,Aktivní verze,26428695,Jirků A-Z s.r.o.,3342,,Průmyslová,Kladno,Kladno,272 01,Kladno,Středočeský,CZ,2021-12-18,2021-12-18,2046-12-18,2021-12-18,Radovan Jirků
@@ -29822,6 +29826,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 112137232,,Aktivní verze,,,,,,,,,,,,2022-01-15,2022-01-15,2047-01-15,2022-01-15,
 112137234,,Aktivní verze,29193753,Pekárna BACHAN s.r.o.,864,,,Blatnice pod Svatým Antonínkem,Blatnice pod Svatým Antonínkem,696 71,Hodonín,Jihomoravský,CZ,2022-01-05,2022-01-05,2047-01-05,2022-01-05,Bc. Roman Baraňák
 112137235,,Aktivní verze,04325192,"MVE Dubí (TP), s.r.o.",2852,16,Jeseniova,Praha,Žižkov,130 00,Hlavní město Praha,Hlavní město Praha,CZ,2021-12-31,2021-12-31,2046-12-31,2021-12-31,Ing. Miroslav Bližňák
+112137239,,Aktivní verze,,,,,,,,,,,,2022-01-20,2022-01-20,2047-01-20,2022-01-20,
 112137241,,Aktivní verze,10985751,"LPAV - energo, s.r.o.",838,6,Příkop,Brno,Zábrdovice,602 00,Brno-město,Jihomoravský,CZ,2021-12-29,2022-01-01,2046-12-29,2021-12-29,Petr Kvintus
 112137247,,Aktivní verze,27814319,"B.A.W.R., a.s.",262,34,Nuselská,Praha,Nusle,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2022-01-14,2022-01-14,2047-01-14,2022-01-14,Ing. Jan Chytil
 112137250,,Aktivní verze,,,,,,,,,,,,2022-01-04,2022-01-04,2047-01-04,2022-01-04,
@@ -29831,9 +29836,12 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 112137257,,Aktivní verze,,,,,,,,,,,,2022-01-12,2022-01-12,2047-01-12,2022-01-12,
 112137259,,Aktivní verze,,,,,,,,,,,,2022-01-06,2022-01-06,2047-01-06,2022-01-06,Ing. Ilja Merunka
 112137260,,Aktivní verze,,,,,,,,,,,,2022-01-03,2022-01-03,2047-01-03,2022-01-03,Štěpán Tintěra
+112137262,,Aktivní verze,,,,,,,,,,,,2022-01-20,2022-01-20,2047-01-20,2022-01-20,
 112137267,,Aktivní verze,26788942,"Řeznictví H+H, s.r.o.",46,,Hlavní,Hladké Životice,Hladké Životice,742 47,Nový Jičín,Moravskoslezský,CZ,2022-01-17,2022-01-17,2047-01-17,2022-01-17,Pavel Smisitel
+112137268,,Aktivní verze,14014815,Produktionsanlage ETX s.r.o.,165,,Chrastavická,Domažlice,Dolejší Předměstí,344 01,Domažlice,Plzeňský,CZ,2022-01-24,2022-01-24,2026-12-31,2022-01-24,Miroslav Mašát
 112237286,,Aktivní verze,14101157,LATOP ENERGY s.r.o.,200,,Táborská,Chotoviny,Červené Záhoří,391 37,Tábor,Jihočeský,CZ,2022-01-12,2022-01-12,2047-01-12,2022-01-12,Lukáš Smetana
 112237292,,Aktivní verze,48804843,"Domov Hortenzie, příspěvková organizace",1568,,Za Střelnicí,Frenštát pod Radhoštěm,Frenštát pod Radhoštěm,744 01,Nový Jičín,Moravskoslezský,CZ,2022-01-12,2022-01-12,2047-01-12,2022-01-12,Ing. Adam Domašík
+112237303,,Aktivní verze,25676059,MY DVA holding a.s.,1053,28,Osadní,Praha,Holešovice,170 00,Hlavní město Praha,Hlavní město Praha,CZ,2022-01-21,2022-01-21,2047-01-21,2022-01-21,Ing. Miloslav Pašek
 120100023,6,Aktivní verze,46342796,"OHLA ŽS, a.s.",1554,115b,Tuřanka,Brno,Slatina,627 00,Brno-město,Jihomoravský,CZ,2001-07-01,2001-07-01,2099-12-31,2021-12-17,Ing. Zdeněk Durďák
 120100073,1,Aktivní verze,61534625,OD ANDY s.r.o.,2906,,Erbenova,Česká Lípa,,470 01,Česká Lípa,Liberecký,CZ,2001-08-01,2001-08-01,2099-12-31,2002-06-20,Miroslav Štěrba
 120100112,2,Aktivní verze,46504826,"ZPA Nová Paka, a.s.",470,,Pražská,Nová Paka,,509 39,Jičín,Královéhradecký,CZ,2001-10-01,2001-10-01,2099-12-31,2013-09-19,Ing. Bohuslav Franěk
@@ -30216,7 +30224,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 121634199,,Aktivní verze,25677063,"PREměření, a.s.",2149,19,Na hroudě,Praha,Strašnice,100 00,Hlavní město Praha,Hlavní město Praha,CZ,2016-10-31,2016-11-01,2041-10-31,2016-10-31,Ing. Rudolf Červenka
 121634207,,Zrušena,00000515,LOM PRAHA s.p.,270,8,Tiskařská,Praha,Malešice,108 00,Hlavní město Praha,Hlavní město Praha,CZ,2017-02-15,2017-02-15,2017-08-01,2017-02-15,
 121634265,2,Aktivní verze,04607295,Liberec Property s.r.o.,682,14,Rybná,Praha,Staré Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2017-03-22,2017-03-22,2099-03-22,2019-02-26,David Srch
-121634308,56,Aktivní verze,01873237,ČEZ LDS s.r.o.,1444,2,Duhová,Praha,Michle,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2017-01-27,2017-02-01,2099-12-31,2021-12-08,Jan Pospíšil
+121634308,57,Aktivní verze,01873237,ČEZ LDS s.r.o.,1444,2,Duhová,Praha,Michle,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2017-01-27,2017-02-01,2099-12-31,2022-01-26,Jan Pospíšil
 121734401,,Aktivní verze,25113445,Transfer Energy a.s.,65,,Beranových,Praha,Letňany,199 00,Hlavní město Praha,Hlavní město Praha,CZ,2017-06-23,2017-06-23,2042-01-31,2017-06-23,Antonín Doseděl
 121734448,,Aktivní verze,03801632,For Real s.r.o.,2373,,Hrabalova,Nymburk,Nymburk,288 02,Nymburk,Středočeský,CZ,2017-06-13,2017-06-13,2042-06-13,2017-06-13,Ing. Radek Formánek
 121734501,,Zrušena,04575342,MB Futurum HK s.r.o.,2096,4,Olivova,Praha,Nové Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2017-07-15,2017-07-15,2018-10-04,2017-07-15,
@@ -30409,7 +30417,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 140705523,2,Aktivní verze,25966090,Východočeská energie s.r.o.,807,64,Václavské náměstí,Praha,Nové Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2007-12-27,2008-01-01,2022-12-26,2017-11-09,Ing. Radek Milek
 140705525,2,Aktivní verze,27201791,ČETRANS energetika s.r.o.,683,,nám. 1. máje,Hostivice,Hostivice,253 01,Praha-západ,Středočeský,CZ,2007-11-16,2007-11-16,2022-11-15,2017-08-05,Michal Čermák
 140705532,1,Zaniklá,27597075,"UNIPETROL RPA, s.r.o.",1,,Záluží,Litvínov,,436 70,Most,Ústecký,CZ,2007-12-05,2007-12-05,2012-12-05,2010-11-25,
-140705550,3,Aktivní verze,45193070,"VÍTKOVICE, a.s.",2887,101,Ruská,Ostrava,Vítkovice,703 00,Ostrava-město,Moravskoslezský,CZ,2007-12-17,2007-12-17,2022-12-17,2017-11-30,Ing. Jiří Hanzelka
+140705550,4,Aktivní verze,45193070,"VÍTKOVICE, a.s.",3020,,,Ostrava,Vítkovice,703 00,Ostrava-město,Moravskoslezský,CZ,2007-12-17,2007-12-17,2022-12-17,2022-01-21,Ing. Ivo Mirek
 140705551,4,Aktivní verze,25309391,"EZAMONT Group, a.s.",915,101a,Obřanská,Brno,Maloměřice,614 00,Brno-město,Jihomoravský,CZ,2008-01-17,2008-01-17,2023-01-16,2017-12-09,Ing. Jan Sedláček
 140705561,2,Zrušena,99999999,Merrill Lynch Commodities (Europe) Limited,2,,King Edward Street,London,Merrill Lynch Financial Centre,EC1A 1HQ,,,UK,2007-11-15,2007-12-03,2017-09-07,2012-10-18,
 140705567,1,Zaniklá,46356550,Příbramská teplárenská a.s.,269,,Obecnická,Příbram VI,,261 01,Příbram,Středočeský,CZ,2007-12-31,2008-01-01,2017-12-31,2012-10-26,
@@ -30840,7 +30848,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 141633991,2,Aktivní verze,05082013,IN ENERGIE Prodej s.r.o.,1219,93,Závodní,Ostrava,Zábřeh,700 30,Ostrava-město,Moravskoslezský,CZ,2016-08-26,2016-09-01,2026-08-26,2021-04-09,"Ing. Břetislav Novosad, Ph.D."
 141634001,1,Aktivní verze,03606554,RIGHT POWER COMMODITIES  s.r.o.,3321,46,Českobratrská,Ostrava,Moravská Ostrava,702 00,Ostrava-město,Moravskoslezský,CZ,2016-08-03,2016-08-03,2026-08-03,2021-05-08,Ing. Marek Piwko
 141634013,1,Aktivní verze,01494325,JM VISION a.s.,290,16,Karlovo náměstí,Praha,Nové Město,120 00,Hlavní město Praha,Hlavní město Praha,CZ,2016-07-14,2016-09-01,2026-07-14,2021-02-13,Petr Oliva
-141634014,2,Aktivní verze,05099951,Moravská plynárenská s.r.o.,2697,70,Křižíkova,Brno,Královo Pole,612 00,Brno-město,Jihomoravský,CZ,2016-08-09,2016-08-09,2026-08-09,2021-03-10,Martin Živný
+141634014,3,Aktivní verze,05099951,Moravská plynárenská s.r.o.,988,2,Nové sady,Brno,Staré Brno,602 00,Brno-město,Jihomoravský,CZ,2016-08-09,2016-08-09,2026-08-09,2022-01-20,Martin Živný
 141634017,,Zaniklá,29297010,SVINOS s.r.o.,114,,,Svinošice,Svinošice,679 22,Blansko,Jihomoravský,CZ,2016-08-27,2016-08-27,2021-08-27,2016-08-27,
 141634027,1,Aktivní verze,27465021,"Fatra, a.s.",1541,,třída Tomáše Bati,Napajedla,Napajedla,763 61,Zlín,Zlínský,CZ,2016-07-21,2016-07-21,2026-07-21,2021-02-25,Libor Blažek
 141634048,,Zaniklá,45274517,"ELTODO, a.s.",1010,14,Novodvorská,Praha,Lhotka,142 00,Hlavní město Praha,Hlavní město Praha,CZ,2016-08-29,2016-08-29,2021-08-29,2016-08-29,
@@ -30933,7 +30941,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 141835150,,Aktivní verze,06998381,Františkovy Energie s.r.o.,444,18,Matěchova,Praha,Krč,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2018-12-04,2018-12-04,2023-12-04,2018-12-04,Ing. Vladimír Sláma
 141835152,1,Aktivní verze,06629164,ENERGOVR s.r.o.,425,53,Hroznová,Brno,Pisárky,603 00,Brno-město,Jihomoravský,CZ,2018-10-20,2018-10-20,2023-10-20,2021-11-25,Ing. Jiří Lisník
 141835168,,Aktivní verze,46962778,"DT - Výhybkárna a strojírna, a.s.",3137,100,Dolní,Prostějov,Prostějov,796 01,Prostějov,Olomoucký,CZ,2019-01-01,2019-01-01,2024-01-01,2018-12-07,Tomáš Musil
-141835175,,Aktivní verze,07198205,Manta Energy s.r.o.,1569,2c,Jankovcova,Praha,Holešovice,170 00,Hlavní město Praha,Hlavní město Praha,CZ,2018-11-06,2018-11-06,2023-11-06,2018-11-06,Ing. Petr Beneš
+141835175,,Zaniklá,07198205,Manta Energy s.r.o.,1569,2c,Jankovcova,Praha,Holešovice,170 00,Hlavní město Praha,Hlavní město Praha,CZ,2018-11-06,2018-11-06,2021-06-07,2018-11-06,
 141835190,,Aktivní verze,07487100,"O-Trade, s.r.o.",3506,20,Průmyslová,Ústí nad Labem,Ústí nad Labem-centrum,400 01,Ústí nad Labem,Ústecký,CZ,2018-10-26,2018-11-01,2023-10-26,2018-10-26,Ing. Petr Landovský
 141835203,,Aktivní verze,45349711,Pfeifer Holz s.r.o.,102,,,Chanovice,Chanovice,341 01,Klatovy,Plzeňský,CZ,2018-12-04,2019-01-01,2023-12-04,2018-12-04,Milan Kodýtek
 141835233,,Aktivní verze,01985248,Passenergy s.r.o.,86,6,Křižovnická,Praha,Staré Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2019-01-08,2019-01-08,2024-01-08,2019-01-08,Ing. Marek Izrael
@@ -31023,6 +31031,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 142137176,,Aktivní verze,03107108,DRFG ENERGY s.r.o.,460,3,Vinařská,Brno,Pisárky,603 00,Brno-město,Jihomoravský,CZ,2021-11-22,2021-11-22,2026-11-22,2021-11-22,Jiří Horký
 142137231,,Aktivní verze,01413376,JOHNYNOTIME družstvo,4,,,Litvínov,Dolní Litvínov,436 01,Most,Ústecký,CZ,2021-12-16,2022-01-01,2026-12-16,2021-12-16,Ing. Milan Nečas
 142137272,,Aktivní verze,07198205,Manta Energy a.s.,1569,2c,Jankovcova,Praha,Holešovice,170 00,Hlavní město Praha,Hlavní město Praha,CZ,2022-01-14,2022-01-14,2027-01-14,2022-01-14,Ing. Petr Beneš
+142237319,,Aktivní verze,60722266,Faster CZ spol. s r.o.,1064,44g,Jarní,Brno,Maloměřice,614 00,Brno-město,Jihomoravský,CZ,2022-01-25,2022-02-01,2027-01-25,2022-01-25,Ing. Miloslav Škorpík
 150504700,5,Aktivní verze,26463318,"OTE, a.s.",192,79,Sokolovská,Praha,Karlín,180 00,Hlavní město Praha,Hlavní město Praha,CZ,2005-07-09,2005-07-09,2099-12-31,2021-09-22,"Ing. Igor Chemišinec, Ph.D."
 210100686,14,Aktivní verze,00494356,"Green Gas DPB, a.s.",637,,Rudé armády,Paskov,Paskov,739 21,Frýdek-Místek,Moravskoslezský,CZ,2002-01-01,2002-01-01,2027-01-16,2016-12-16,Ing. Miloslav Dušek
 210101643,,Zrušena,18050646,"TŘINECKÉ ŽELEZÁRNY, a. s.",1000,,Průmyslová,Třinec - Staré Město,,739 70,Frýdek-Místek,Moravskoslezský,CZ,2002-01-01,2002-01-01,2019-01-01,2002-01-01,
@@ -31075,7 +31084,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 220102884,1,Zrušena,00134601,Zemědělské družstvo Velké Bílovice,1236,,Podivínská,Velké Bílovice,,691 02,Břeclav,Jihomoravský,CZ,2002-03-01,2002-03-01,2015-04-24,2003-11-21,
 220102934,2,Aktivní verze,26019388,"BorsodChem MCHZ, s.r.o.",2039,1,Chemická,Ostrava,Mariánské Hory,709 00,Ostrava-město,Moravskoslezský,CZ,2002-03-29,2002-03-29,2099-12-31,2019-03-27,Ing. Ľubomír Ogurčák
 220103057,3,Zrušena,60193484,"RWE Plynoprojekt, s.r.o.",223,42,U Plynárny,Praha 4,Michle,140 21,,Hlavní město Praha,CZ,2002-05-15,2002-05-15,2012-04-03,2009-06-18,
-220103058,1,Aktivní verze,15503461,"ENERGOAQUA, a.s.",823,,1. máje,Rožnov pod Radhoštěm,,756 61,Vsetín,Zlínský,CZ,2002-05-01,2002-05-01,2099-12-31,2013-12-28,Ing. Zdeněk Kubín
+220103058,2,Aktivní verze,15503461,"ENERGOAQUA, a.s.",823,,1. máje,Rožnov pod Radhoštěm,Rožnov pod Radhoštěm,756 61,Vsetín,Zlínský,CZ,2002-05-01,2002-05-01,2099-12-31,2022-01-19,Ing. Lukáš Trčka
 220103152,6,Aktivní verze,25012240,AGC Automotive Czech a.s.,33,,Osada,Bílina,Chudeřice,418 01,Teplice,Ústecký,CZ,2002-09-19,2002-09-19,2099-12-31,2021-03-19,Bc. Milan Trnka
 220103160,6,Aktivní verze,45350507,I.P.P.E. s.r.o.,297,,,Dýšina,Dýšina,330 02,Plzeň-sever,Plzeňský,CZ,2002-04-09,2002-04-09,2099-12-31,2018-05-16,Ing. František Markvart
 220103543,3,Aktivní verze,25758292,PDI a.s.,39,,Národní,Praha 1,,110 00,,Hlavní město Praha,CZ,2002-05-06,2002-05-06,2099-12-31,2011-05-20,Vojtěch Peterek
@@ -31163,7 +31172,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 240404357,2,Zaniklá,14613581,ArcelorMittal Frýdek-Místek a.s.,1377,,Křižíkova,Frýdek-Místek,,738 01,Frýdek-Místek,Moravskoslezský,CZ,2005-01-01,2005-01-01,2014-11-01,2009-11-19,
 240404399,1,Zrušena,25336169,SPP Bohemia a.s.,1511,230,Vinohradská,Praha 10,,100 00,,Hlavní město Praha,CZ,2004-12-01,2004-12-01,2014-03-22,2009-10-13,
 240404412,4,Aktivní verze,25911945,"Lumius, spol. s r.o.",700,,Horní,Sviadnov,Sviadnov,739 25,Frýdek-Místek,Moravskoslezský,CZ,2005-01-01,2005-01-01,2025-01-17,2019-09-09,Ing. Pavel Miklas
-240404418,7,Aktivní verze,45193070,"VÍTKOVICE, a.s.",3020,,,Ostrava,Vítkovice,703 00,Ostrava-město,Moravskoslezský,CZ,2005-01-01,2005-01-01,2025-01-17,2019-10-22,Ing. Jaromír Klement
+240404418,8,Aktivní verze,45193070,"VÍTKOVICE, a.s.",3020,,,Ostrava,Vítkovice,703 00,Ostrava-město,Moravskoslezský,CZ,2005-01-01,2005-01-01,2025-01-17,2022-01-21,Ing. Ivo Mirek
 240404439,3,Aktivní verze,27077187,ENERGIE CZ s.r.o.,225,,Fortna,Nové Strašecí,Nové Strašecí,271 01,Rakovník,Středočeský,CZ,2005-01-01,2005-01-01,2025-01-17,2019-08-22,Ing. Ivo Duchoň
 240404446,1,Zaniklá,,,,,,,,,,,,2005-01-19,2005-01-19,2015-02-04,2009-10-13,
 240404450,3,Aktivní verze,47674865,"Moravské železárny, a.s.",35,86,Řepčínská,Olomouc,Řepčín,779 00,Olomouc,Olomoucký,CZ,2005-02-03,2005-02-03,2025-02-19,2020-01-01,Petr Motl
@@ -31306,7 +31315,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 241218925,,Zaniklá,24801208,"CTR Energo, s.r.o.",525,1,Sladkovského náměstí,Praha 3,Žižkov,130 00,,Hlavní město Praha,CZ,2012-02-01,2012-02-01,2013-12-14,2012-02-01,
 241218938,3,Aktivní verze,29308607,FONERGY s.r.o.,1334,,Stojanova,Uherské Hradiště,Uherské Hradiště,686 01,Uherské Hradiště,Zlínský,CZ,2012-02-23,2012-02-23,2027-02-22,2021-09-29,Ing. Petr Látal
 241218951,1,Aktivní verze,28231198,"ENERGOREAL, s.r.o.",731,34,Klapkova,Praha,Kobylisy,182 00,Hlavní město Praha,Hlavní město Praha,CZ,2012-02-16,2012-03-01,2022-02-16,2016-12-23,Ing. Jaroslav Krešňák
-241218964,3,Aktivní verze,60193492,"Pražská plynárenská, a.s.",37,38,Národní,Praha,Nové Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2012-02-27,2012-02-27,2022-02-26,2018-02-27,Ing. Tomáš Fiala
+241218964,4,Aktivní verze,60193492,"Pražská plynárenská, a.s.",37,38,Národní,Praha,Nové Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2012-02-27,2012-02-27,2027-02-26,2022-01-25,Ing. Tomáš Fiala
 241219002,2,Aktivní verze,28145127,"OBECNÍ PLYNÁRNA, s.r.o.",1,,třída Míru,Český Krumlov,Nádražní Předměstí,381 01,Český Krumlov,Jihočeský,CZ,2012-04-17,2012-04-17,2027-04-17,2021-12-31,David Keliš
 241219032,3,Aktivní verze,25055925,České teplo s.r.o.,731,34,Klapkova,Praha,Kobylisy,182 00,Hlavní město Praha,Hlavní město Praha,CZ,2012-05-10,2012-05-10,2027-05-10,2021-12-07,Ing. Michal Sedmihradský
 241219045,3,Aktivní verze,24285137,Blue-Gas s.r.o.,647,48,Lublaňská,Praha 2,Vinohrady,120 00,,Hlavní město Praha,CZ,2012-04-11,2012-04-11,2027-04-10,2022-01-06,Ing. Zdeněk Kánský
@@ -31451,7 +31460,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 241633942,2,Aktivní verze,25027590,VNG Energie Czech s.r.o.,1284,37,Opletalova,Praha,Nové Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2016-07-20,2016-07-20,2026-07-20,2021-05-11,Ing. Aleš Kronowetter
 241633992,2,Aktivní verze,05082013,IN ENERGIE Prodej s.r.o.,1219,93,Závodní,Ostrava,Zábřeh,700 30,Ostrava-město,Moravskoslezský,CZ,2016-08-26,2016-09-01,2026-08-26,2021-04-09,"Ing. Břetislav Novosad, Ph.D."
 241634002,1,Aktivní verze,03606554,RIGHT POWER COMMODITIES  s.r.o.,3321,46,Českobratrská,Ostrava,Moravská Ostrava,702 00,Ostrava-město,Moravskoslezský,CZ,2016-08-03,2016-08-03,2026-08-03,2021-05-08,Ing. Marek Piwko
-241634015,2,Aktivní verze,05099951,Moravská plynárenská s.r.o.,2697,70,Křižíkova,Brno,Královo Pole,612 00,Brno-město,Jihomoravský,CZ,2016-08-09,2016-08-09,2026-08-09,2021-03-10,Martin Živný
+241634015,3,Aktivní verze,05099951,Moravská plynárenská s.r.o.,988,2,Nové sady,Brno,Staré Brno,602 00,Brno-město,Jihomoravský,CZ,2016-08-09,2016-08-09,2026-08-09,2022-01-20,Martin Živný
 241634028,1,Aktivní verze,27465021,"Fatra, a.s.",1541,,třída Tomáše Bati,Napajedla,Napajedla,763 61,Zlín,Zlínský,CZ,2016-07-21,2016-07-21,2026-07-21,2021-02-25,Libor Blažek
 241634038,1,Aktivní verze,29297010,SVINOS s.r.o.,114,,,Svinošice,Svinošice,679 22,Blansko,Jihomoravský,CZ,2016-08-27,2016-08-27,2026-08-27,2021-05-15,Richard Matula
 241634059,2,Aktivní verze,22795090,Český Energetický Dodavatel a.s.,806,62,Václavské náměstí,Praha,Nové Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2016-09-07,2016-09-07,2026-09-07,2021-05-11,Ing. Josef Červinka
@@ -31513,7 +31522,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 241835151,,Aktivní verze,06998381,Františkovy Energie s.r.o.,444,18,Matěchova,Praha,Krč,140 00,Hlavní město Praha,Hlavní město Praha,CZ,2018-12-04,2018-12-04,2023-12-04,2018-12-04,Ing. Vladimír Sláma
 241835155,1,Aktivní verze,25115171,"innogy Energo, s.r.o.",3135,12,Limuzská,Praha,Strašnice,108 00,Hlavní město Praha,Hlavní město Praha,CZ,2018-11-15,2018-11-15,2023-11-15,2019-10-30,Ing. Marek Joska
 241835170,,Aktivní verze,46962778,"DT - Výhybkárna a strojírna, a.s.",3137,100,Dolní,Prostějov,Prostějov,796 01,Prostějov,Olomoucký,CZ,2019-01-01,2019-01-01,2024-01-01,2018-12-07,Tomáš Musil
-241835176,,Aktivní verze,07198205,Manta Energy s.r.o.,1569,2c,Jankovcova,Praha,Holešovice,170 00,Hlavní město Praha,Hlavní město Praha,CZ,2018-11-06,2018-11-06,2023-11-06,2018-11-06,Ing. Petr Beneš
+241835176,,Zaniklá,07198205,Manta Energy s.r.o.,1569,2c,Jankovcova,Praha,Holešovice,170 00,Hlavní město Praha,Hlavní město Praha,CZ,2018-11-06,2018-11-06,2021-06-07,2018-11-06,
 241835238,,Aktivní verze,07574550,Bohemia Energie Obchod s.r.o.,1867,2,U Mostu,Říčany,Říčany,251 01,Praha-východ,Středočeský,CZ,2018-12-22,2019-01-01,2023-12-22,2018-12-22,Jiří Schneider
 241835275,,Aktivní verze,02224925,POUR ENERGO s.r.o.,424,91,Vrahovická,Prostějov,Vrahovice,798 11,Prostějov,Olomoucký,CZ,2018-12-07,2019-01-01,2023-12-07,2018-12-07,Ing. Jan Černý
 241835291,1,Aktivní verze,04778669,Hradecké Plynárny s.r.o.,198,36,Nerudova,Hradec Králové,Pražské Předměstí,500 02,Hradec Králové,Královéhradecký,CZ,2019-01-08,2019-01-08,2024-01-08,2019-02-19,Ing. Daniel Rezek
@@ -32551,7 +32560,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 320100504,1,Aktivní verze,63494876,VESBYT s.r.o.,1527,,Blatnická,Veselí nad Moravou,,698 01,Hodonín,Jihomoravský,CZ,2002-01-01,2002-01-01,2099-12-31,2012-08-14,Ing. Petr Knotek
 320100512,1,Zaniklá,25176404,Správa domů města Kaplice s.r.o.,79,,Českobudějovická,Kaplice,,382 41,Český Krumlov,Jihočeský,CZ,2001-11-12,2001-11-12,2013-09-19,2010-07-08,
 320100513,9,Aktivní verze,25106481,C-Energy Planá s.r.o.,748,,Průmyslová,Planá nad Lužnicí,Planá nad Lužnicí,391 02,Tábor,Jihočeský,CZ,2001-10-22,2001-10-22,2099-12-31,2021-10-30,Ing. Vladimír Dufek
-320100517,16,Aktivní verze,60826843,"Teplárna Strakonice, a.s.",59,,Komenského,Strakonice,Strakonice II,386 01,Strakonice,Jihočeský,CZ,2002-01-01,2002-01-01,2099-12-31,2021-12-06,Ing. Jan Košťál
+320100517,17,Aktivní verze,60826843,"Teplárna Strakonice, a.s.",59,,Komenského,Strakonice,Strakonice II,386 01,Strakonice,Jihočeský,CZ,2002-01-01,2002-01-01,2099-12-31,2022-01-25,Ing. Jan Košťál
 320100519,13,Aktivní verze,49101684,Tepelné hospodářství města Ústí nad Labem s.r.o.,2437,11,Malátova,Ústí nad Labem,Ústí nad Labem-centrum,400 11,Ústí nad Labem,Ústecký,CZ,2002-01-01,2002-01-01,2099-12-31,2020-10-01,Ing. Ivan Holka
 320100528,3,Aktivní verze,25412400,Rýnovická energetická s.r.o.,4887,,Belgická,Jablonec nad Nisou,Rýnovice,466 05,Jablonec nad Nisou,Liberecký,CZ,2002-01-01,2002-01-01,2099-12-31,2014-09-18,Filip Lhota
 320100531,10,Aktivní verze,26259893,"Domovní správa Prostějov, s.r.o.",176,8,Pernštýnské nám.,Prostějov,Prostějov,796 01,Prostějov,Olomoucký,CZ,2002-01-01,2002-01-01,2099-12-31,2020-04-23,Ing. Vladimír Průša
@@ -33357,7 +33366,7 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 322136808,,Aktivní verze,28014138,VOLNÉ PROSTORY s.r.o.,297,7,Zelinářská,Plzeň,Severní Předměstí,301 00,Plzeň-město,Plzeňský,CZ,2021-06-04,2021-06-04,2120-06-04,2021-06-04,Ing. Jiří Hrubý
 322136925,,Aktivní verze,47676159,Agro - společnost MORAVA s.r.o.,1052,,Komenského náměstí,Kojetín,Kojetín I-Město,752 01,Přerov,Olomoucký,CZ,2021-07-22,2021-07-22,2046-07-22,2021-07-22,Josef Kršňák
 322136974,,Aktivní verze,10836942,EC Teplárenská s.r.o.,716,24,Rybná,Praha,Staré Město,110 00,Hlavní město Praha,Hlavní město Praha,CZ,2021-08-31,2021-08-31,2120-08-31,2021-08-31,"Ing. Zdeněk Funda, Ph.D."
-322137038,,Aktivní verze,05879841,TC Přádelna Strakonice s.r.o.,140,,Na Dubovci,Strakonice,Strakonice II,386 01,Strakonice,Jihočeský,CZ,2021-12-07,2021-12-07,2120-12-07,2021-12-05,Ing. Jiří Simon
+322137038,1,Aktivní verze,05879841,TC Přádelna Strakonice s.r.o.,140,,Na Dubovci,Strakonice,Strakonice II,386 01,Strakonice,Jihočeský,CZ,2021-12-07,2021-12-07,2120-12-07,2022-01-26,Ing. Jiří Simon
 541118685,,Zrušena,99999999,MVM-ADWEST Marketing und Handelsgesellschaft m.b.H.,7,,Wienerbergstrasse,Wien,,1100,,,AT,2011-10-19,2011-10-19,2014-04-30,2011-10-18,
 541218955,,Aktivní verze,99999999,Freepoint Commodities Europe LLP,,4th Floor,George Street,Reading,,RG1 8LS,,,GB,2012-02-24,2012-02-24,2099-02-23,2012-02-24,
 541219304,,Zaniklá,99999999,TRADEA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ,11,6,Šw. Jana,Czestochowa,,42-217,,,PL,2012-06-06,2012-06-06,2021-04-22,2012-06-06,
@@ -33471,4 +33480,5 @@ cislo_licence,verze,status,ic,nazev,cislo_dom,cislo_or,ulice,obec,obec_cast,psc,
 642136691,,Aktivní verze,99999999,Polski Koncern Naftowy ORLEN Spólka Akcyjna,7,N/A,Chemików,Plock,,09-411,,,PL,2021-03-19,2021-03-19,2025-12-31,2021-03-19,
 642136707,,Aktivní verze,99999999,MFGK Austria GmbH,2,,Am Euro Platz,Vídeň,,1120,,,AT,2021-03-22,2021-03-22,2120-03-22,2021-03-22,
 642136725,,Aktivní verze,99999999,ERU Europe GmbH,123,,Mariahilfer Strasse,Wien,,1060,,,AT,2021-04-01,2021-04-01,2120-04-01,2021-04-01,
+642136855,,Aktivní verze,99999999,Nitor Energy A/S,4X  4,,Klosterport,Aarhus C,,8000,,,DK,2021-07-08,2021-07-08,2120-07-08,2021-07-08,
 642137115,,Zaniklá,99999999,Nitrofer GmbH,16,,Berggasse,Wien,,1090,,,AT,2021-10-21,2021-10-21,2021-12-31,2021-10-21,

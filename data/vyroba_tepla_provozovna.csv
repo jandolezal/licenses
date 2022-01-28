@@ -1949,8 +1949,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311018326,31,Kotelna Bradlo,58291,Světlá nad Sázavou,Na Bradle,969,Havlíčkův Brod,Vysočina,1
 311018326,32,KJ Frýdlant,46401,Frýdlant,Bělikova,1398,Liberec,Liberecký,2
 311018326,33,KJ - Jihlava U Břízek,58601,Jihlava,U Břízek,4674/15,Jihlava,Vysočina,1
-311018326,34,"KJ - Sušice, Sirkařská",34201,Sušice,Sirkařská,,Klatovy,Plzeňský,1
-311018326,35,"KJ - Sušice, Kaštanová",34201,Sušice,Kaštanová,,Klatovy,Plzeňský,2
+311018326,34,KJ - Sušice Sirkařská,34201,Sušice,Sirkařská,,Klatovy,Plzeňský,1
+311018326,35,KJ - Sušice Kaštanová,34201,Sušice,Kaštanová,,Klatovy,Plzeňský,1
 311018326,36,Kotelna - ZŠ Velká Chuchle,15900,Praha,Starochuchelská,240/38,,,3
 311018326,40,"KJ - Fügnerova, Vrchlabí",54301,Vrchlabí,Fügnerova,572,Trutnov,Královéhradecký,1
 311018326,41,KJ - Bystřice nad Pernštejnem,59301,Bystřice nad Pernštejnem,Hornická,746,Žďár nad Sázavou,Vysočina,1
@@ -1959,8 +1959,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311018326,44,KJ - Moravský Krumlov,67211,Moravský Krumlov,Sídliště,,Znojmo,Jihomoravský,1
 311018326,45,"KJ - Vrchlabí, připojení Liščí kopec",54301,Vrchlabí,Žižkova,,Trutnov,Královéhradecký,1
 311018326,46,KJ - Brtnice,58832,Brtnice,Nad Práchovnou,,Jihlava,Vysočina,1
-311018326,47,"KJ - Sušice, Na Hrázi",34201,Sušice,Na Hrázi,,Klatovy,Plzeňský,3
-311018326,48,"KJ - Sušice, Pravdova",34201,Sušice,Pravdova,,Klatovy,Plzeňský,2
+311018326,47,KJ - Sušice Na Hrázi,34201,Sušice,Na Hrázi,,Klatovy,Plzeňský,2
+311018326,48,KJ - Sušice Pravdova,34201,Sušice,Pravdova,,Klatovy,Plzeňský,1
 311018326,52,"KJ - Nové Město nad Metují, Sokolská",54901,Nové Město nad Metují,Sokolská,150,Náchod,Královéhradecký,1
 311018326,53,"KJ - Nové Město nad Metují, Družstevní",54901,Nové Město nad Metují,Družstevní,586,Náchod,Královéhradecký,1
 311018326,54,"KJ - Vysoké Mýto, Generála Svatoně (kotelna Vanice)",56601,Vysoké Mýto,Generala Svatoně,,Ústí nad Orlicí,Pardubický,1
