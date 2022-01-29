@@ -26,7 +26,9 @@ scrapy crawl drzitel -O data/drzitel.csv
 
 ### Licenses
 
-Initial spiders `vyroba_elektriny` and `vyroba_tepla` partially scraping data from licenses for electricity generation and heat generation. Output is best in .json as some fields are lists of other items (one license can have many capacities and many facilities; facilities themselves can have many capacities).
+Initial spiders `vyroba_elektriny` and `vyroba_tepla` partially scraping data from licenses for electricity generation and heat generation.
+
+The scrapers are written with the assumption that Scrapy's json [feed export](https://docs.scrapy.org/en/latest/topics/feed-exports.html) will be used. Output is best in .json as some fields are lists of other items (one license can have many capacities and many facilities; facilities themselves can have many capacities).
 
 Scraping data about land registry and in case of hydro power plants river and river km is not implemented.
 
@@ -39,6 +41,8 @@ scrapy crawl vyroba_elektriny -O data/vyroba_elektriny.json
 # Scrape heat generation data
 scrapy crawl vyroba_tepla -O data/vyroba_tepla.json
 ```
+
+Once there are .json files, convert them to few .csv files for SQLite (Datasette). I think there must be a better way (than stand-alone module `licenses.make_csvs`) taking advantage of some Scrapy feature, but I did not find it.
 
 
 ```bash
@@ -65,7 +69,6 @@ python -m pytest tests/
 
 ## TODO
 
-- Add GitHub workflow to scrape data on weekly basis
 - Refactor without the .json step with a view of using Datasette (and .csv files)
-- If possible take advantage of Scrapy features and remove standalone module `make_csvs`.
+- If possible take advantage of Scrapy features and remove stand-alone module `make_csvs`.
 - Add spiders for other types of businesses (electricity trade, etc.)
