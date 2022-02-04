@@ -182,12 +182,12 @@ cislo_licence,druh,technologie,mw
 110100228,elektrický,vodní,0.03
 110100229,elektrický,celkový,0.044
 110100229,elektrický,vodní,0.044
-110100230,elektrický,celkový,13.114
-110100230,tepelný,celkový,15.89
+110100230,elektrický,celkový,13.125
+110100230,tepelný,celkový,15.915
 110100230,elektrický,bez názvu,0.13
 110100230,tepelný,bez názvu,0.201
-110100230,elektrický,plynový a spalovací,12.954
-110100230,tepelný,plynový a spalovací,15.689
+110100230,elektrický,plynový a spalovací,12.965
+110100230,tepelný,plynový a spalovací,15.714
 110100230,elektrický,sluneční,0.03
 110100248,elektrický,celkový,26.0
 110100248,tepelný,celkový,87.2
@@ -2378,10 +2378,11 @@ cislo_licence,druh,technologie,mw
 110303841,elektrický,celkový,0.018
 110303841,elektrický,sluneční,0.005
 110303841,elektrický,vodní,0.013
-110303843,elektrický,celkový,0.15
+110303843,elektrický,celkový,0.164
 110303843,tepelný,celkový,7.2
 110303843,elektrický,plynový a spalovací,0.15
 110303843,tepelný,plynový a spalovací,7.2
+110303843,elektrický,sluneční,0.014
 110303846,elektrický,celkový,0.005
 110303846,elektrický,vodní,0.005
 110303850,elektrický,celkový,0.019
@@ -32363,8 +32364,8 @@ cislo_licence,druh,technologie,mw
 111220868,elektrický,sluneční,0.003
 111220869,elektrický,celkový,0.007
 111220869,elektrický,sluneční,0.007
-111220870,elektrický,celkový,0.011
-111220870,elektrický,sluneční,0.011
+111220870,elektrický,celkový,0.022
+111220870,elektrický,sluneční,0.022
 111220871,elektrický,celkový,0.009
 111220871,elektrický,sluneční,0.009
 111220872,elektrický,celkový,0.029
@@ -60137,8 +60138,8 @@ cislo_licence,druh,technologie,mw
 111935889,elektrický,sluneční,0.005
 111935890,elektrický,celkový,0.017
 111935890,elektrický,sluneční,0.017
-111935891,elektrický,celkový,0.312
-111935891,elektrický,sluneční,0.312
+111935891,elektrický,celkový,0.366
+111935891,elektrický,sluneční,0.366
 111935892,elektrický,celkový,0.009
 111935892,elektrický,sluneční,0.009
 111935893,elektrický,celkový,0.013
@@ -62000,6 +62001,8 @@ cislo_licence,druh,technologie,mw
 112137023,elektrický,sluneční,0.05
 112137024,elektrický,celkový,0.006
 112137024,elektrický,sluneční,0.006
+112137025,elektrický,celkový,0.005
+112137025,elektrický,sluneční,0.005
 112137026,elektrický,celkový,0.005
 112137026,elektrický,sluneční,0.005
 112137027,elektrický,celkový,0.005
@@ -62042,6 +62045,8 @@ cislo_licence,druh,technologie,mw
 112137047,elektrický,sluneční,0.006
 112137049,elektrický,celkový,0.029
 112137049,elektrický,sluneční,0.029
+112137050,elektrický,celkový,0.012
+112137050,elektrický,sluneční,0.012
 112137051,elektrický,celkový,0.004
 112137051,elektrický,sluneční,0.004
 112137052,elektrický,celkový,0.005
@@ -62110,6 +62115,8 @@ cislo_licence,druh,technologie,mw
 112137086,elektrický,sluneční,0.013
 112137089,elektrický,celkový,0.011
 112137089,elektrický,sluneční,0.011
+112137090,elektrický,celkový,0.008
+112137090,elektrický,vodní,0.008
 112137091,elektrický,celkový,0.02
 112137091,elektrický,sluneční,0.02
 112137093,elektrický,celkový,0.005
@@ -62240,6 +62247,8 @@ cislo_licence,druh,technologie,mw
 112137181,elektrický,sluneční,0.045
 112137183,elektrický,celkový,0.004
 112137183,elektrický,sluneční,0.004
+112137187,elektrický,celkový,0.07
+112137187,elektrický,sluneční,0.07
 112137188,elektrický,celkový,0.005
 112137188,elektrický,sluneční,0.005
 112137189,elektrický,celkový,0.018
@@ -62318,6 +62327,8 @@ cislo_licence,druh,technologie,mw
 112137252,elektrický,sluneční,0.019
 112137253,elektrický,celkový,0.017
 112137253,elektrický,sluneční,0.017
+112137256,elektrický,celkový,0.006
+112137256,elektrický,sluneční,0.006
 112137257,elektrický,celkový,0.037
 112137257,elektrický,vodní,0.037
 112137259,elektrický,celkový,0.019
@@ -62330,6 +62341,12 @@ cislo_licence,druh,technologie,mw
 112137267,elektrický,sluneční,0.148
 112137268,elektrický,celkový,0.305
 112137268,elektrický,sluneční,0.305
+112137277,elektrický,celkový,0.03
+112137277,elektrický,sluneční,0.03
+112137279,elektrický,celkový,0.005
+112137279,elektrický,sluneční,0.005
+112137282,elektrický,celkový,0.019
+112137282,elektrický,vodní,0.019
 112237286,elektrický,celkový,0.999
 112237286,tepelný,celkový,1.11
 112237286,elektrický,plynový a spalovací,0.999
@@ -62338,5 +62355,7 @@ cislo_licence,druh,technologie,mw
 112237292,tepelný,celkový,0.058
 112237292,elektrický,plynový a spalovací,0.03
 112237292,tepelný,plynový a spalovací,0.058
+112237298,elektrický,celkový,0.496
+112237298,elektrický,sluneční,0.496
 112237303,elektrický,celkový,0.095
 112237303,elektrický,sluneční,0.095

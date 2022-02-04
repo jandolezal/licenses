@@ -209,6 +209,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100449,1,Kotelna 590,26242,Rožmitál pod Třemšínem,Sídliště,590,Příbram,Středočeský,3
 310100450,1,Quick I. v.o. s.,43521,Obrnice,Nová výstavba,225,Most,Ústecký,2
 310100451,1,C-Energy Planá,39102,Planá nad Lužnicí,Průmyslová,748,Tábor,Jihočeský,9
+310100451,2,Základní závod - TTA 1,39002,Tábor,U Cihelny,2128,Tábor,Jihočeský,3
+310100451,3,Špičková kotel - TTA 2,39005,Tábor,Václava Soumara,,Tábor,Jihočeský,3
 310100454,1,Plynová kotelna mjr. Nováka,66491,Ivančice,mjr. Nováka,1477/13,Brno-venkov,Jihomoravský,4
 310100454,2,Plynová kotelna V Lánech,66491,Ivančice,V Lánech,2,Brno-venkov,Jihomoravský,2
 310100454,3,"Kotelna - Žizkova, Vrchlabí",54301,Vrchlabí,Žižkova,,Trutnov,Královéhradecký,3
@@ -1276,7 +1278,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310202180,15,Kotelna K 21 1. máje,78815,Velké Losiny,1. máj,1,Šumperk,Olomoucký,3
 310202180,17,K 24 Loučná n. Desnou,78811,Loučná nad Desnou,Loučná nad Desnou,,Šumperk,Olomoucký,2
 310202180,18,Kotelna K 25 Hanušovice,78833,Hanušovice,Hlavní,,Šumperk,Olomoucký,3
-310202180,19,Kotelna K 26 Hanušovice,78833,Hanušovice,Zábřežská,,Šumperk,Olomoucký,3
+310202180,19,Kotelna K 26 Hanušovice,78833,Hanušovice,Zábřežská,,Šumperk,Olomoucký,2
 310202180,20,Kotelna JK3 Dukelská,79001,Jeseník,Růžičkova,1250,Jeseník,Olomoucký,5
 310202180,21,Kotelna JK2 Lipovská,79001,Jeseník,Lipovská,1172,Jeseník,Olomoucký,4
 310202180,22,Kotelna JK4 Horská,79001,Jeseník,Horská,1210,Jeseník,Olomoucký,2
