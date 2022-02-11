@@ -288,7 +288,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100551,5,Teplárna Olomouc,77211,Olomouc,Tovární,839/46,Olomouc,Olomoucký,2
 310100551,6,Špičková výtopna Oloumouc,77211,Olomouc,Pavelkova,,Olomouc,Olomoucký,3
 310100551,7,Fakultní nemocnice Olomouc,77211,Olomouc,I. P. Pavlova,,Olomouc,Olomoucký,3
-310100551,9,Teplárna Přerov,75042,Přerov,Tovačovská,2924/18,Přerov,Olomoucký,4
+310100551,9,Teplárna Přerov,75042,Přerov,Tovačovská,2924/18,Přerov,Olomoucký,3
 310100551,10,Teplárna Frýdek-Místek,73805,Frýdek-Místek,Frýdek-Místek,,Frýdek-Místek,Moravskoslezský,3
 310100551,11,Teplárna Krnov,79400,Krnov,Revoluční,960/51,Bruntál,Moravskoslezský,2
 310100551,12,Výtopna Pod Cvilínem,79400,Krnov,Opavská,426/57,Bruntál,Moravskoslezský,2
@@ -1818,13 +1818,13 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310806456,1,PK 1 - Medlánky,62100,Brno,Jabloňová,,Brno-město,Jihomoravský,3
 310806586,8,Teplárna ČSM Sever,73534,Stonava,Stonava,,Karviná,Moravskoslezský,4
 310806586,10,SE Lazy - kotelna Lazy I,73534,Stonava,Stonava,,Karviná,Moravskoslezský,1
-310806586,13,Kotelna Staříč,73943,Staříč,Staříč,,Frýdek-Místek,Moravskoslezský,4
+310806586,13,Kotelna Staříč,73943,Staříč,Staříč,,Frýdek-Místek,Moravskoslezský,3
 310806586,15,"SE Karviná, kotelna Doubrava Sever",73533,Doubrava,Doubrava,,Karviná,Moravskoslezský,5
 310806586,18,Kotelna ČSM Sever,73534,Stonava,Stonava,,Karviná,Moravskoslezský,1
-310806586,19,ČSA 3 výroba chladu,73506,Karviná,Karviná,,Karviná,Moravskoslezský,4
 310806586,20,KGJ 13 - Přerov,75002,Přerov,Tovačovská,,Přerov,Olomoucký,1
 310806586,21,KGJ 12 - ČSM,73534,Stonava,Stonava,,Karviná,Moravskoslezský,1
 310806586,22,KGJ 14 - ČSM,73534,Stonava,Stonava,,Karviná,Moravskoslezský,1
+310806586,23,Kotelna Přerov - K11,75042,Přerov,Tovačovská,,Přerov,Olomoucký,1
 310806623,1,Kotelna Nemocnice Nové Město na Moravě,59231,Nové Město na Moravě,Žďárská,615,Žďár nad Sázavou,Vysočina,5
 310806633,1,Kotelna Kyjovská,58001,Havlíčkův Brod,Kyjovská,3187,Havlíčkův Brod,Vysočina,3
 310806658,1,Centrální kotelna Rokle,38501,Vimperk,Luční,,Prachatice,Jihočeský,3
