@@ -828,6 +828,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310101438,16,KO01KR,37821,Kardašova Řečice,sídliště T.G.Masaryka,,Jindřichův Hradec,Jihočeský,2
 310101438,17,KOZSCH,37804,Chlum u Třeboně,Náměstí,232,Jindřichův Hradec,Jihočeský,2
 310101438,18,KO446NV,37842,Nová Včelnice,Na Hliněnce,446,Jindřichův Hradec,Jihočeský,2
+310101438,19,KO457NV,37842,Nová Včelnice,Na Hliněnce,457,Jindřichův Hradec,Jihočeský,2
 310101452,1,Plynová kotelna AVTB,75701,Valašské Meziříčí,Zašovská,750,Vsetín,Zlínský,2
 310101471,1,Centrální výtopna,79501,Rýmařov,Okružní,849/47,Bruntál,Moravskoslezský,3
 310101471,2,Plynová kotelna Žižkova,79501,Rýmařov,Žižkova,1278/14,Bruntál,Moravskoslezský,2
@@ -1083,7 +1084,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310102796,13,Kotelna U pivovaru,58601,Jihlava,U pivovaru,4692/14,Jihlava,Vysočina,3
 310102796,14,Kotelna Srázná,58601,Jihlava,Srázná,4678/16,Jihlava,Vysočina,3
 310102796,16,Kotelna K2 Barvířská,58901,Třešť,Barvířská,520/10,Jihlava,Vysočina,3
-310102796,17,Kotelna Alšova,58601,Jihlava,Alšova,26402/20,Jihlava,Vysočina,2
+310102796,17,Kotelna Alšova,58601,Jihlava,Alšova,2358/20,Jihlava,Vysočina,2
 310102796,18,Kotelna Riegrova,58601,Jihlava,Riegrova,,Jihlava,Vysočina,6
 310102796,19,Kotelna Vrchlického 34,58601,Jihlava,Vrchlického,2514/34,Jihlava,Vysočina,2
 310102796,20,Kotelna Vrchlického 49,58601,Jihlava,Vrchlického,,Jihlava,Vysočina,3
@@ -1331,7 +1332,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310202355,1,Kotelna SK 5,53803,Heřmanův Městec,U Bažantnice - sídliště,,Chrudim,Pardubický,2
 310202355,2,Kotelna SK 6,53803,Heřmanův Městec,V Lukách - sídliště,,Chrudim,Pardubický,2
 310202363,1,Kotelna Sokolovská,68601,Uherské Hradiště,Sokolovská,572,Uherské Hradiště,Zlínský,4
-310202363,2,Kotelna K 1,68606,Uherské Hradiště,Štěpnická,1058,Uherské Hradiště,Zlínský,1
+310202363,2,Kotelna K 1,68606,Uherské Hradiště,Štěpnická,1058,Uherské Hradiště,Zlínský,2
 310202363,3,Kotelna K 2-1,68600,Uherské Hradiště,Sadová,909,Uherské Hradiště,Zlínský,4
 310202363,4,Kotelna K 2-2,68600,Uherské Hradiště,J.Staňka,864,Uherské Hradiště,Zlínský,3
 310202363,5,Kotelna K 2-3,68600,Uherské Hradiště,Sadová,906,Uherské Hradiště,Zlínský,4
