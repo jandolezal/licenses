@@ -846,6 +846,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310101474,1,Plyn. kot. Jesenická,79351,Břidličná,Jesenická,,Bruntál,Moravskoslezský,2
 310101474,2,Domovní kotelna Vajglov 49,79351,Břidličná,Břidličná,49,Bruntál,Moravskoslezský,2
 310101474,3,Ply.kotelna Tovární,79351,Břidličná,Břidličná,128,Bruntál,Moravskoslezský,3
+310101497,1,Motorová teplárna,41118,Budyně nad Ohří,Pražská,403,Litoměřice,Ústecký,2
 310101515,2,Kotelna Semanínská,56002,Česká Třebová,Semanínská,,Ústí nad Orlicí,Pardubický,3
 310101515,7,Kotelna,35002,Cheb,Za Nádražím,668/73,Cheb,Karlovarský,3
 310101521,1,Kotelna Lihovarská s.r.o.,19000,Praha,Lihovarská,2180/9,,,3
@@ -1545,7 +1546,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310304092,1,Komenského 9,76321,Slavičín,Komenského,9,Zlín,Zlínský,3
 310404130,1,Plynová kotelna Otická,74601,Opava,Otická,2692/15,Opava,Moravskoslezský,6
 310404140,2,OLEJOVÁ KOTELNA NEMOCNICE,26101,Příbram,U Nemocnice,84,Příbram,Středočeský,3
-310404140,3,SOLENICE,26263,Solenice,Solenice,112,Příbram,Středočeský,3
 310404144,2,Kotelna Nad Práchovnou,58832,Brtnice,Nad Práchovnou,711,Jihlava,Vysočina,3
 310404144,3,Výtopna   UK  4,34815,Planá,Plzeňská,825,Tachov,Plzeňský,3
 310404158,1,EJPO 3000 Dýšina,33002,Dýšina,Dýšina,,Plzeň-město,Plzeňský,1
@@ -1915,7 +1915,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311016256,1,Kotelna Nemocnice Benešov,25630,Benešov,Máchova,400,Benešov,Středočeský,4
 311016304,6,Kogenerační teplárna v areálu Avia Praha,19903,Praha 9,Beranových,140,,,5
 311016304,7,Kogenerační teplárna v areálu skládky TKO Ďáblice,18200,Praha,Ďáblická,791/89,,,3
-311016304,8,TEDOM Jablonec,46605,Jablonec nad Nisou,Belgická,4685/15,Jablonec nad Nisou,Liberecký,4
+311016304,8,TEDOM Jablonec,46605,Jablonec nad Nisou,Belgická,4685/15,Jablonec nad Nisou,Liberecký,3
 311016479,1,BPS Slavíkov,58265,Slavíkov,Slavíkov,55,Havlíčkův Brod,Vysočina,2
 311017700,1,HOTEL CEMENTÁŘ,75301,Hranice,Náměstí,8,Přerov,Olomoucký,4
 311017700,2,UBYTOVNA STUDÉNKA,74213,Studénka,Poštovní,660,Nový Jičín,Moravskoslezský,2
@@ -1943,7 +1943,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311018326,14,Kotelna K1 Železná Ruda,34004,Železná Ruda,Krátká,,Klatovy,Plzeňský,4
 311018326,15,"Kotelna Zruč, Na výsluní",28522,Zruč nad Sázavou,Na výsluní,719,Kutná Hora,Středočeský,3
 311018326,16,"Kotelna Zruč, Okružní",28522,Zruč nad Sázavou,Okružní,600,Kutná Hora,Středočeský,2
-311018326,17,Kotelna Govorova,50303,Smiřice,Gen. Govorova,100,Hradec Králové,Královéhradecký,4
+311018326,17,KOTELNA GOVOROVA,50303,Smiřice,Gen. Govorova,100,Hradec Králové,Královéhradecký,3
 311018326,18,Kotelna - Jiráskova,50303,Smiřice,Jiráskova,,Hradec Králové,Královéhradecký,6
 311018326,19,Kotelna Palackého,50303,Smiřice,Palackého,106,Hradec Králové,Královéhradecký,6
 311018326,20,Kotelna ZŠ Jiráskova,50303,Smiřice,Jiráskova,206,Hradec Králové,Královéhradecký,3
@@ -2079,6 +2079,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311018326,166,KJ - Lysá nad Labem,28922,Lysá nad Labem,Ke Vrutici,1693,Nymburk,Středočeský,1
 311018326,167,KJ - JOB AIR TECHNIC MOŠNOV,74251,Mošnov,Mošnov,,Nový Jičín,Moravskoslezský,1
 311018326,168,KJ - PROSTĚJOV ANGLI,79604,Prostějov,Holandská,,Prostějov,Olomoucký,1
+311018326,169,KJ - POLICE NAD METUJÍ,54954,Police nad Metují,K Sídlišti,,Náchod,Královéhradecký,1
 311018334,2,ECKH - BIOMASA,28401,Kutná Hora,Kutná Hora,197,Kutná Hora,Středočeský,1
 311018340,1,HORY,35707,Oloví,Oloví,152,Sokolov,Karlovarský,3
 311018340,2,nám. HORNÍ,35707,Oloví,nám. Horní,19,Sokolov,Karlovarský,3
@@ -2091,7 +2092,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311118427,2,Kotelna K2,39301,Pelhřimov,U Agrostroje,1412,Pelhřimov,Vysočina,6
 311118427,3,VS13-KGJ,39301,Pelhřimov,Dolnokubínská,1452,Pelhřimov,Vysočina,1
 311118459,1,VILLAPARK ČECHOVKA - Rezidenční čtvrť,58001,Havlíčkův Brod,Stromovka,3962,Havlíčkův Brod,Vysočina,2
-311118471,1,Kotelna Třemošnice,53843,Třemošnice,Lichnická,425,Chrudim,Pardubický,3
 311118535,1,Palackého 922,33401,Přeštice,Palackého,922,Plzeň-jih,Plzeňský,1
 311118535,2,Husova 967,33401,Přeštice,Husova,967,Plzeň-jih,Plzeňský,1
 311118535,3,"Přeštice, Bioteplárna",33401,Přeštice,Přeštice,,Plzeň-jih,Plzeňský,1
@@ -2400,9 +2400,9 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311533274,10,Juliska,16000,Praha 6,Pod Juliskou,2604/6,,,3
 311533274,11,Komořany,14000,Praha 4,K Nouzovu,2181/1,,,3
 311533274,12,Košíře,15800,Praha,Houdova,1233/15,,,2
-311533274,13,Lužiny LOK3,15000,Praha 5,Fantova,1741,,,4
+311533274,13,Lužiny LOK3,15000,Praha 5,Fantova,1741,,,5
 311533274,14,Lužiny LOK4,15000,Praha 5,Holýšovská,1876,,,5
-311533274,15,Lužiny LOK5,15500,Praha,Kolovečská,1936/3,,,4
+311533274,15,Lužiny LOK5,15500,Praha,Kolovečská,1936/3,,,5
 311533274,16,Lužiny LOK6,15000,Praha 5,Böhmova,1975,,,5
 311533274,17,Nové Butovice NBOK13,15000,Praha 5,Nušlova,2299/63,,,5
 311533274,18,Nové Butovice NBOK17,15000,Praha 5,Ovčí hájek,2176,,,5
@@ -2411,7 +2411,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311533274,22,Řepy ŘOK1,16000,Praha 6,Šímova,1056,,,4
 311533274,23,Řepy ŘOK2,16000,Praha 6,Brunnerova,1012,,,4
 311533274,24,Řepy ŘOK3,16000,Praha 6,Žufanova,1092,,,4
-311533274,25,Řepy ŘOK4,16000,Praha 6,Drahoňovského,1149,,,4
+311533274,25,Řepy ŘOK4,16000,Praha 6,Drahoňovského,1149/2,,,5
 311533274,26,Řepy ŘOK5,16000,Praha 6,Drahoňovského,1180,,,4
 311533274,27,Stodůlky SOK1,15000,Praha 5,Lýskova,1614,,,5
 311533274,28,Stodůlky SOK2,15000,Praha 5,Hábova,1572,,,4
