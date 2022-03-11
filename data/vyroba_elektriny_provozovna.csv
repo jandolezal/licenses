@@ -509,7 +509,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 110100811,25,Teplárna Východ,67401,Kožichovice,Žďárského,,Třebíč,Vysočina,1
 110100812,5,MVE SKRYJSKÝ POTOK,67556,Dukovany,Skryje,,Třebíč,Vysočina,2
 110100814,1,MVE - PROSTŘEDNÍ BEČVA,75656,Prostřední Bečva,Adámky,,Vsetín,Zlínský,2
-110100815,1,MVE Vaňkův mlýn,37802,Stráž nad Nežárkou,Stráž nad Nežárkou,1,Jindřichův Hradec,Jihočeský,1
+110100815,1,MVE VAŇKŮV MLÝN,37802,Stráž nad Nežárkou,Stráž nad Nežárkou,1,Jindřichův Hradec,Jihočeský,1
 110100817,1,Bazén Hloubětín,19400,Praha 14 - Hloubětín,Hloubětínská,80/32,,,2
 110100820,1,"MVE Branná Km 12,170",78825,Branná,Branná,23,Šumperk,Olomoucký,2
 110100822,1,MVE ŠKUTINA,51793,Podbřezí,Podbřezí,78,Rychnov nad Kněžnou,Královéhradecký,1
@@ -714,7 +714,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 110101362,1,"MVE HORNÍ LÁNOV, st. p. 307",54341,Lánov,Lánov,,Trutnov,Královéhradecký,2
 110101364,1,MVE KUNČICE,78832,Staré Město,Staré Město,,Šumperk,Olomoucký,1
 110101365,1,MVE - CHÁNOV II,43401,Obrnice,Obrnice,,Most,Ústecký,2
-110101366,1,MVE LÁSENICE,37801,Lásenice,jez Hrbek,,Jindřichův Hradec,Jihočeský,3
+110101366,1,MVE LáseniceC,37801,Lásenice,Jez Hrbek,,Jindřichův Hradec,Jihočeský,3
 110101366,3,MVE Vidov u Jezu,37007,Vidov,U jezu,,České Budějovice,Jihočeský,2
 110101366,4,Česká Olešná,37853,Strmilov,Strmilov,107,Jindřichův Hradec,Jihočeský,1
 110101370,1,MALÁ VODNÍ ELEKTRÁRNA ŠIROKÝ BROD,79084,Mikulovice,Mikulovice,,Jeseník,Olomoucký,3
@@ -16534,142 +16534,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111018322,2,U dubu 126,14700,Praha,U dubu,126/1385,,,1
 111018322,3,Žďárského 181,67401,Kožichovice,Žďárského,181,Třebíč,Vysočina,1
 111018323,1,Havlovice nad Úpou,54238,Havlovice,Havlovice,76,Trutnov,Královéhradecký,1
-111018325,3,Kotelna Humpolec,39601,Humpolec,Fügnerova,,Pelhřimov,Vysočina,1
-111018325,4,Kotelna Volyně,38701,Volyně,Karla Čapka,718,Strakonice,Jihočeský,2
-111018325,6,Kotelna Votice,25901,Votice,Malé nám.,830,Benešov,Středočeský,1
-111018325,7,Kotelna Svitavy - Větrná,56802,Svitavy,Větrná,27,Svitavy,Pardubický,1
-111018325,8,Kotelna Svitavy - Tovární,56802,Svitavy,Tovární,2126,Svitavy,Pardubický,1
-111018325,9,Kotelna Lázeňská,56802,Svitavy,Lázeňská,2250/46,Svitavy,Pardubický,1
-111018325,12,Kotelna Zruč - Na Výsluní,28522,Zruč nad Sázavou,Na Výsluní,719,Kutná Hora,Středočeský,1
-111018325,13,KOTELNA GOVOROVA - Smiřice,50303,Smiřice,Gen. Govorova,100,Hradec Králové,Královéhradecký,1
-111018325,14,Kotelna Krátká - Železná Ruda,34004,Železná Ruda,Krátká,367,Klatovy,Plzeňský,2
-111018325,15,Kotelna - ZŠ Jiráskova,50303,Smiřice,Jiráskova,206,Hradec Králové,Královéhradecký,1
-111018325,24,Kotelna Bradlo,58291,Světlá nad Sázavou,Na Bradle,969,Havlíčkův Brod,Vysočina,1
-111018325,25,Kotelna Frýdlant,46401,Frýdlant,Bělikova,1398,Liberec,Liberecký,2
-111018325,26,"KJ - Jihlava, U Břízek",58601,Jihlava,U Břízek,4674/15,Jihlava,Vysočina,1
-111018325,27,KJ - Sušice Sirkařská,34201,Sušice,Sirkařská,,Klatovy,Plzeňský,1
-111018325,28,KJ - Sušice Kaštanová,34201,Sušice,Kaštanová,,Klatovy,Plzeňský,1
-111018325,29,Kotelna - ZŠ Velká Chuchle,15900,Praha,Starochuchelská,240/38,,,1
-111018325,30,KJ - Bystřice nad Pernštejnem,59301,Bystřice nad Pernštejnem,Hornická,746,Žďár nad Sázavou,Vysočina,1
-111018325,31,"KJ - Fügnerova, Vrchlabí",54301,Vrchlabí,Fügnerova,572,Trutnov,Královéhradecký,1
-111018325,32,"KJ - Nádražní, Adamov",67904,Adamov,Nádražní,,Blansko,Jihomoravský,1
-111018325,33,"KJ - Malé nám., Votice",25901,Votice,Malé nám.,830,Benešov,Středočeský,1
-111018325,34,KJ - Moravský Krumlov,67211,Moravský Krumlov,Sídliště,,Znojmo,Jihomoravský,1
-111018325,35,"KJ - Vrchlabí, připojení Liščí kopec",54301,Vrchlabí,Žižkova,,Trutnov,Královéhradecký,1
-111018325,36,KJ - Brtnice,58832,Brtnice,Nad Práchovnou,,Jihlava,Vysočina,1
-111018325,37,KJ - Sušice Pravdova,34201,Sušice,Pravdova,,Klatovy,Plzeňský,1
-111018325,38,KJ - Sušice Na Hrázi,34201,Sušice,Na Hrázi,,Klatovy,Plzeňský,2
-111018325,40,"KJ - Nové Město nad Metují, Sokolská",54901,Nové Město nad Metují,Sokolská,,Náchod,Královéhradecký,1
-111018325,41,"KJ - Nové Město nad Metují, Družstevní",54901,Nové Město nad Metují,Družstevní,586,Náchod,Královéhradecký,1
-111018325,42,"KJ - Vysoké Mýto, Generála Svatoně (kotelna Vanice)",56601,Vysoké Mýto,Generála Svatoně,,Ústí nad Orlicí,Pardubický,1
-111018325,43,"KJ - Vysoké Mýto, Prokopa Velikého (kotelna Družba)",56601,Vysoké Mýto,Prokopa Velikého,,Ústí nad Orlicí,Pardubický,1
-111018325,44,"KJ - Havlíčkův Brod, Na Výšině",58001,Havlíčkův Brod,Na Výšině,3235,Havlíčkův Brod,Vysočina,2
-111018325,45,"KJ - Havlíčkův Brod, Smetanovo náměstí",58001,Havlíčkův Brod,Smetanovo náměstí,1867,Havlíčkův Brod,Vysočina,1
-111018325,46,"KJ - Havlíčkův Brod, Žižkov II",58001,Havlíčkův Brod,Žižkov II,1245,Havlíčkův Brod,Vysočina,1
-111018325,47,"KJ - Nýřany, Komenského",33023,Nýřany,Komenského,,Plzeň-sever,Plzeňský,1
-111018325,48,"KJ - Nýřany, Luční",33023,Nýřany,Luční,,Plzeň-sever,Plzeňský,1
-111018325,49,"KJ - Humpolec, Na Rybníčku",39601,Humpolec,Na Rybníčku,,Pelhřimov,Vysočina,1
-111018325,50,"KJ - Postoloprty, Draguš",43942,Postoloprty,Draguš,550,Louny,Ústecký,1
-111018325,51,KJ - Vamberk,51754,Vamberk,Palackého,,Rychnov nad Kněžnou,Královéhradecký,1
-111018325,52,"KJ - Polička, Hegerova",57201,Polička,Hegerova,,Svitavy,Pardubický,1
-111018325,53,"KJ - Polička, Svépomoc",57201,Polička,Svépomoc,,Svitavy,Pardubický,1
-111018325,54,KJ - Bojkovice,68771,Bojkovice,Tovární,,Uherské Hradiště,Zlínský,1
-111018325,55,KJ - Kladruby (areál RÚ),25762,Kladruby,Kladruby,,Benešov,Středočeský,1
-111018325,56,KJ - Ústí nad Orlicí,56203,Ústí nad Orlicí,Mazánkova,75,Ústí nad Orlicí,Pardubický,1
-111018325,57,KJ - Rokycany,33701,Rokycany,Kotelská,,Rokycany,Plzeňský,1
-111018325,58,"KJ - Postoloprty, Dvořákova",43942,Postoloprty,Dvořákova,549,Louny,Ústecký,1
-111018325,59,KJ - Hodkovice nad Mohelkou,46342,Hodkovice nad Mohelkou,Mánesova,550,Liberec,Liberecký,1
-111018325,60,KJ - Kaznějov,33151,Kaznějov,Kaznějov,,Plzeň-sever,Plzeňský,1
-111018325,61,KJ - Duchcov,41901,Duchcov,Osecká,1333,Teplice,Ústecký,1
-111018325,62,"KJ - Lipník nad Bečvou, ul. Na Bečvě",75131,Lipník nad Bečvou,Na Bečvě,1398,Přerov,Olomoucký,1
-111018325,63,KJ - Hlučín,74801,Hlučín,Čs. armády,1263/32,Opava,Moravskoslezský,1
-111018325,64,KJ - Nové Strašecí,27101,Nové Strašecí,Topinkova,,Rakovník,Středočeský,1
-111018325,65,KJ - Osek,41705,Osek,Sokolská,,Teplice,Ústecký,1
-111018325,66,Kotelna Vítkovice,70300,Ostrava,Výstavní,,Ostrava-město,Moravskoslezský,3
-111018325,67,KJ - Hořovice,26801,Hořovice,U Remízku,1392,Beroun,Středočeský,1
-111018325,68,"KJ - Lipník nad Bečvou, ul. Hranická",75131,Lipník nad Bečvou,Hranická,1410,Přerov,Olomoucký,1
-111018325,69,KJ - Nové Hrady,37333,Nové Hrady,Zahradní čtvrť,,České Budějovice,Jihočeský,1
-111018325,70,KJ - Nymburk,28802,Nymburk,Pražská,,Nymburk,Středočeský,2
-111018325,71,KJ - Krupka,41742,Krupka,Karla Čapka,,Teplice,Ústecký,1
-111018325,72,KJ - Šumperk,78701,Šumperk,Erbenova,2326,Šumperk,Olomoucký,1
-111018325,74,"KJ - Ústí nad Orlicí, Okružní",56203,Ústí nad Orlicí,Okružní,,Ústí nad Orlicí,Pardubický,1
-111018325,75,KJ - Mohelnice,78985,Mohelnice,1. máj,1,Šumperk,Olomoucký,1
-111018325,76,KJ - Broumov,55001,Broumov,Křinická,,Náchod,Královéhradecký,1
-111018325,77,"KJ - Česká Třebová, Lhotka",56002,Česká Třebová,Česká Třebová,205,Ústí nad Orlicí,Pardubický,1
-111018325,78,"KJ - Česká Třebová, Křib",56002,Česká Třebová,Křib,2083,Ústí nad Orlicí,Pardubický,1
-111018325,79,KJ - Tanvald,46841,Tanvald,Pod Špičákem,546,Jablonec nad Nisou,Liberecký,1
-111018325,80,KJ - Horní Bříza,33012,Horní Bříza,Na Kaolince,,Plzeň-sever,Plzeňský,1
-111018325,81,"KJ - Polička, Jiráskova",57201,Polička,Jiráskova,977,Svitavy,Pardubický,1
-111018325,82,"KJ - Přelouč, 17. listopadu",53501,Přelouč,nám.,17,Pardubice,Pardubický,1
-111018325,83,"KJ - Vrchlabí, Žižkova NKTC",54301,Vrchlabí,Žižkova,,Trutnov,Královéhradecký,1
-111018325,84,KJ - Ivančice,66491,Ivančice,mjr. Nováka,,Brno-venkov,Jihomoravský,1
-111018325,85,KJ - Roudnice nad Labem,41301,Roudnice nad Labem,Na Urbance,,Litoměřice,Ústecký,1
-111018325,86,KJ - Prostějov nemocnice,79604,Prostějov,Mathonova,,Prostějov,Olomoucký,1
-111018325,87,KJ - Prostějov sladovny,79601,Prostějov,Za Drahou,,Prostějov,Olomoucký,1
-111018325,88,KJ - Babice (areál Hamé),68703,Babice,Babice,,Uherské Hradiště,Zlínský,1
-111018325,89,KJ - Klimkovice (areál sanatoria),74285,Vřesina,Vřesina,,Ostrava-město,Moravskoslezský,1
-111018325,90,KJ - Hrabyně (areál RÚ),74767,Hrabyně,Hrabyně,,Opava,Moravskoslezský,1
-111018325,91,KJ - Meziboří,43513,Meziboří,J.A. Komenského,,Most,Ústecký,2
-111018325,92,KJ - Benešov,25601,Benešov,Černoleská,,Benešov,Středočeský,1
-111018325,93,KJ - Hodonice,67125,Hodonice,U Sladovny,,Znojmo,Jihomoravský,2
-111018325,94,KJ - Kamenický Šenov,47114,Kamenický Šenov,Nový svět,,Česká Lípa,Liberecký,1
-111018325,95,KJ - Šternberk,78501,Šternberk,Poděbradova,,Olomouc,Olomoucký,1
-111018325,96,"KJ - Kraslice, Školní",35801,Kraslice,Školní,1773,Sokolov,Karlovarský,1
-111018325,97,"KJ - Kraslice, Pohraniční stráže",35801,Kraslice,Pohraniční stráže,1828,Sokolov,Karlovarský,1
-111018325,98,KJ - Bečov,43526,Bečov,Bečov,,Most,Ústecký,1
-111018325,99,"KJ - Havlíčkův Brod, Rozkošská",58001,Havlíčkův Brod,Rozkošská,,Havlíčkův Brod,Vysočina,1
-111018325,100,"KJ - Humpolec, Lnářská",39601,Humpolec,Lnářská,,Pelhřimov,Vysočina,1
-111018325,101,KJ - Odolena Voda (areál AERO Vodochody),25070,Odolena Voda,Odolena Voda,,Praha-východ,Středočeský,1
-111018325,102,KJ - Kojetín,75201,Kojetín,Nová,,Přerov,Olomoucký,1
-111018325,103,"KJ - Prostějov, Tylova",79601,Prostějov,Tylova,,Prostějov,Olomoucký,1
-111018325,104,"KJ - Prostějov, B. Šmerala",79601,Prostějov,Bohumíra Šmerala,,Prostějov,Olomoucký,1
-111018325,105,"KJ - Prostějov, S. Manharda",79601,Prostějov,Stanislava Manharda,,Prostějov,Olomoucký,1
-111018325,106,"KJ - Prostějov, Moravská",79601,Prostějov,Moravská,,Prostějov,Olomoucký,1
-111018325,107,KJ - Luhačovice (areál lázní),76326,Luhačovice,Leoše Janáčka,,Zlín,Zlínský,1
-111018325,108,"KJ - Sušice, Studentská",34201,Sušice,Studentská,,Klatovy,Plzeňský,1
-111018325,109,"KJ - Sedlčany, Na Severním sídlišti",26401,Sedlčany,Na Severním sídlišti,87,Příbram,Středočeský,1
-111018325,110,KJ - Moravský Beroun,79305,Moravský Beroun,Partyzánská,,Olomouc,Olomoucký,1
-111018325,111,KJ - Zákupy,47123,Zákupy,Gagarinova,356,Česká Lípa,Liberecký,1
-111018325,112,"KJ - Světlá nad Sázavou, Zámecká (areál sklárny)",58291,Světlá nad Sázavou,Zámecká,,Havlíčkův Brod,Vysočina,1
-111018325,113,KJ - Jaroměř,55101,Jaroměř,Národní,83,Náchod,Královéhradecký,1
-111018325,114,"KJ - Nový Bor, Rumburských hrdinů",47301,Nový Bor,Rumburských hrdinů,742,Česká Lípa,Liberecký,1
-111018325,115,KJ - Litomyšl,57001,Litomyšl,kpt. Jaroše,1129,Svitavy,Pardubický,1
-111018325,116,"KJ - Nový Bor, Wolkerova",47301,Nový Bor,Wolkerova,588,Česká Lípa,Liberecký,1
-111018325,117,KJ - Bochov,36471,Bochov,Okružní,,Karlovy Vary,Karlovarský,1
-111018325,118,KJ - Horní Slavkov,35731,Horní Slavkov,Hornova,,Sokolov,Karlovarský,2
-111018325,119,"KJ - Sedlčany, Žižkov",26401,Sedlčany,Žižkova,88,Příbram,Středočeský,1
-111018325,120,KJ - Krásná Lípa,40746,Krásná Lípa,Nemocniční,1066/34,Děčín,Ústecký,1
-111018325,121,KJ - Energocentrum Vítkovice III,70300,Ostrava,Ruská,,Ostrava-město,Moravskoslezský,1
-111018325,122,KJ - Kotelna Milíř,56002,Česká Třebová,Na Milíři,,Ústí nad Orlicí,Pardubický,1
-111018325,123,"KJ - Jáchymov, ul. Lidická",36251,Jáchymov,Lidická,1015,Karlovy Vary,Karlovarský,1
-111018325,124,KJ - Příbor,74258,Příbor,U Tatry,1520,Nový Jičín,Moravskoslezský,1
-111018325,125,Kotelna Rakovník,26901,Rakovník,Havlíčkova,2583,Rakovník,Středočeský,1
-111018325,126,Kotelna Šumperk K3,78701,Šumperk,Šumperk,,Šumperk,Olomoucký,1
-111018325,127,KJ - Tanvald ul. Vítězná,46841,Tanvald,Vítězná,,Jablonec nad Nisou,Liberecký,1
-111018325,128,KJ - ÚJV Řež,25068,Husinec,Hlavní,,Praha-východ,Středočeský,1
-111018325,129,KJ - Kdyně,34506,Kdyně,Kdyně,,Domažlice,Plzeňský,1
-111018325,130,Kotelna Šumperk K2,78701,Šumperk,Prievidzská,2568/4,Šumperk,Olomoucký,1
-111018325,131,KJ - Helvíkovice,56401,Helvíkovice,Helvíkovice,,Ústí nad Orlicí,Pardubický,1
-111018325,132,KJ - MONDELEZ OPAVA,74773,Opava,K Celnici,,Opava,Moravskoslezský,1
-111018325,133,KJ - Veselí nad Lužnicí,39181,Veselí nad Lužnicí,K Zastávce,,Tábor,Jihočeský,1
-111018325,134,KJ - Luby Tovární,35137,Luby,Tovární,85,Cheb,Karlovarský,1
-111018325,135,KJ - Luby U Pily,35137,Luby,U Pily,126,Cheb,Karlovarský,1
-111018325,136,KJ - Rýmařov,79501,Rýmařov,Rýmařov,,Bruntál,Moravskoslezský,1
-111018325,137,KJ - JnN ul. Liberecká,46601,Jablonec nad Nisou,Liberecká,,Jablonec nad Nisou,Liberecký,1
-111018325,138,KJ - Dřevomodelárny Sléváren Třinec,73961,Třinec,Třinec,,Frýdek-Místek,Moravskoslezský,1
-111018325,139,KJ - JnN ul. Boženy Němcové,46604,Jablonec nad Nisou,Boženy Němcové,5327/9,Jablonec nad Nisou,Liberecký,2
-111018325,140,KJ - JnN ul. Josefa Hory,46604,Jablonec nad Nisou,Josefa Hory,5328/20,Jablonec nad Nisou,Liberecký,1
-111018325,141,KJ - Hanušovice,78833,Hanušovice,Hanušovice,,Šumperk,Olomoucký,1
-111018325,142,KJ - JnN ul. Březová,46601,Jablonec nad Nisou,Březová,,Jablonec nad Nisou,Liberecký,1
-111018325,143,KJ - nemocnice Pelhřimov,39301,Pelhřimov,Slovanské bratrství,1957,Pelhřimov,Vysočina,1
-111018325,144,KJ - nemocnice Havlíčkův Brod,58001,Havlíčkův Brod,areál nemocnice Havlíčkův Brod,,Havlíčkův Brod,Vysočina,1
-111018325,145,KJ - Česká Třebová ul. Semanínská,56002,Česká Třebová,Semanínská,2052,Ústí nad Orlicí,Pardubický,1
-111018325,146,KJ - Fruta Kunovice,68604,Kunovice,Na Dráhách,,Uherské Hradiště,Zlínský,1
-111018325,147,KJ - Špindlerův mlýn,54351,Špindlerův Mlýn,Svatopetrská,280,Trutnov,Královéhradecký,1
-111018325,148,KJ - Lysá nad Labem,28922,Lysá nad Labem,Ke Vrutici,1693,Nymburk,Středočeský,1
-111018325,149,KJ - JOB AIR TECHNIC MOŠNOV,74251,Mošnov,Mošnov,,Nový Jičín,Moravskoslezský,1
-111018325,150,KJ - PROSTĚJOV ANGLICKÁ,79604,Prostějov,Holandská,,Prostějov,Olomoucký,1
-111018325,151,KJ - POLICE NAD METUJÍ,54954,Police nad Metují,K Sídlišti,,Náchod,Královéhradecký,1
 111018328,1,FVE - Suchánek,37007,Heřmaň,Heřmaň,67,České Budějovice,Jihočeský,1
 111018329,1,MVE Janovice,54213,Jívka,Jívka,,Trutnov,Královéhradecký,2
 111018331,1,FVE KENTAUR Domamyslice,79801,Prostějov,Domamyslická,346/59,Prostějov,Olomoucký,1
@@ -34763,6 +34627,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111935872,3,FVE - Uhříněves,10400,Praha,Přátelství,1613,,,1
 111935872,4,FVE - Unhošť,27351,Unhošť,Pražská,1525,Kladno,Středočeský,1
 111935872,5,FVE - Odolena Voda,25070,Odolena Voda,Ke Stadionu,519,Praha-východ,Středočeský,1
+111935872,6,FVE - Borovany,37312,Borovany,Na Výhony,671,České Budějovice,Jihočeský,1
 111935873,1,PANORAMA,43111,Jirkov,Panorama,357,Chomutov,Ústecký,1
 111935874,1,"Ostrovní 1267, 39701 Písek",39701,Písek,Ostrovní,1267/8,Písek,Jihočeský,1
 111935875,1,U HVĚZDÁRNY 16,32600,Plzeň,U Hvězdárny,1163/16,Plzeň-město,Plzeňský,1
@@ -35631,6 +35496,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112136852,1,Harantova 264,50901,Nová Paka,Harantova,264,Jičín,Královéhradecký,1
 112136856,1,TECAM PCV a.s.,50301,Hradec Králové,Kotrčova,304/2,Hradec Králové,Královéhradecký,1
 112136857,1,Ivo Lochman,58801,Smrčná,Smrčná,,Jihlava,Vysočina,1
+112136857,2,FVE Štoky,58253,Štoky,Štoky,386,Havlíčkův Brod,Vysočina,1
 112136859,1,Rjedlička,79393,Brantice,Radim,80,Bruntál,Moravskoslezský,1
 112136860,1,FVE - Mikulová NZÚ,18200,Praha,Skřivánčí,258/4,,,1
 112136861,1,ION UHLYA,33026,Tlučná,Línská,260,Plzeň-sever,Plzeňský,1
@@ -35752,9 +35618,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112136991,1,Luhan,33401,Přeštice,Luční,1160,Plzeň-jih,Plzeňský,1
 112136992,1,FVE U Kozičky,41501,Teplice,Rooseveltova,262,Teplice,Ústecký,1
 112136993,1,FVE STATEK SLUP,67128,Slup,Slup,,Znojmo,Jihomoravský,1
-112136998,1,BPS Velký Karlov I,67127,Hrádek,Hrádek,,Znojmo,Jihomoravský,1
-112136998,2,BPS Velký Karlov II,67127,Hrádek,Hrádek,,Znojmo,Jihomoravský,1
-112136998,3,BPS Velký Karlov III,67127,Hrádek,Hrádek,,Znojmo,Jihomoravský,3
+112136998,1,BPS Velký Karlov I,67127,Hrádek,Hrádek,,Znojmo,Jihomoravský,5
 112136999,1,FVE - Jan Jarník K Vranému,25245,Ohrobec,K Vranému,267,Praha-západ,Středočeský,1
 112137001,1,JV areal s.r.o.,51301,Semily,Nádražní,92,Semily,Liberecký,1
 112137002,1,FVE AMBRŮZ,75002,Přerov,Havlíčkova,1394/21,Přerov,Olomoucký,1
@@ -35936,6 +35800,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112137219,1,"Družstevní 646/42, Troubsko 664 41",66441,Troubsko,Družstevní,686/42,Brno-venkov,Jihomoravský,1
 112137220,1,SSH,54376,Chotěvice,Chotěvice,,Trutnov,Královéhradecký,1
 112137222,1,BPS Nový Dvůr,77900,Olomouc,Olomouc,,Olomouc,Olomoucký,6
+112137223,1,FVE Sudolský Hlušovice,78314,Hlušovice,Okružní,,Olomouc,Olomoucký,1
 112137224,1,SEDMIHORKY,51101,Karlovice,Karlovice,74,Semily,Liberecký,1
 112137225,1,Fotovotaický systém 123. budovy,76001,Zlín,třída Tomáše Bati,,Zlín,Zlínský,1
 112137225,2,Fotovoltaický systém 64/2 budovy,76001,Zlín,Sedmdesátá,7055,Zlín,Zlínský,1
@@ -35951,6 +35816,10 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112137239,1,"FVE 5,5kWp Plumlov",79803,Plumlov,Plumlov,515,Prostějov,Olomoucký,1
 112137241,1,FVE-LPAV 1,56501,Kosořín,Kosořín,,Ústí nad Orlicí,Pardubický,1
 112137243,1,FVE CHVÁLKOVICE,77900,Olomouc,Olomouc,,Olomouc,Olomoucký,1
+112137244,1,Fotovoltaický systém 34. budovy,76001,Zlín,Vavrečkova,5657,Zlín,Zlínský,1
+112137244,2,Fotovoltaický systém objektu Panorama,76005,Zlín,Okružní,4701,Zlín,Zlínský,1
+112137244,3,Fotovoltaický systém 103.budovy,76005,Zlín,třída Tomáše Bati,5658,Zlín,Zlínský,1
+112137244,4,Fotovoltaický systém objektu Ostrava-Poruba,70800,Ostrava,náměstí Antonie Bejdové,1810,Ostrava-město,Moravskoslezský,1
 112137246,1,Ubytovna Krátká,73801,Frýdek-Místek,Krátká,1177,Frýdek-Místek,Moravskoslezský,1
 112137247,1,Fotovoltaický systém 64/1 budovy,76001,Zlín,třída Tomáše Bati,7015,Zlín,Zlínský,1
 112137249,1,KGJ Praha 14,19800,Praha,Bratří Venclíků,1072/6,,,1
@@ -35960,6 +35829,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112137253,1,"Střední škola obchodní a technická Dačice, Strojírenská 304",38001,Dačice,Strojírenská,304,Jindřichův Hradec,Jihočeský,1
 112137256,1,Kristýna Löfflerová,69155,Moravská Nová Ves,Lipová,949,Břeclav,Jihomoravský,1
 112137257,1,MVE Hejnice II.,46362,Hejnice,Petra Bezruče,260,Liberec,Liberecký,1
+112137258,1,FVE I.,69672,Lipov,Lipov,,Hodonín,Jihomoravský,1
 112137259,1,"FVE 19,2 KWp JUDr. NĚMCOVÁ",16200,Praha,Na Petřinách,310/82,,,1
 112137260,1,FVE - Dobiáš,41301,Roudnice nad Labem,Potoční,,Litoměřice,Ústecký,1
 112137262,1,"FVE-4,8",19016,Praha,Deštná,128/8,,,1
@@ -35977,6 +35847,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112137284,1,FVE m-tec,76302,Zlín,třída,3,Zlín,Zlínský,1
 112137285,1,Jaromír Pírek,74101,Nový Jičín,Pod Horama,132,Nový Jičín,Moravskoslezský,1
 112137287,1,Jan Šetka,74601,Opava,Krátka,172/1,Opava,Moravskoslezský,1
+112137291,1,CTIDRUŽICE 7,67154,Ctidružice,Ctidružice,7,Znojmo,Jihomoravský,1
 112237286,1,Výroba pelet,39137,Chotoviny,Táborská,214,Tábor,Jihočeský,1
 112237292,1,Za Střelnicí - Domov Hortenzie,74401,Frenštát pod Radhoštěm,Za Střelnicí,,Nový Jičín,Moravskoslezský,1
 112237298,1,FVE - GHERKIN,66902,Znojmo,Dobšická,3929/4,Znojmo,Jihomoravský,1
@@ -35991,6 +35862,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112237317,3,DEBRNÉ,54371,Mostek,Mostek,,Trutnov,Královéhradecký,3
 112237317,4,MVE ŠTĚKEŇ,38601,Štěkeň,Štěkeň,,Strakonice,Jihočeský,2
 112237317,5,MVE Mikulovice,79084,Mikulovice,Hlavní,2,Jeseník,Olomoucký,1
+112237318,1,FVE AGRISAB RAKŠICE,67201,Moravský Krumlov,Družstevní,1159,Znojmo,Jihomoravský,1
 112237320,1,MVE Kunkovice 12,34142,Čachrov,Čachrov,,Klatovy,Plzeňský,1
 112237321,1,FVE - ATEX - spol. s.r.o.,62100,Brno,Vážného,21/3,Brno-město,Jihomoravský,1
 112237322,1,Florplant Ostrava,72400,Ostrava,Krmelínská,625,Ostrava-město,Moravskoslezský,1
@@ -36000,14 +35872,23 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 112237326,1,LIBANICE 15,53862,Honbice,Honbice,15,Chrudim,Pardubický,1
 112237327,1,FVE - RUDOLF JELÍNEK,76312,Vizovice,Razov,,Zlín,Zlínský,1
 112237328,1,FVE FINAL TECH,53009,Pardubice,Hradecká,585,Pardubice,Pardubický,1
+112237335,1,"FVE - Johnson, Modřice",66442,Modřice,Popovická,917,Brno-venkov,Jihomoravský,1
 112237343,1,Josef Štaif,33011,Dolany,Dolany,29,Plzeň-sever,Plzeňský,1
 112237344,1,FVE Skalice,28167,Stříbrná Skalice,Stříbrná Skalice,128,Kolín,Středočeský,1
 112237345,1,FVE Tučapy 449,78375,Dub nad Moravou,Dub nad Moravou,449,Olomouc,Olomoucký,1
+112237349,1,FVE Pechová,75354,Hranice,Hranice,6,Přerov,Olomoucký,1
 112237350,1,FVE Mátl & Bula,66461,Rajhrad,Stará pošta,,Brno-venkov,Jihomoravský,1
 112237359,1,FVE Neslovice,66491,Neslovice,Za Bránou,254,Brno-venkov,Jihomoravský,1
 112237360,1,FVE-Stavební stroje Ústí n. L.,40007,Ústí nad Labem,Přístavní,507/51,Ústí nad Labem,Ústecký,1
+112237363,1,FVE Štěrboholy,10200,Praha,Ústřední,84/31,,,1
+112237363,2,FVE Rezidence Měcholupy,10900,Praha 10,Na Návsi,525,,,1
+112237363,3,FVE Plzeň - Bolevec,32300,Plzeň,Pode Dvory,3117,Plzeň-město,Plzeňský,1
+112237363,4,FVE DM5,10900,Praha,Ke dráze,536/7,,,1
+112237364,1,Spáleniště 47,51801,Dobruška,Dobruška,47,Rychnov nad Kněžnou,Královéhradecký,1
 112237365,1,44001 Husova 2975,44001,Louny,Husova,,Louny,Ústecký,1
 112237367,1,JPZ holding. a.s. 4 kWp,33008,Zruč-Senec,Pod Vysokou,434,Plzeň-sever,Plzeňský,1
 112237367,2,"JPZ holding. a.s. 19,85 kWp",33008,Zruč-Senec,Pod Vysokou,392,Plzeň-sever,Plzeňský,1
+112237368,1,SAFINA VESTEC,62100,Brno,Karásek,2262/1,Brno-město,Jihomoravský,1
+112237372,1,Klabačková Eva,68801,Uherský Brod,Františka Bára,2560,Uherské Hradiště,Zlínský,1
 112237381,1,PENAPOL s.r.o.,76001,Zlín,Zálešná XI,1357,Zlín,Zlínský,1
 112237384,1,Mezirolí,36225,Nová Role,Nová Role,144,Karlovy Vary,Karlovarský,1

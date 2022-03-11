@@ -173,7 +173,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100343,1,kotelna 1 U Husa 660,33012,Horní Bříza,U Husa,660,Plzeň-sever,Plzeňský,4
 310100343,2,kotelna 2,33012,Horní Bříza,Sídlištní,,Plzeň-sever,Plzeňský,5
 310100371,1,Kotelna Kovařovicova,34401,Domažlice,Kovařovicova,274,Domažlice,Plzeňský,3
-310100371,2,Kotelna Švabinského,34401,Domažlice,Švabinského,564,Domažlice,Plzeňský,4
+310100371,2,Kotelna Švabinského,34401,Domažlice,Švabinského,564,Domažlice,Plzeňský,6
 310100371,3,Kotelna Břetislavova,34401,Domažlice,Břetislavova,84,Domažlice,Plzeňský,5
 310100371,5,Kotelna Zahradní,34401,Domažlice,Zahradní,513,Domažlice,Plzeňský,2
 310100374,1,teplárna CHS,58301,Chotěboř,Herrmannova,,Havlíčkův Brod,Vysočina,3
@@ -403,8 +403,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100628,1,Teplárna Ostrov,36301,Ostrov,Mořičovská,,Karlovy Vary,Karlovarský,6
 310100636,1,"Plynová kotelna PK16,",76861,Bystřice pod Hostýnem,Topolová,1563,Kroměříž,Zlínský,4
 310100636,2,Plynová kotelna PK 36,76861,Bystřice pod Hostýnem,Vsetínská,1562,Kroměříž,Zlínský,4
-310100649,1,Teplárna Bystřice pod Hostýnem,76861,Bystřice pod Hostýnem,Michaela Thoneta,148,Kroměříž,Zlínský,2
-310100649,2,Kotelna Holešov,76901,Holešov,Tovární,725,Kroměříž,Zlínský,4
+310100649,1,Kotelna Bystřice p.H,76861,Bystřice pod Hostýnem,Michaela Thoneta,148,Kroměříž,Zlínský,2
+310100649,2,Kotelna Holešov,76901,Holešov,Tovární,725,Kroměříž,Zlínský,1
 310100657,1,Kotelna Nýřany II,33023,Nýřany,Komenského,1016,Plzeň-sever,Plzeňský,3
 310100657,2,Kotelna Nýřany III,33023,Nýřany,Luční,2,Plzeň-sever,Plzeňský,3
 310100657,3,Kotelna Kaznějov,33151,Kaznějov,Sídliště,480,Plzeň-sever,Plzeňský,3
@@ -1383,7 +1383,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310202531,2,Plynová kotelna,39811,Protivín,Družstevní,,Písek,Jihočeský,3
 310202531,3,Plynová kotelna,39811,Protivín,Masarykovo náměstí,,Písek,Jihočeský,3
 310202540,1,Kotelna Městské zdravotnické zařízení Březnice,26272,Březnice,Sadová,618,Příbram,Středočeský,3
-310202560,1,Bloková kotelna,33162,Manětín,Manětín,256,Plzeň-sever,Plzeňský,2
+310202560,1,Bloková kotelna,33162,Manětín,Manětín,256,Plzeň-sever,Plzeňský,3
 310202581,1,Plynová kotelna,34901,Stříbro,Revoluční,845,Tachov,Plzeňský,2
 310202587,3,Kogenerace Velešín,38232,Velešín,Budějovická,148,Český Krumlov,Jihočeský,2
 310202588,1,Kotelna ABB s.r.o.,61900,Brno-Dolní Heršpice,Vídeňská,100/117,Brno-město,Jihomoravský,4
@@ -2690,9 +2690,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 312136773,1,Dlouhá Ves Kotelna,34201,Dlouhá Ves,Dlouhá Ves,315,Klatovy,Plzeňský,1
 312136924,1,BPS Kojetín,75201,Kojetín,Komenského náměstí,,Přerov,Olomoucký,1
 312136996,1,Kubánské nám.,10000,Praha,Kubánské náměstí,1271/5,,,6
-312136997,1,BPS Velký Karlov I,67127,Hrádek,Hrádek,,Znojmo,Jihomoravský,1
-312136997,2,BPS Velký Karlov II,67127,Hrádek,Hrádek,,Znojmo,Jihomoravský,1
-312136997,3,BPS Velký Karlov III,67127,Hrádek,Hrádek,,Znojmo,Jihomoravský,3
+312136997,1,BPS Velký Karlov I,67127,Hrádek,Hrádek,,Znojmo,Jihomoravský,5
 312137020,1,Kotelna - CYMEDICA,26801,Hořovice,Fügnerova,458/7,Beroun,Středočeský,3
 312137167,1,PK3 ETI,35601,Březová,Březová,,Sokolov,Karlovarský,2
 312137214,1,BPS Domašov u Šternb,78501,Domašov u Šternberka,Domašov u Šternberka,,Olomouc,Olomoucký,2
