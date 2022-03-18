@@ -119,7 +119,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100242,11,Bk 991,25801,Vlašim,Severní,991,Benešov,Středočeský,6
 310100242,12,BK 986,25801,Vlašim,Severní,986,Benešov,Středočeský,6
 310100242,13,BK 988,25801,Vlašim,Severní,988,Benešov,Středočeský,5
-310100242,14,BK 1394,25801,Vlašim,Dvořákova,1394,Benešov,Středočeský,4
+310100242,14,BK 1394,25801,Vlašim,Dvořákova,1394,Benešov,Středočeský,2
 310100242,15,BK 1183,25801,Vlašim,Družstevní,1183,Benešov,Středočeský,4
 310100259,1,Teplárna na Moráni,43001,Chomutov,Na Moráni,,Chomutov,Ústecký,2
 310100260,1,Plynová kotelna Čechova,38801,Blatná,Čechova,90,Strakonice,Jihočeský,2
@@ -217,7 +217,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100454,4,KJ - Ivančice,66491,Ivančice,mjr. Nováka,,Brno-venkov,Jihomoravský,1
 310100462,1,Kotelna 17. listopadu 6,35002,Cheb,17. listopadu 1379/,17,Cheb,Karlovarský,2
 310100462,2,Kotelna Valdštejnova 49,35002,Cheb,Valdštejnova,1320/49,Cheb,Karlovarský,2
-310100462,3,Kotelna BOŽENY NĚMCOVÉ,35002,Cheb,B. Němcové,1981/9,Cheb,Karlovarský,6
+310100462,3,Kotelna BOŽENY NĚMCOVÉ,35002,Cheb,B. Němcové,1981/9,Cheb,Karlovarský,3
 310100462,4,Kotelna Hrnčířská,35002,Cheb,Hrnčířská,2129/2,Cheb,Karlovarský,4
 310100462,5,Kotelna Mánesova 34,35002,Cheb,Mánesova,1207/34,Cheb,Karlovarský,3
 310100462,6,Kotelna Sadová,35002,Cheb,Sadová,1139/7,Cheb,Karlovarský,3
@@ -572,7 +572,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310101207,1,Olejová kotelna,43186,Kovářská,Sídliště,671,Chomutov,Ústecký,4
 310101210,1,Severovýchod,78901,Zábřeh,Severovýchod,491/54,Šumperk,Olomoucký,2
 310101210,3,Kosmonautů,78901,Zábřeh,Kosmonautů,78/5,Šumperk,Olomoucký,3
-310101210,5,Výsluní,78901,Zábřeh,Na Výsluní,1173/4,Šumperk,Olomoucký,2
 310101210,6,Československé armády 651/9,78901,Zábřeh,Československé armády,651/9,Šumperk,Olomoucký,2
 310101210,7,17.listopadu 832/3,78901,Zábřeh,17. listopadu 832/,17,Šumperk,Olomoucký,2
 310101215,1,Kotelna Chlumec II.,40339,Chlumec,Chlumec,,Ústí nad Labem,Ústecký,3
