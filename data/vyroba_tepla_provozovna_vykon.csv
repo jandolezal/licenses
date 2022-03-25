@@ -1204,9 +1204,9 @@ cislo_licence,ev_cislo,druh,technologie,mw
 310100783,1,tepelný,celkový,1.56
 310100783,1,tepelný,teplovodní,1.56
 310100788,1,elektrický,celkový,2.1
-310100788,1,tepelný,celkový,36.85
-310100788,1,tepelný,horkovodní,29.0
-310100788,1,tepelný,teplovodní,7.85
+310100788,1,tepelný,celkový,35.48
+310100788,1,tepelný,horkovodní,26.63
+310100788,1,tepelný,teplovodní,8.85
 310100788,1,tepelný,výkon kvet,7.85
 310100832,1,elektrický,celkový,0.999
 310100832,1,tepelný,celkový,75.025
