@@ -1446,6 +1446,9 @@ cislo_licence,ev_cislo,druh,technologie,mw
 310101184,1,tepelný,výkon kvet,0.504
 310101187,2,tepelný,celkový,27.0
 310101187,2,tepelný,horkovodní,27.0
+310101187,4,tepelný,celkový,5.79
+310101187,4,tepelný,horkovodní,5.6
+310101187,4,tepelný,teplovodní,0.19
 310101195,2,tepelný,celkový,3.35
 310101195,2,tepelný,teplovodní,3.35
 310101197,1,tepelný,celkový,0.3
@@ -5853,8 +5856,6 @@ cislo_licence,ev_cislo,druh,technologie,mw
 311329846,22,tepelný,teplovodní,0.79
 311329846,23,tepelný,celkový,0.172
 311329846,23,tepelný,teplovodní,0.172
-311329846,24,tepelný,celkový,0.36
-311329846,24,tepelný,teplovodní,0.36
 311329846,25,tepelný,celkový,0.854
 311329846,25,tepelný,teplovodní,0.854
 311329846,26,tepelný,celkový,1.043
@@ -6657,12 +6658,14 @@ cislo_licence,ev_cislo,druh,technologie,mw
 311734322,9,tepelný,teplovodní,0.045
 311734322,10,tepelný,celkový,0.07
 311734322,10,tepelný,teplovodní,0.07
-311734322,11,tepelný,celkový,0.116
-311734322,11,tepelný,teplovodní,0.116
+311734322,11,tepelný,celkový,0.096
+311734322,11,tepelný,teplovodní,0.096
 311734322,12,tepelný,celkový,0.1
 311734322,12,tepelný,teplovodní,0.1
 311734322,13,tepelný,celkový,0.1
 311734322,13,tepelný,teplovodní,0.1
+311734322,14,tepelný,celkový,0.041
+311734322,14,tepelný,teplovodní,0.041
 311734331,1,tepelný,celkový,0.175
 311734331,1,tepelný,teplovodní,0.175
 311734342,1,elektrický,celkový,0.703
@@ -7038,6 +7041,10 @@ cislo_licence,ev_cislo,druh,technologie,mw
 312136750,5,tepelný,teplovodní,0.016
 312136750,6,tepelný,celkový,0.078
 312136750,6,tepelný,teplovodní,0.078
+312136750,7,tepelný,celkový,0.052
+312136750,7,tepelný,teplovodní,0.052
+312136750,8,tepelný,celkový,0.052
+312136750,8,tepelný,teplovodní,0.052
 312136758,1,elektrický,celkový,0.505
 312136758,1,tepelný,celkový,0.954
 312136758,1,tepelný,teplovodní,0.954
@@ -7064,3 +7071,11 @@ cislo_licence,ev_cislo,druh,technologie,mw
 312137214,1,tepelný,celkový,0.464
 312137214,1,tepelný,teplovodní,0.464
 312137214,1,tepelný,výkon kvet,0.464
+312237340,1,elektrický,celkový,4.952
+312237340,1,tepelný,celkový,6.456
+312237340,1,tepelný,teplovodní,6.456
+312237340,1,tepelný,výkon kvet,6.456
+312237340,2,elektrický,celkový,0.6
+312237340,2,tepelný,celkový,0.86
+312237340,2,tepelný,teplovodní,0.86
+312237340,2,tepelný,výkon kvet,0.86

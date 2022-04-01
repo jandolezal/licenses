@@ -565,6 +565,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310101180,3,Plynová kotelna Tržní 558,38411,Netolice,Tržní,558,Prachatice,Jihočeský,3
 310101184,1,Teplárna ÚJV Řež a.s.,25068,Husinec,Řež,130,Praha-východ,Středočeský,5
 310101187,2,Výtopna Stráž pod R.,47127,Stráž pod Ralskem,Pod Vinicí,,Česká Lípa,Liberecký,3
+310101187,4,Plynová kotelna NZH,40339,Chlumec,Hrbovická,2,Ústí nad Labem,Ústecký,3
 310101195,2,UK 5 Mánesova,34901,Stříbro,Mánesova,485,Tachov,Plzeňský,4
 310101197,1,Plynová kotelna Areál,35734,Nové Sedlo,Masarykova,,Sokolov,Karlovarský,2
 310101199,1,Kotelna Energobloku SPH-SLUŽBY s.r.o.,75301,Hranice,Tovární,605,Přerov,Olomoucký,0
@@ -2289,7 +2290,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311329846,21,Viklefova 2,13000,Praha,Viklefova,1928/2,,,2
 311329846,22,Ambrožova 1,13000,Praha,Ambrožova,2408/1,,,1
 311329846,23,Perunova 5,13000,Praha,Perunova,919/5,,,2
-311329846,24,Zelenky Hajského 2,13000,Praha,Zelenky Hajského,1935/2,,,2
 311329846,25,Baranova 26,13000,Praha,Baranova,1518/26,,,1
 311329846,26,Jeseniova 25,13000,Praha,Jeseniova,508/25,,,2
 311329846,27,Ostromečská 5,13000,Praha,Ostromečská,395/5,,,2
@@ -2546,9 +2546,10 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311734322,8,Schlattauerova 542,75701,Valašské Meziříčí,Schlattauerova,542/9,Vsetín,Zlínský,1
 311734322,9,Schlattauerova 577,75701,Valašské Meziříčí,Schlattauerova,577/6,Vsetín,Zlínský,1
 311734322,10,Pod Oborou 804,75701,Valašské Meziříčí,Pod Oborou,804,Vsetín,Zlínský,2
-311734322,11,Pod Oborou 860,75701,Valašské Meziříčí,Pod Oborou,860,Vsetín,Zlínský,3
+311734322,11,Pod Oborou 860,75701,Valašské Meziříčí,Pod Oborou,860,Vsetín,Zlínský,2
 311734322,12,Pospíšilova 70,75701,Valašské Meziříčí,Náměstí,70/10,Vsetín,Zlínský,2
 311734322,13,Žerotínova 736,75701,Valašské Meziříčí,Žerotínova,736,Vsetín,Zlínský,2
+311734322,14,Jičínská 156,75701,Valašské Meziříčí,Jičínská,156/39,Vsetín,Zlínský,2
 311734331,1,"KAŠTANOVÁ 1302/3, DĚČÍN 1",40501,Děčín,Kaštanová,1302/3,Děčín,Ústecký,2
 311734342,1,69,26235,Klučenice,Klučenice,,Příbram,Středočeský,1
 311734393,1,KOTELNA NEMOCNICE,26101,Příbram,U Nemocnice,358,Příbram,Středočeský,3
@@ -2685,6 +2686,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 312136750,4,DŮLCE 2093/19,40001,Ústí nad Labem,Důlce,2093/19,Ústí nad Labem,Ústecký,2
 312136750,5,LONDÝNSKÁ 1,40001,Ústí nad Labem,Londýnská,1875/1,Ústí nad Labem,Ústecký,1
 312136750,6,HRNČÍŘSKÁ 6,40001,Ústí nad Labem,Hrnčířská,6/9,Ústí nad Labem,Ústecký,3
+312136750,7,MASARYKOVA 67,40001,Ústí nad Labem,Masarykova,2313/67,Ústí nad Labem,Ústecký,1
+312136750,8,KLÍŠSKÁ 53,40001,Ústí nad Labem,Klíšská,2057/53,Ústí nad Labem,Ústecký,1
 312136758,1,Sytherm s.r.o.,46841,Tanvald,Tanvald,159,Jablonec nad Nisou,Liberecký,1
 312136773,1,Dlouhá Ves Kotelna,34201,Dlouhá Ves,Dlouhá Ves,315,Klatovy,Plzeňský,1
 312136924,1,BPS Kojetín,75201,Kojetín,Komenského náměstí,,Přerov,Olomoucký,1
@@ -2693,3 +2696,5 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 312137020,1,Kotelna - CYMEDICA,26801,Hořovice,Fügnerova,458/7,Beroun,Středočeský,3
 312137167,1,PK3 ETI,35601,Březová,Březová,,Sokolov,Karlovarský,2
 312137214,1,BPS Domašov u Šternb,78501,Domašov u Šternberka,Domašov u Šternberka,,Olomouc,Olomoucký,2
+312237340,1,Teplárna Avia Praha,19903,Praha 9,Beranových,,,,5
+312237340,2,Teplárna Ďáblice,18200,Praha,Ďáblická,,,,2
