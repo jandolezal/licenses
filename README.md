@@ -22,6 +22,9 @@ Complete spider scraping .xml files about license holders (for any business like
 ```bash
 # Scrape data about license holders
 scrapy crawl drzitel -O data/drzitel.csv
+
+# Sort the output .csv file by license id
+python3 -m licenses.make_csvs drzitel
 ```
 
 ### Licenses

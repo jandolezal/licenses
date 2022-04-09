@@ -25,7 +25,7 @@ def convert_to_date(x):
 
 def extract_business_code(url: str) -> str:
     """Extract code of the business type from the xml filename."""
-    start = int(url.index("LIC_")) + 4
+    start = int(url.index("lic")) + 3
     end = start + 2
     predmet = url[start:end]
     return int(predmet)
@@ -58,8 +58,10 @@ class HolderLoader(ItemLoader):
 class HoldersSpider(scrapy.Spider):
     name = "drzitel"
 
+    # Energy Regulatory Office has a new website.
+    # I will see next week how exactly they generate a link of the holders page
     start_urls = [
-        "https://www.eru.cz/licence/informace-o-drzitelich",
+        "https://www.eru.cz/seznam-drzitelu-licenci-uznani-opravneni-podnikat-ke-dni-8-4-2022",
     ]
 
     def parse(self, response):
@@ -67,18 +69,24 @@ class HoldersSpider(scrapy.Spider):
         Extract vocabulary of business types. Generate requests for these urls.
         """
         # Capture elements of interest from the page
-        xml_paras = response.xpath('//p[contains(text(), "XML")]/a/@href')
-        business_strings = response.xpath('//p[contains(text(), "XML")]/a/text()')
+        a_with_xml = response.xpath('//a[contains(@href, ".xml")]')
 
         # Get business types strings from filenames(urs)
         business_list = []
+        xml_urls = []
 
         # Create vocabulary of codes and business descriptions and export them to csv
-        for xml_href, business in zip(xml_paras, business_strings):
-            code = extract_business_code(xml_href.get())
-            description = business.get()
-            business_list.append({"kod": code, "predmet": description})
+        for i, a in enumerate(a_with_xml):
+            if i % 2 == 0: # there are two links to similar xml file. skip one of them
+                xml_href = a.xpath('@href').get()
+                code = extract_business_code(xml_href)
+                description = a.xpath('text()').get().lower()
+                # Gather list of business codes and the description
+                business_list.append({"kod": code, "predmet": description})
+                # Gather paths to the xml files
+                xml_urls.append('https://www.eru.cz' + xml_href)
 
+        # Save the businesses codes to a csv file
         pathlib.Path('data').mkdir(exist_ok=True)
 
         with pathlib.Path('data/druh.csv').open(mode='w') as csvf:
@@ -87,13 +95,7 @@ class HoldersSpider(scrapy.Spider):
             business_list.sort(key=lambda x: x['kod'])
             writer.writerows(business_list)
 
-        # Get urls to xml files
-        xml_urls = []
-
-        # Extract urls for future requests for each XML file
-        for xml_href in xml_paras:
-            xml_urls.append("https://www.eru.cz" + xml_href.get())
-
+        # Request xml files
         for url in xml_urls:
             yield scrapy.Request(url=url, callback=self.parse_xml, encoding="utf-8")
 
