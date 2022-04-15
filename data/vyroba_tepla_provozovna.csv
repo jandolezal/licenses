@@ -1122,6 +1122,10 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310103071,8,Kotelna Dukelských hrdinů,26901,Rakovník,Dukelských hrdinů,1908,Rakovník,Středočeský,2
 310103071,10,Kotelna Vinohrady,26901,Rakovník,Zdeňka Štěpánka,,Rakovník,Středočeský,2
 310103071,11,Kotelna 1. ZŠ,26901,Rakovník,Martinovského,153,Rakovník,Středočeský,2
+310103071,12,Kotelna Václav,33701,Rokycany,Kotelská,9027,Rokycany,Plzeňský,2
+310103071,13,Kotelna Pátek,33701,Rokycany,Na Pátku,9010,Rokycany,Plzeňský,3
+310103071,14,Kotelna J. Knihy,33701,Rokycany,Josefa Knihy,14,Rokycany,Plzeňský,2
+310103071,15,Kotelna Zbiroh,33808,Zbiroh,Zdeňka Nejedlého,523,Rokycany,Plzeňský,2
 310103076,1,Kotelna Opavská,78501,Šternberk,Opavská,,Olomouc,Olomoucký,1
 310103081,1,Centrální kotelna - Bouzov,78325,Bouzov,Bouzov,60,Olomouc,Olomoucký,2
 310103102,2,Červená Voda čp.117,56161,Červená Voda,Červená Voda,117,Ústí nad Orlicí,Pardubický,3
@@ -1455,12 +1459,10 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310203685,1,Centrální kotelna,66412,Oslavany,Hlavní,43/8,Brno-venkov,Jihomoravský,2
 310203700,1,Výtopna SLETEX,73801,Frýdek-Místek,Nádražní,1085,Frýdek-Místek,Moravskoslezský,2
 310203710,1,Kotelna Vanice,56601,Vysoké Mýto,Generála Svatoně,760/,Ústí nad Orlicí,Pardubický,4
-310203710,2,Kotelna Družba,56601,Vysoké Mýto,Prokopa Velikého,,Ústí nad Orlicí,Pardubický,4
+310203710,2,Kotelna Družba,56601,Vysoké Mýto,Prokopa Velikého,941/,Ústí nad Orlicí,Pardubický,3
 310203710,3,Kotelna Pod Kasinem,56601,Vysoké Mýto,U Potoka,763/,Ústí nad Orlicí,Pardubický,4
-310203710,4,Kotelna U internátu Karosa,56601,Vysoké Mýto,Školní,,Ústí nad Orlicí,Pardubický,2
 310203710,5,Kotelna Pivovarská I.,56601,Vysoké Mýto,Pivovarská,512/,Ústí nad Orlicí,Pardubický,2
-310203710,6,Kotelna Pivovarská II.,56601,Vysoké Mýto,V Peklovcích,521/,Ústí nad Orlicí,Pardubický,2
-310203710,7,Kotelna Husova,56601,Vysoké Mýto,Husova,,Ústí nad Orlicí,Pardubický,3
+310203710,7,Kotelna Husova,56601,Vysoké Mýto,Husova,942/,Ústí nad Orlicí,Pardubický,2
 310203718,1,Teplárna Energetické centrum s.r.o.,37701,Jindřichův Hradec,Otín,3,Jindřichův Hradec,Jihočeský,4
 310203732,1,Plynová kotelna,25801,Vlašim,Vlasákova,333,Benešov,Středočeský,2
 310203734,1,Kotelna Film real,76001,Zlín,Filmová,174,Zlín,Zlínský,2
