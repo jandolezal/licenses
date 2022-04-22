@@ -6932,9 +6932,9 @@ cislo_licence,ev_cislo,druh,technologie,mw
 312036068,3,tepelný,celkový,11.53
 312036068,3,tepelný,teplovodní,11.53
 312036139,1,elektrický,celkový,44.2432
-312036139,1,tepelný,celkový,138.48
-312036139,1,tepelný,parní,138.48
-312036139,1,tepelný,výkon kvet,138.48
+312036139,1,tepelný,celkový,92.32
+312036139,1,tepelný,parní,92.32
+312036139,1,tepelný,výkon kvet,92.32
 312036152,1,elektrický,celkový,0.999
 312036152,1,tepelný,celkový,1.268
 312036152,1,tepelný,teplovodní,1.268
@@ -7067,6 +7067,8 @@ cislo_licence,ev_cislo,druh,technologie,mw
 312137214,1,tepelný,celkový,0.464
 312137214,1,tepelný,teplovodní,0.464
 312137214,1,tepelný,výkon kvet,0.464
+312137278,1,tepelný,celkový,46.159
+312137278,1,tepelný,parní,46.159
 312237340,1,elektrický,celkový,4.952
 312237340,1,tepelný,celkový,6.456
 312237340,1,tepelný,teplovodní,6.456

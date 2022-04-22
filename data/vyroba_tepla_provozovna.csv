@@ -2651,7 +2651,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 312036068,1,TEPLÁRNA ZLÍN,76001,Zlín,Hlavničkovo nábřeží,650,Zlín,Zlínský,3
 312036068,2,VÝTOPNA ZLÍN,76001,Zlín,Hlavničkovo nábřeží,650,Zlín,Zlínský,2
 312036068,3,VÝTOPNA KOCANDA,76005,Zlín,Okružní,,Zlín,Zlínský,4
-312036139,1,CZT Příbram,26101,Příbram VI,Obecnická,,Příbram,Středočeský,3
+312036139,1,CZT Příbram I,26101,Příbram VI,Obecnická,,Příbram,Středočeský,2
 312036152,1,KGJ Florcenter,77900,Olomouc,Olomouc,,Olomouc,Olomoucký,1
 312036174,1,Kotelna Hranice,75301,Hranice,Tovární,,Přerov,Olomoucký,4
 312036210,1,BPS Chabičovice,38232,Mirkovice,Mirkovice,,Český Krumlov,Jihočeský,4
@@ -2696,5 +2696,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 312137167,1,PK3 ETI,35601,Březová,Březová,,Sokolov,Karlovarský,2
 312137202,1,Kotelna Čihovice,37501,Týn nad Vltavou,Čihovice,30,České Budějovice,Jihočeský,1
 312137214,1,BPS Domašov u Šternb,78501,Domašov u Šternberka,Domašov u Šternberka,,Olomouc,Olomoucký,2
+312137278,1,CZT Příbram II,26101,Příbram,Obecnická,,Příbram,Středočeský,1
 312237340,1,Teplárna Avia Praha,19903,Praha 9,Beranových,,,,5
 312237340,2,Teplárna Ďáblice,18200,Praha,Ďáblická,,,,2
