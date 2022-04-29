@@ -972,10 +972,6 @@ cislo_licence,ev_cislo,druh,technologie,mw
 310100551,113,tepelný,teplovodní,0.07
 310100551,114,tepelný,celkový,0.22
 310100551,114,tepelný,teplovodní,0.22
-310100551,115,tepelný,celkový,0.418
-310100551,115,tepelný,teplovodní,0.418
-310100551,116,tepelný,celkový,2.43
-310100551,116,tepelný,teplovodní,2.43
 310100551,117,elektrický,celkový,0.199
 310100551,117,tepelný,celkový,0.293
 310100551,117,tepelný,teplovodní,0.293
