@@ -112,6 +112,9 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 110100146,38,Teplárna Trmice,40004,Trmice,Edisonova,453,Ústí nad Labem,Ústecký,6
 110100146,39,Elektrárna Počerady 2,43401,Volevčice,Volevčice,,Most,Ústecký,3
 110100146,40,Elektrárna Ledvice IV B6,41848,Bílina,Bílina,,Teplice,Ústecký,1
+110100146,41,FVE Benešov,25601,Benešov,Benešov,,Benešov,Středočeský,1
+110100146,42,FVE Louny,44001,Louny,Louny,,Louny,Ústecký,1
+110100146,43,FVE Mladá Boleslav,29301,Mladá Boleslav,Zálužanská,1289,Mladá Boleslav,Středočeský,1
 110100159,1,MALÁ VODNÍ ELEKTRÁRNA VINEC,29301,Vinec,Vinec,55,Mladá Boleslav,Středočeský,3
 110100161,1,MVE TRŽEK,57001,Tržek,Tržek,2,Svitavy,Pardubický,1
 110100169,2,MVE Milenovice,39811,Protivín,Protivín,,Písek,Jihočeský,2
@@ -16655,6 +16658,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111018325,149,KJ - JOB AIR TECHNIC MOŠNOV,74251,Mošnov,Mošnov,,Nový Jičín,Moravskoslezský,1
 111018325,150,KJ - PROSTĚJOV ANGLICKÁ,79604,Prostějov,Holandská,,Prostějov,Olomoucký,1
 111018325,151,KJ - POLICE NAD METUJÍ,54954,Police nad Metují,K Sídlišti,,Náchod,Královéhradecký,1
+111018325,152,KJ - PODĚBRADY,29001,Poděbrady,Kunštátská,,Nymburk,Středočeský,1
 111018328,1,FVE - Suchánek,37007,Heřmaň,Heřmaň,67,České Budějovice,Jihočeský,1
 111018329,1,MVE Janovice,54213,Jívka,Jívka,,Trutnov,Královéhradecký,2
 111018331,1,FVE KENTAUR Domamyslice,79801,Prostějov,Domamyslická,346/59,Prostějov,Olomoucký,1
@@ -25124,6 +25128,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111225985,1,Biskupice 131,67557,Biskupice-Pulkov,Biskupice-Pulkov,131,Třebíč,Vysočina,1
 111225986,1,FVE - RD Květná,57201,Květná,Květná,37,Svitavy,Pardubický,1
 111225987,1,FVE Heřmaň 76,37007,Heřmaň,Heřmaň,76,České Budějovice,Jihočeský,1
+111225987,2,FVE Heřmaň 85613,37007,Heřmaň,Heřmaň,76,České Budějovice,Jihočeský,1
 111225988,1,"SLEZSKÁ 501, BOHUMÍN",73581,Bohumín,Slezská,501,Karviná,Moravskoslezský,1
 111225989,1,Přáslavice Ubytovna 1,78354,Přáslavice,Přáslavice,,Olomouc,Olomoucký,1
 111225989,2,Přáslavice Ubytovna 2,78354,Přáslavice,Přáslavice,,Olomouc,Olomoucký,1
@@ -27255,7 +27260,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 111328035,1,FVE Krasanovský - Praha,19800,Praha,Jahodnická,725/29,,,1
 111328036,1,FVE Antes,70030,Ostrava,Hasičská,1569,Ostrava-město,Moravskoslezský,1
 111328037,1,Velké Přílepy,25264,Velké Přílepy,Velké Přílepy,,Praha-západ,Středočeský,1
-111328038,1,FVE Pohořelice,76361,Pohořelice,Potoky,107,Zlín,Zlínský,1
+111328038,1,FVE Pohořelice,76361,Pohořelice,Potoky,107,Zlín,Zlínský,4
 111328039,1,FVE BIJOK,74283,Klimkovice,SNP,700,Ostrava-město,Moravskoslezský,1
 111328040,1,FVE - Drslavice,68733,Drslavice,Drslavice,,Uherské Hradiště,Zlínský,1
 111328041,1,FVE - Popovice,68604,Popovice,Popovice,310,Uherské Hradiště,Zlínský,1

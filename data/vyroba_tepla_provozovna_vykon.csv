@@ -5243,6 +5243,10 @@ cislo_licence,ev_cislo,druh,technologie,mw
 311018326,169,tepelný,celkový,0.478
 311018326,169,tepelný,teplovodní,0.478
 311018326,169,tepelný,výkon kvet,0.478
+311018326,170,elektrický,celkový,0.4
+311018326,170,tepelný,celkový,0.478
+311018326,170,tepelný,teplovodní,0.478
+311018326,170,tepelný,výkon kvet,0.478
 311018334,2,elektrický,celkový,7.457
 311018334,2,tepelný,celkový,23.0
 311018334,2,tepelný,parní,23.0
