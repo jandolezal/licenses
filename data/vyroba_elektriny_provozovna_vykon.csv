@@ -13008,6 +13008,8 @@ cislo_licence,ev_cislo,druh,technologie,mw
 110908721,1,elektrický,sluneční,0.011
 110908721,2,elektrický,celkový,0.003
 110908721,2,elektrický,sluneční,0.003
+110908721,3,elektrický,celkový,0.005
+110908721,3,elektrický,sluneční,0.005
 110908722,1,elektrický,celkový,0.001
 110908722,1,elektrický,sluneční,0.001
 110908723,1,elektrický,celkový,0.006
@@ -23958,6 +23960,8 @@ cislo_licence,ev_cislo,druh,technologie,mw
 111013563,1,elektrický,sluneční,0.005
 111013564,1,elektrický,celkový,0.005
 111013564,1,elektrický,sluneční,0.005
+111013564,2,elektrický,celkový,0.018
+111013564,2,elektrický,sluneční,0.018
 111013565,1,elektrický,celkový,0.013
 111013565,1,elektrický,sluneční,0.013
 111013567,1,elektrický,celkový,0.115
@@ -35995,8 +35999,8 @@ cislo_licence,ev_cislo,druh,technologie,mw
 111118688,1,tepelný,plynový a spalovací,0.809
 111118691,1,elektrický,celkový,0.111
 111118691,1,elektrický,vodní,0.111
-111118696,1,elektrický,celkový,0.005
-111118696,1,elektrický,sluneční,0.005
+111118696,1,elektrický,celkový,0.017
+111118696,1,elektrický,sluneční,0.017
 111118699,1,elektrický,celkový,0.025
 111118699,1,elektrický,sluneční,0.025
 111118702,1,elektrický,celkový,0.098
@@ -72969,9 +72973,9 @@ cislo_licence,ev_cislo,druh,technologie,mw
 111935864,1,elektrický,sluneční,0.132
 111935866,1,elektrický,sluneční,0.023
 111935867,1,elektrický,celkový,4.0
-111935867,1,tepelný,celkový,56.11
+111935867,1,tepelný,celkový,94.088
 111935867,1,elektrický,parní,4.0
-111935867,1,tepelný,parní,56.11
+111935867,1,tepelný,parní,94.088
 111935867,2,elektrický,celkový,0.854
 111935867,2,tepelný,celkový,0.988
 111935867,2,elektrický,plynový a spalovací,0.854
@@ -73654,6 +73658,8 @@ cislo_licence,ev_cislo,druh,technologie,mw
 112036181,1,elektrický,sluneční,0.029
 112036182,1,elektrický,celkový,0.02
 112036182,1,elektrický,sluneční,0.02
+112036182,2,elektrický,celkový,0.049
+112036182,2,elektrický,sluneční,0.049
 112036183,1,elektrický,celkový,0.005
 112036183,1,elektrický,sluneční,0.005
 112036184,1,elektrický,celkový,0.02
