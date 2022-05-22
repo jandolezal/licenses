@@ -10,6 +10,9 @@ from scrapy.loader import ItemLoader
 from licenses.items import HolderItem
 
 
+BASE_URL = "https://www.eru.cz"
+
+
 # Pomocné funkce pro čistění vstupních dat
 def remove_fluff(x):
     if (x == "") or ("----" in x):
@@ -58,13 +61,19 @@ class HolderLoader(ItemLoader):
 class HoldersSpider(scrapy.Spider):
     name = "drzitel"
 
-    # Energy Regulatory Office has a new website.
-    # I will see next week how exactly they generate a link of the holders page
     start_urls = [
-        "https://www.eru.cz/seznam-drzitelu-licenci-uznani-opravneni-podnikat-ke-dni-8-4-2022",
+        BASE_URL + "/o-drzitelich-licence",
     ]
 
+
     def parse(self, response):
+        """Retrieve link to newest article which contains links to xml files with data and yield request.
+        """
+        article_url = BASE_URL + response.xpath("//h3/span/a/@href").get()
+        yield scrapy.Request(url=article_url, callback=self.parse_xml_links, encoding="utf-8")
+
+
+    def parse_xml_links(self, response):
         """Parse initial page which contains list of links to xml files.
         Extract vocabulary of business types. Generate requests for these urls.
         """
@@ -84,7 +93,7 @@ class HoldersSpider(scrapy.Spider):
                 # Gather list of business codes and the description
                 business_list.append({"kod": code, "predmet": description})
                 # Gather paths to the xml files
-                xml_urls.append('https://www.eru.cz' + xml_href)
+                xml_urls.append(BASE_URL + xml_href)
 
         # Save the businesses codes to a csv file
         pathlib.Path('data').mkdir(exist_ok=True)
