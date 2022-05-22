@@ -7059,6 +7059,10 @@ cislo_licence,ev_cislo,druh,technologie,mw
 312137020,1,tepelný,celkový,0.181
 312137020,1,tepelný,teplovodní,0.181
 312137020,1,tepelný,výkon kvet,0.083
+312137137,1,elektrický,celkový,0.288
+312137137,1,tepelný,celkový,0.446
+312137137,1,tepelný,teplovodní,0.446
+312137137,1,tepelný,výkon kvet,0.446
 312137167,1,tepelný,celkový,16.795
 312137167,1,tepelný,parní,16.795
 312137202,1,tepelný,celkový,0.25

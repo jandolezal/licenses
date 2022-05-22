@@ -2682,6 +2682,10 @@ cislo_licence,druh,technologie,mw
 312137020,tepelný,celkový,0.181
 312137020,tepelný,teplovodní,0.181
 312137020,tepelný,výkon kvet,0.083
+312137137,elektrický,celkový,0.288
+312137137,tepelný,celkový,0.446
+312137137,tepelný,teplovodní,0.446
+312137137,tepelný,výkon kvet,0.446
 312137167,tepelný,celkový,16.795
 312137167,tepelný,parní,16.795
 312137202,tepelný,celkový,0.25
