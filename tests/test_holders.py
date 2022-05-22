@@ -12,18 +12,18 @@ def test_parse():
         body=Path('tests/drzitele.html').read_bytes(),
     )
 
-    xml_urls_list = list(holders.HoldersSpider().parse(response))
+    xml_urls_list = list(holders.HoldersSpider().parse_xml_links(response))
 
     first_url = xml_urls_list[0]
     assert (
         first_url.url
-        == 'https://www.eru.cz/documents/10540/2407284/LIC_11_2021-05-28-ver-1.xml/a1868a3b-ec72-44fc-bdda-561d6308fedc'
+        == 'https://www.eru.cz/sites/default/files/obsah/prilohy/lic112022-05-20-ver-1_0.xml'
     )
 
     last_url = xml_urls_list[-1]
     assert (
         last_url.url
-        == 'https://www.eru.cz/documents/10540/2407284/LIC_32_2021-05-28-ver-1.xml/a426f274-dde2-4c00-87de-0fa1e644337a'
+        == 'https://www.eru.cz/sites/default/files/obsah/prilohy/lic322022-05-20-ver-1_0.xml'
     )
 
 
