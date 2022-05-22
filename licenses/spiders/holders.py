@@ -65,13 +65,12 @@ class HoldersSpider(scrapy.Spider):
         BASE_URL + "/o-drzitelich-licence",
     ]
 
-
     def parse(self, response):
-        """Retrieve link to newest article which contains links to xml files with data and yield request.
-        """
+        """Retrieve link to newest article which contains links to xml files with data and yield request."""
         article_url = BASE_URL + response.xpath("//h3/span/a/@href").get()
-        yield scrapy.Request(url=article_url, callback=self.parse_xml_links, encoding="utf-8")
-
+        yield scrapy.Request(
+            url=article_url, callback=self.parse_xml_links, encoding="utf-8"
+        )
 
     def parse_xml_links(self, response):
         """Parse initial page which contains list of links to xml files.
@@ -86,7 +85,7 @@ class HoldersSpider(scrapy.Spider):
 
         # Create vocabulary of codes and business descriptions and export them to csv
         for i, a in enumerate(a_with_xml):
-            if i % 2 == 0: # there are two links to similar xml file. skip one of them
+            if i % 2 == 0:  # there are two links to similar xml file. skip one of them
                 xml_href = a.xpath('@href').get()
                 code = extract_business_code(xml_href)
                 description = a.xpath('text()').get().lower()
