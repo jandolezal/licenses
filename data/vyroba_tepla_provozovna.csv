@@ -151,6 +151,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100265,26,Kotelna Uhříněves 3,10400,Praha,Ke Kříži,1636,,,4
 310100265,27,Kotelna Uhříněves 4,10400,Praha,Ke Kříži,1653/6,,,4
 310100265,28,Kotelna V Závětří,17000,Praha,V závětří,385/8,,,4
+310100265,29,Kotelna Hlavatého,14900,Praha,Hlavatého,618/1,,,3
+310100265,30,Kotelna Zelenky-Hajského,13000,Praha,Zelenky Hajského,1935/2,,,2
 310100267,1,Kotelna Březno u Chomutova,43145,Březno,Chomutovská,318,Chomutov,Ústecký,10
 310100287,1,"Energetika Chropyně, a.s.",76811,Chropyně,Komenského,75,Kroměříž,Zlínský,5
 310100302,1,Elektrárna Mělník EMĚ I,27703,Horní Počaply,Horní Počaply,,Mělník,Středočeský,6
@@ -288,7 +290,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100551,5,Teplárna Olomouc,77211,Olomouc,Tovární,839/46,Olomouc,Olomoucký,2
 310100551,6,Špičková výtopna Oloumouc,77211,Olomouc,Pavelkova,,Olomouc,Olomoucký,3
 310100551,7,Fakultní nemocnice Olomouc,77211,Olomouc,I. P. Pavlova,,Olomouc,Olomoucký,3
-310100551,9,Teplárna Přerov,75042,Přerov,Tovačovská,2924/18,Přerov,Olomoucký,3
+310100551,9,Teplárna Přerov,75042,Přerov,Tovačovská,2924/18,Přerov,Olomoucký,5
 310100551,10,Teplárna Frýdek-Místek,73805,Frýdek-Místek,Frýdek-Místek,,Frýdek-Místek,Moravskoslezský,3
 310100551,11,Teplárna Krnov,79400,Krnov,Revoluční,960/51,Bruntál,Moravskoslezský,2
 310100551,12,Výtopna Pod Cvilínem,79400,Krnov,Opavská,426/57,Bruntál,Moravskoslezský,2
@@ -303,7 +305,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100551,28,Provozovna Nemocnice s poliklinikou Havířov,73601,Havířov,Dělnická,1132/24,Karviná,Moravskoslezský,3
 310100551,32,K 095,13000,Praha,Křišťanova,889/13,,,2
 310100551,33,K 100,11000,Praha,Vodičkova,681/18,,,5
-310100551,34,K 606,16900,Praha,Mládeže,1627/13,,,2
+310100551,34,G606,16900,Praha,Mládeže,1627/13,,,2
 310100551,35,K 032,18600,Praha,Karlínské náměstí,316/7,,,4
 310100551,37,K016,10200,Praha,Pražská,1014/2,,,2
 310100551,38,K128,10700,Praha,Netlucká,634,,,2
@@ -315,7 +317,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100551,46,Kotelna Loučka,74101,Nový Jičín,Loučka,445,Nový Jičín,Moravskoslezský,4
 310100551,47,Kotelna Mendelova,74101,Nový Jičín,Mendelova,1650/10,Nový Jičín,Moravskoslezský,2
 310100551,48,Kotelna Poděbradova,74101,Nový Jičín,Poděbradova,2025/14,Nový Jičín,Moravskoslezský,4
-310100551,49,K 621,16000,Praha,Patočkova,978/20,,,4
+310100551,49,K 621,16000,Praha,Patočkova,978/20,,,2
 310100551,50,Provozovna Nemocnice Frýdek-Místek,73801,Frýdek-Místek,El. Krásnohorské,321,Frýdek-Místek,Moravskoslezský,2
 310100551,52,K 157,13000,Praha,Kališnická,379,,,2
 310100551,53,Provozovna Bazén,74101,Nový Jičín,Novosady,914/10,Nový Jičín,Moravskoslezský,4
@@ -360,11 +362,10 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100551,98,G664 Nad údolím C,15500,Praha,Radouňova,2682/26,,,2
 310100551,99,G829 Na Neklance,15000,Praha,Na Neklance,3232/38,,,2
 310100551,100,G830 Palác Koruna,11000,Praha,Václavské náměstí,846/1,,,3
-310100551,101,G697 ZŠ Loučanská,15300,Praha,Praha,1112/3,,,1
+310100551,101,G697 ZŠ Loučanská,15300,Praha,Praha,1112/3,,,4
 310100551,102,G840 ZŠ Fingerova,15800,Praha,Fingerova,2186/17,,,2
 310100551,103,G644 Vaníčkova,16900,Praha,Vaníčkova,1230,,,3
 310100551,104,G0022 Fr. lyceum,15000,Praha,Drtinova,304/7,,,3
-310100551,105,G831 Ve Žlíbku,19300,Praha,Ve Žlíbku,2518/17,,,2
 310100551,106,G896 Byty Roztoky II,25263,Roztoky,Lederova,1998,Praha-západ,Středočeský,2
 310100551,107,G954 Vimbau,14800,Praha,Dobronická,,,,4
 310100551,108,G837 V Javorch 2770,19300,Praha,V Javorech,,,,4
@@ -383,6 +384,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100551,123,G430 Centrum Nové Chabry,18400,Praha,Za Pískovnou,1210/2,,,2
 310100551,124,G571 Jahodnice I,19800,Praha,U Hostavického potoka,740/49,,,2
 310100551,125,PK Lutín,78349,Lutín,Na Sídlišti,,Olomouc,Olomoucký,5
+310100551,126,G997 5. Května 339,35491,Lázně Kynžvart,5. Květn,5,Cheb,Karlovarský,1
+310100551,127,G997 Krátká 359,35491,Lázně Kynžvart,Krátká,,Cheb,Karlovarský,3
 310100554,1,KO 50 Jahodiště,28201,Český Brod,Palackého,,Kolín,Středočeský,5
 310100554,3,KO 52 Jungmanova,28201,Český Brod,Jungmanova,440,Kolín,Středočeský,2
 310100554,4,KO 53 Jungmanova,28201,Český Brod,Jungmanova,1163,Kolín,Středočeský,2
@@ -860,7 +863,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310101539,1,Plynová kotelna I. kategorie Č.ST.P. 223/4 KÚ Bečov u Mostu,43526,Bečov,Bečov,,Most,Ústecký,3
 310101540,3,NTL plynová kotelna G 14,69006,Břeclav,Hájová,1090,Břeclav,Jihomoravský,3
 310101540,7,NTL plynová kotelna G 18,69002,Břeclav,Na Valtické,628,Břeclav,Jihomoravský,5
-310101540,9,NTL plynová kotelna G 22,69002,Břeclav,Fintajslova,2173/3,Břeclav,Jihomoravský,3
 310101540,10,NTL plynová kotelna G 24,69002,Břeclav,Sladová,2854,Břeclav,Jihomoravský,3
 310101542,1,Kotelna Hálkova 861,33202,Starý Plzenec,Hálkova,861,Plzeň-jih,Plzeňský,2
 310101542,2,Kotelna Hálkova 969,33202,Starý Plzenec,Hálkova,969,Plzeň-jih,Plzeňský,2
@@ -880,9 +882,8 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310101586,1,"Teplárna ŽĎAS, a.s.",59171,Žďár nad Sázavou,Srojírenská,675/6,Žďár nad Sázavou,Vysočina,7
 310101588,4,Kotelna Olbrachtova,69501,Hodonín,Olbrachtova,,Hodonín,Jihomoravský,1
 310101594,1,Kotelna V - 15 - Centrum II.,74901,Vítkov,Selská,,Opava,Moravskoslezský,2
-310101594,2,Kotelna V - 6 - Budišovská,74901,Vítkov,Budišovská,500,Opava,Moravskoslezský,3
 310101594,3,Wolkerova,74901,Vítkov,Wolkerova,,Opava,Moravskoslezský,2
-310101594,4,Kotelna V - 1 Oderská,74901,Vítkov,Oderská,215,Opava,Moravskoslezský,3
+310101594,4,"Vítkov, Oderská 215",74901,Vítkov,Oderská,215,Opava,Moravskoslezský,2
 310101594,5,Kotelna V - 4,74901,Vítkov,Husova,643,Opava,Moravskoslezský,3
 310101594,6,Kotelna V - 8,74901,Vítkov,Opavská,687,Opava,Moravskoslezský,4
 310101594,7,Kotelna V - 9,74901,Vítkov,Komenského,152,Opava,Moravskoslezský,3
@@ -1900,7 +1901,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311015241,3,Záložní zdroj tepla Farářství Hradec Králové,50002,Hradec Králové,Hradec Králové,1519,Hradec Králové,Královéhradecký,1
 311015241,4,Záložní zdroj tepla Chrudim,53701,Chrudim,Dašická,1185,Chrudim,Pardubický,1
 311015241,5,Záložní zdroj CZT - Nemocnice Chrudim,53727,Chrudim,Václavská,570,Chrudim,Pardubický,2
-311015241,6,Záložní zdroje tepla Hradec Králové,50002,Hradec Králové,Brněnská,207,Hradec Králové,Královéhradecký,2
 311015241,7,Záložní zdroje tepla ZVU Hradec Králové,50002,Hradec Králové,Pražská,322,Hradec Králové,Královéhradecký,2
 311015353,1,Kotelna 344,79331,Světlá Hora,Světlá,344,Bruntál,Moravskoslezský,3
 311015353,2,Kotelna 378,79331,Světlá Hora,Světlá,378,Bruntál,Moravskoslezský,3
@@ -2640,6 +2640,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311935868,3,Kopřivnice KGJ1,74221,Kopřivnice,Areál Tatry,,Nový Jičín,Moravskoslezský,1
 311935868,4,KGJ Libčice,25266,Libčice nad Vltavou,Pod Saharou,715,Praha-západ,Středočeský,1
 311935868,5,Kopřivnice KGJ2,74221,Kopřivnice,Areál Tatry,,Nový Jičín,Moravskoslezský,1
+311935868,6,KGJ ČSLA,29501,Mnichovo Hradiště,Čsl. armády,1442,Mladá Boleslav,Středočeský,1
 311935876,1,kotelna Mora Moravia,78365,Hlubočky,Nádražní,,Olomouc,Olomoucký,2
 311935886,1,Teplárna Plhov,54701,Náchod,Plhovská,544,Náchod,Královéhradecký,1
 311935886,2,KGJ 1,54701,Náchod,Plhovská,544,Náchod,Královéhradecký,1
@@ -2652,7 +2653,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 312036068,3,VÝTOPNA KOCANDA,76005,Zlín,Okružní,,Zlín,Zlínský,4
 312036139,1,CZT Příbram I,26101,Příbram VI,Obecnická,,Příbram,Středočeský,2
 312036152,1,KGJ Florcenter,77900,Olomouc,Olomouc,,Olomouc,Olomoucký,1
-312036174,1,Kotelna Hranice,75301,Hranice,Tovární,,Přerov,Olomoucký,4
+312036174,1,Kotelna Hranice,75301,Hranice,Tovární,,Přerov,Olomoucký,2
 312036210,1,BPS Chabičovice,38232,Mirkovice,Mirkovice,,Český Krumlov,Jihočeský,4
 312036347,1,ENERGOBLOK Bouzov,78325,Bouzov,Bouzov,,Olomouc,Olomoucký,1
 312036453,1,Automedia s.r.o.,63800,Brno,Okružní,732/5,Brno-město,Jihomoravský,1
@@ -2697,5 +2698,6 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 312137202,1,Kotelna Čihovice,37501,Týn nad Vltavou,Čihovice,30,České Budějovice,Jihočeský,1
 312137214,1,BPS Domašov u Šternb,78501,Domašov u Šternberka,Domašov u Šternberka,,Olomouc,Olomoucký,2
 312137278,1,CZT Příbram II,26101,Příbram,Obecnická,,Příbram,Středočeský,1
+312237331,1,ECR Rapotín,78814,Rapotín,Jesenická,,Šumperk,Olomoucký,1
 312237340,1,Teplárna Avia Praha,19903,Praha 9,Beranových,,,,5
 312237340,2,Teplárna Ďáblice,18200,Praha,Ďáblická,,,,2
