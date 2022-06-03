@@ -2618,6 +2618,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 311935758,1,"Kotelna - Drahotuše, Hranice",75301,Hranice,Olomoucká,,Přerov,Olomoucký,5
 311935758,2,"KJ - Praha, Stodůlky",15500,Praha,Jeremiášova,,,,1
 311935758,3,"KJ - Ostrava, Vítkovice",70300,Ostrava,Ruská,2995/20,Ostrava-město,Moravskoslezský,1
+311935758,4,KJ - Hranice,75301,Hranice,Tovární,,Přerov,Olomoucký,2
 311935782,1,EVECONT,39102,Planá nad Lužnicí,Průmyslová,,Tábor,Jihočeský,2
 311935792,1,Elektrodový kotel,53701,Chrudim,Chrudim,,Chrudim,Pardubický,1
 311935792,2,KJ1 Chrudim,53701,Chrudim,Průmyslová,90,Chrudim,Pardubický,1
@@ -2687,6 +2688,9 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 312136750,6,HRNČÍŘSKÁ 6,40001,Ústí nad Labem,Hrnčířská,6/9,Ústí nad Labem,Ústecký,3
 312136750,7,MASARYKOVA 67,40001,Ústí nad Labem,Masarykova,2313/67,Ústí nad Labem,Ústecký,1
 312136750,8,KLÍŠSKÁ 53,40001,Ústí nad Labem,Klíšská,2057/53,Ústí nad Labem,Ústecký,1
+312136750,9,Mošnova 10,40011,Ústí nad Labem,Mošnova,1967/10,Ústí nad Labem,Ústecký,1
+312136750,10,Sadová 7,40001,Ústí nad Labem,Sadová,1917/7,Ústí nad Labem,Ústecký,1
+312136750,11,Bratislavská 16,40001,Ústí nad Labem,Bratislavská,2287/16,Ústí nad Labem,Ústecký,1
 312136758,1,Sytherm s.r.o.,46841,Tanvald,Tanvald,159,Jablonec nad Nisou,Liberecký,1
 312136773,1,Dlouhá Ves Kotelna,34201,Dlouhá Ves,Dlouhá Ves,315,Klatovy,Plzeňský,1
 312136924,1,BPS Kojetín,75201,Kojetín,Komenského náměstí,,Přerov,Olomoucký,1
