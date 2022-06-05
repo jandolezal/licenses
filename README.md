@@ -1,9 +1,8 @@
 # Scrape licenses from Energy Regulatory Office
 
-Python package build with Scrapy to get data about [licenses](http://licence.eru.cz/) and their [holders](https://www.eru.cz/licence/informace-o-drzitelich) from the Czech Energy Regulatory Office website.
+Python package written with Scrapy to get data about [licenses](http://licence.eru.cz/) for electricity and heat generation in Czechia and their [holders](https://www.eru.cz/o-drzitelich-licence) from the Czech Energy Regulatory Office website.
 
-There is a Datasette app [licence-eru](https://licence-eru.herokuapp.com/) hosted at Heroku with the final datasets (at the moment they are not updated regularly).
-
+Data are scraped every Friday and a Datasette app [licence-eru](https://licence-eru.herokuapp.com/) hosted at Heroku provides recent datasets.
 
 ## Use
 
