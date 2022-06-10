@@ -3216,8 +3216,8 @@ cislo_licence,druh,technologie,mw
 110705225,elektrický,celkový,0.025
 110705225,elektrický,sluneční,0.015
 110705225,elektrický,vodní,0.01
-110705226,elektrický,celkový,0.003
-110705226,elektrický,sluneční,0.003
+110705226,elektrický,celkový,0.007
+110705226,elektrický,sluneční,0.007
 110705228,elektrický,celkový,0.006
 110705228,elektrický,sluneční,0.006
 110705230,elektrický,celkový,0.022
@@ -3400,11 +3400,11 @@ cislo_licence,druh,technologie,mw
 110705352,elektrický,sluneční,0.003
 110705353,elektrický,celkový,0.002
 110705353,elektrický,sluneční,0.002
-110705354,elektrický,celkový,0.07
+110705354,elektrický,celkový,0.082
 110705354,tepelný,celkový,0.089
 110705354,elektrický,plynový a spalovací,0.05
 110705354,tepelný,plynový a spalovací,0.089
-110705354,elektrický,sluneční,0.02
+110705354,elektrický,sluneční,0.032
 110705358,elektrický,celkový,0.003
 110705358,elektrický,sluneční,0.003
 110705359,elektrický,celkový,0.019
@@ -14133,8 +14133,8 @@ cislo_licence,druh,technologie,mw
 110911166,elektrický,sluneční,0.004
 110911167,elektrický,celkový,0.004
 110911167,elektrický,sluneční,0.004
-110911168,elektrický,celkový,0.014
-110911168,elektrický,sluneční,0.014
+110911168,elektrický,celkový,0.019
+110911168,elektrický,sluneční,0.019
 110911169,elektrický,celkový,0.006
 110911169,elektrický,sluneční,0.006
 110911170,elektrický,celkový,0.005
@@ -15340,8 +15340,8 @@ cislo_licence,druh,technologie,mw
 110911796,elektrický,sluneční,0.006
 110911797,elektrický,celkový,0.003
 110911797,elektrický,sluneční,0.003
-110911798,elektrický,celkový,0.013
-110911798,elektrický,sluneční,0.013
+110911798,elektrický,celkový,0.023
+110911798,elektrický,sluneční,0.023
 110911800,elektrický,celkový,0.007
 110911800,elektrický,sluneční,0.007
 110911801,elektrický,celkový,0.021
@@ -17948,8 +17948,8 @@ cislo_licence,druh,technologie,mw
 111013191,elektrický,sluneční,0.013
 111013192,elektrický,celkový,0.009
 111013192,elektrický,sluneční,0.009
-111013193,elektrický,celkový,0.011
-111013193,elektrický,sluneční,0.011
+111013193,elektrický,celkový,0.019
+111013193,elektrický,sluneční,0.019
 111013194,elektrický,celkový,0.013
 111013194,elektrický,sluneční,0.013
 111013195,elektrický,celkový,1.894
@@ -32505,8 +32505,8 @@ cislo_licence,druh,technologie,mw
 111220930,elektrický,sluneční,0.005
 111220931,elektrický,celkový,0.004
 111220931,elektrický,sluneční,0.004
-111220932,elektrický,celkový,0.016
-111220932,elektrický,sluneční,0.016
+111220932,elektrický,celkový,0.006
+111220932,elektrický,sluneční,0.006
 111220933,elektrický,celkový,0.033
 111220933,elektrický,sluneční,0.033
 111220934,elektrický,celkový,0.005
@@ -40870,8 +40870,8 @@ cislo_licence,druh,technologie,mw
 111225101,elektrický,sluneční,0.015
 111225102,elektrický,celkový,0.008
 111225102,elektrický,sluneční,0.008
-111225103,elektrický,celkový,0.012
-111225103,elektrický,sluneční,0.012
+111225103,elektrický,celkový,0.018
+111225103,elektrický,sluneční,0.018
 111225104,elektrický,celkový,0.006
 111225104,elektrický,sluneční,0.006
 111225105,elektrický,celkový,0.007
@@ -43565,8 +43565,8 @@ cislo_licence,druh,technologie,mw
 111226465,elektrický,sluneční,0.005
 111226466,elektrický,celkový,0.005
 111226466,elektrický,sluneční,0.005
-111226467,elektrický,celkový,0.006
-111226467,elektrický,sluneční,0.006
+111226467,elektrický,celkový,0.011
+111226467,elektrický,sluneční,0.011
 111226468,elektrický,celkový,0.025
 111226468,elektrický,sluneční,0.025
 111226469,elektrický,celkový,0.01
@@ -46525,8 +46525,8 @@ cislo_licence,druh,technologie,mw
 111328050,elektrický,sluneční,0.009
 111328051,elektrický,celkový,0.012
 111328051,elektrický,sluneční,0.012
-111328052,elektrický,celkový,0.005
-111328052,elektrický,sluneční,0.005
+111328052,elektrický,celkový,0.009
+111328052,elektrický,sluneční,0.009
 111328053,elektrický,celkový,0.012
 111328053,elektrický,sluneční,0.012
 111328054,elektrický,celkový,0.005
@@ -53188,8 +53188,8 @@ cislo_licence,druh,technologie,mw
 111331487,elektrický,sluneční,0.008
 111331488,elektrický,celkový,0.005
 111331488,elektrický,sluneční,0.005
-111331489,elektrický,celkový,0.059
-111331489,elektrický,sluneční,0.059
+111331489,elektrický,celkový,0.079
+111331489,elektrický,sluneční,0.079
 111331490,elektrický,celkový,0.005
 111331490,elektrický,sluneční,0.005
 111331491,elektrický,celkový,0.006
@@ -56236,8 +56236,8 @@ cislo_licence,druh,technologie,mw
 111533205,elektrický,sluneční,0.005
 111533206,elektrický,celkový,0.005
 111533206,elektrický,sluneční,0.005
-111533208,elektrický,celkový,0.007
-111533208,elektrický,sluneční,0.007
+111533208,elektrický,celkový,0.017
+111533208,elektrický,sluneční,0.017
 111533211,elektrický,celkový,0.007
 111533211,elektrický,sluneční,0.007
 111533212,elektrický,celkový,0.003
@@ -59515,7 +59515,7 @@ cislo_licence,druh,technologie,mw
 111935483,elektrický,celkový,0.014
 111935483,elektrický,sluneční,0.014
 111935485,elektrický,celkový,0.407
-111935485,elektrický,sluneční,0.407
+111935485,elektrický,sluneční,0.82
 111935486,elektrický,celkový,0.067
 111935486,elektrický,sluneční,0.067
 111935488,elektrický,celkový,0.005
@@ -61354,8 +61354,8 @@ cislo_licence,druh,technologie,mw
 112136611,tepelný,celkový,0.311
 112136611,elektrický,plynový a spalovací,0.199
 112136611,tepelný,plynový a spalovací,0.311
-112136612,elektrický,celkový,0.2
-112136612,elektrický,sluneční,0.2
+112136612,elektrický,celkový,0.229
+112136612,elektrický,sluneční,0.229
 112136613,elektrický,celkový,0.005
 112136613,elektrický,sluneční,0.005
 112136614,elektrický,celkový,0.017
@@ -62394,6 +62394,8 @@ cislo_licence,druh,technologie,mw
 112137243,elektrický,sluneční,0.03
 112137244,elektrický,celkový,0.619
 112137244,elektrický,sluneční,0.619
+112137245,elektrický,celkový,0.019
+112137245,elektrický,sluneční,0.019
 112137246,elektrický,celkový,0.013
 112137246,elektrický,sluneční,0.013
 112137247,elektrický,celkový,0.1
@@ -62572,6 +62574,8 @@ cislo_licence,druh,technologie,mw
 112237364,elektrický,sluneční,0.015
 112237365,elektrický,celkový,0.03
 112237365,elektrický,sluneční,0.03
+112237366,elektrický,celkový,0.064
+112237366,elektrický,sluneční,0.064
 112237367,elektrický,celkový,0.024
 112237367,elektrický,sluneční,0.024
 112237368,elektrický,celkový,0.029
@@ -62672,6 +62676,10 @@ cislo_licence,druh,technologie,mw
 112237428,elektrický,sluneční,0.004
 112237429,elektrický,celkový,0.034
 112237429,elektrický,sluneční,0.034
+112237430,elektrický,celkový,0.047
+112237430,elektrický,sluneční,0.047
+112237433,elektrický,celkový,0.004
+112237433,elektrický,sluneční,0.004
 112237434,elektrický,celkový,0.004
 112237434,elektrický,sluneční,0.004
 112237435,elektrický,celkový,0.004
@@ -62770,6 +62778,8 @@ cislo_licence,druh,technologie,mw
 112237487,elektrický,sluneční,0.067
 112237491,elektrický,celkový,0.02
 112237491,elektrický,sluneční,0.02
+112237492,elektrický,celkový,0.02
+112237492,elektrický,sluneční,0.02
 112237495,elektrický,celkový,0.02
 112237495,elektrický,sluneční,0.02
 112237497,elektrický,celkový,0.02
@@ -62780,6 +62790,8 @@ cislo_licence,druh,technologie,mw
 112237499,elektrický,sluneční,0.02
 112237500,elektrický,celkový,0.004
 112237500,elektrický,sluneční,0.004
+112237502,elektrický,celkový,0.03
+112237502,elektrický,sluneční,0.03
 112237503,elektrický,celkový,0.007
 112237503,elektrický,sluneční,0.007
 112237509,elektrický,celkový,0.019
@@ -62788,6 +62800,8 @@ cislo_licence,druh,technologie,mw
 112237510,elektrický,sluneční,0.009
 112237511,elektrický,celkový,0.03
 112237511,elektrický,sluneční,0.03
+112237512,elektrický,celkový,0.02
+112237512,elektrický,sluneční,0.02
 112237514,elektrický,celkový,0.009
 112237514,elektrický,sluneční,0.009
 112237515,elektrický,celkový,0.02
@@ -62808,6 +62822,8 @@ cislo_licence,druh,technologie,mw
 112237523,elektrický,sluneční,0.011
 112237524,elektrický,celkový,0.004
 112237524,elektrický,sluneční,0.004
+112237533,elektrický,celkový,0.02
+112237533,elektrický,sluneční,0.02
 112237534,elektrický,celkový,0.02
 112237534,elektrický,sluneční,0.02
 112237535,elektrický,celkový,0.011
@@ -62836,10 +62852,16 @@ cislo_licence,druh,technologie,mw
 112237560,elektrický,sluneční,0.019
 112237561,elektrický,celkový,0.005
 112237561,elektrický,sluneční,0.005
+112237567,elektrický,celkový,0.03
+112237567,elektrický,vodní,0.03
+112237571,elektrický,celkový,0.005
+112237571,elektrický,sluneční,0.005
 112237574,elektrický,celkový,0.008
 112237574,elektrický,sluneční,0.008
 112237576,elektrický,celkový,0.01
 112237576,elektrický,sluneční,0.01
+112237581,elektrický,celkový,0.272
+112237581,elektrický,vodní,0.272
 112237582,elektrický,celkový,0.005
 112237582,elektrický,sluneční,0.005
 112237584,elektrický,celkový,0.013
@@ -62852,6 +62874,10 @@ cislo_licence,druh,technologie,mw
 112237589,elektrický,sluneční,0.02
 112237590,elektrický,celkový,0.009
 112237590,elektrický,sluneční,0.009
+112237593,elektrický,celkový,0.013
+112237593,elektrický,sluneční,0.013
+112237597,elektrický,celkový,0.002
+112237597,elektrický,sluneční,0.002
 112237600,elektrický,celkový,0.049
 112237600,elektrický,sluneční,0.049
 112237606,elektrický,celkový,0.01
@@ -62862,3 +62888,11 @@ cislo_licence,druh,technologie,mw
 112237609,elektrický,sluneční,0.005
 112237613,elektrický,celkový,0.01
 112237613,elektrický,sluneční,0.01
+112237616,elektrický,celkový,0.009
+112237616,elektrický,sluneční,0.009
+112237617,elektrický,celkový,0.006
+112237617,elektrický,sluneční,0.006
+112237619,elektrický,celkový,0.02
+112237619,elektrický,sluneční,0.02
+112237625,elektrický,celkový,0.016
+112237625,elektrický,sluneční,0.016

@@ -1,6 +1,6 @@
 cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310100016,1,Centrální kotelna,67128,Velký Karlov,Velký Karlov,72,Znojmo,Jihomoravský,2
-310100019,1,Plynová kotelna K 1 Lnářská,39601,Humpolec,Lnářská,473/3,Pelhřimov,Vysočina,3
+310100019,1,K1 Lnářská,39601,Humpolec,Lnářská,,Pelhřimov,Vysočina,2
 310100019,2,Plynová kotelna K2 Soukenická,39601,Humpolec,Soukenická,706,Pelhřimov,Vysočina,2
 310100019,3,Plynová kotelna K 3 Fugnerova,39601,Humpolec,Fugnerova,1640,Pelhřimov,Vysočina,2
 310100019,4,K5 Na Rybníčku,39601,Humpolec,Na Rybníčku,3010/2,Pelhřimov,Vysočina,3
@@ -1062,7 +1062,7 @@ cislo_licence,ev_cislo,nazev,psc,obec,ulice,cp,okres,kraj,pocet_zdroju
 310102142,2,Šumburk,46841,Tanvald,Vítězná,568,Jablonec nad Nisou,Liberecký,3
 310102145,1,DEZ Druhotný energetický zdroj,70702,Ostrava,Vratimovská,689,Ostrava,kraj,2
 310102212,1,Kotelna Sídliště,67201,Moravský Krumlov,Sídliště Zachráněná,364,Znojmo,Jihomoravský,3
-310102709,2,Kotelna - K3,76321,Slavičín,Malé Pole,,Zlín,Zlínský,9
+310102709,2,Kotelna - K3,76321,Slavičín,Malé Pole,,Zlín,Zlínský,10
 310102735,1,K1 Dukelská,78391,Uničov,Dukelská,843,Olomouc,Olomoucký,5
 310102735,2,K2 Bratří Čapků,78391,Uničov,Bratří Čapků,821,Olomouc,Olomoucký,4
 310102735,3,K3 Plzeňská,78391,Uničov,Plzeňská,845,Olomouc,Olomoucký,3
