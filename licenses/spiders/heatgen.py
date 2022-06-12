@@ -15,7 +15,7 @@ from typing import List, Tuple
 
 import scrapy
 
-from licenses.items import HeatGenItem, CapacityItem, FacilityItem
+from licenses.items import LicenseItem, CapacityItem, FacilityItem, FacilityCapacityItem
 
 
 def prepare_start_urls(
@@ -83,30 +83,34 @@ class HeatGenSpider(scrapy.Spider):
         return psc, obec, ulice, cp, okres, kraj
 
     @staticmethod
-    def _process_capacity_row(item, row_data):
+    def _process_capacity_row(entity, row_data, is_facility=False):
         # Tři sloupce mají výkony
         if len(row_data) == 3:
             tech = row_data[0].strip().lower()
-
             try:
                 el = float(row_data[1].replace(" ", ""))
                 if el > 0:
-                    item.vykony.append(CapacityItem(druh="elektrický", technologie=tech, mw=el))
+                    if is_facility:
+                        entity.vykony.append(FacilityCapacityItem(lic_id=entity.lic_id, ev=entity.ev, druh="elektrický", technologie=tech, mw=el))
+                    else:
+                        entity.vykony.append(CapacityItem(lic_id=entity.lic_id, druh="elektrický", technologie=tech, mw=el))
             except ValueError:
                 pass
             try:
                 tep = float(row_data[2].replace(" ", ""))
                 if tep > 0:
-                    item.vykony.append(CapacityItem(druh="tepelný", technologie=tech, mw=tep))
+                    if is_facility:
+                        entity.vykony.append(FacilityCapacityItem(lic_id=entity.lic_id, ev=entity.ev, druh="tepelný", technologie=tech, mw=tep))
+                    else:
+                        entity.vykony.append(CapacityItem(lic_id=entity.lic_id, druh="tepelný", technologie=tech, mw=tep))
             except ValueError:
                 pass
-
         # Dva sloupce má Počet zdrojů, Řícní tok a Říční km
         elif len(row_data) == 2:
             if "počet zdrojů" in row_data[0].strip().lower():
-                item.pocet_zdroju = int(row_data[1])
+                entity.zdroju = int(row_data[1])
 
-    def parse(self, response: scrapy.http.Response) -> HeatGenItem:
+    def parse(self, response: scrapy.http.Response) -> LicenseItem:
         """Parse license for heat generation.
 
         Page with license can have many capacities and many facilities and
@@ -120,7 +124,7 @@ class HeatGenSpider(scrapy.Spider):
         """
         lic_id = response.url[-9:]
 
-        lic = HeatGenItem(cislo_licence=lic_id)
+        lic = LicenseItem(lic_id=lic_id)
 
         # Výkony za celou licenci (agregace za všechny provozovny)
         total_table = response.xpath('//table[@id="lic-tez-total-table"]/tr')
@@ -143,7 +147,8 @@ class HeatGenSpider(scrapy.Spider):
             psc, obec, ulice, cp, okres, kraj = self._split_address(self._adjust_address(raw_address))
 
             facility = FacilityItem(
-                id=number,
+                lic_id=lic_id,
+                ev=number,
                 nazev=name,
                 psc=psc,
                 obec=obec,
@@ -156,7 +161,7 @@ class HeatGenSpider(scrapy.Spider):
             # Zpracovat tabulku s výkony pro provozovnu
             for row in capacity.xpath("tr")[2:]:  # První dva řádky jsou hlavičky
                 row_data = row.xpath("*/text()").getall()
-                self._process_capacity_row(facility, row_data)
+                self._process_capacity_row(facility, row_data, is_facility=True)
 
             lic.provozovny.append(facility)
 

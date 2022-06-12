@@ -41,8 +41,20 @@ class HolderItem:
 
 @dataclass
 class CapacityItem:
-    """Represents capacity for license or facility."""
+    """Represents capacity for license."""
 
+    lic_id: int
+    druh: str
+    technologie: str
+    mw: float
+
+
+@dataclass
+class FacilityCapacityItem:
+    """Represents capacity for facility."""
+
+    lic_id: int
+    ev: int
     druh: str
     technologie: str
     mw: float
@@ -51,8 +63,9 @@ class CapacityItem:
 @dataclass
 class FacilityItem:
     """Represents facility listed on the license."""
-
-    id: str
+    
+    lic_id: int
+    ev: int
     nazev: str
     psc: str
     obec: str
@@ -60,25 +73,15 @@ class FacilityItem:
     cp: str
     okres: str
     kraj: str
-    pocet_zdroju: int = None
+    zdroju: int = None
     vykony: List[CapacityItem] = field(default_factory=list)
 
 
 @dataclass
-class ElectricityGenItem:
-    """Represents one license for electricity generation."""
+class LicenseItem:
+    """Represents one license for electricity or heat generation."""
 
-    cislo_licence: int
-    pocet_zdroju: int = None
-    vykony: List[CapacityItem] = field(default_factory=list)
-    provozovny: List[FacilityItem] = field(default_factory=list)
-
-
-@dataclass
-class HeatGenItem:
-    """Represents one license for heat generation."""
-
-    cislo_licence: int
-    pocet_zdroju: int = None
+    lic_id: int
+    zdroju: int = None
     vykony: List[CapacityItem] = field(default_factory=list)
     provozovny: List[FacilityItem] = field(default_factory=list)

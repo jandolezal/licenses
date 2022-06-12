@@ -64,9 +64,11 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#     'licenses.pipelines.LicensesHoldersPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'licenses.pipelines.SqlitePipeline': 300,
+}
+SQLITE_URI = "licence_test.db"
+SQLITE_DATABASE = "licence"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
