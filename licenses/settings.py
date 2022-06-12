@@ -67,7 +67,7 @@ FEED_EXPORT_ENCODING = 'utf-8'
 ITEM_PIPELINES = {
     'licenses.pipelines.SqlitePipeline': 300,
 }
-SQLITE_URI = "licence_test.db"
+SQLITE_URI = "licence.db"
 SQLITE_DATABASE = "licence"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
