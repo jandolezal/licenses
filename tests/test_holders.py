@@ -37,7 +37,7 @@ def test_parse_license():
 
     karlov = heatgen_holders_list[0]
 
-    assert karlov.cislo_licence == '310100016'
+    assert karlov.lic_id == 310100016
     assert karlov.verze is None
     assert karlov.nazev == 'Obec Velký Karlov'
     assert karlov.ulice is None
@@ -46,4 +46,4 @@ def test_parse_license():
 
     kasparova = heatgen_holders_list[-1]
 
-    assert kasparova.cislo_licence == '312136750'
+    assert kasparova.lic_id == 312136750

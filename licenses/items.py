@@ -18,7 +18,7 @@ class HolderItem:
     and many other details.
     """
 
-    cislo_licence: int = field(default=None)
+    lic_id: int = field(default=None)
     verze: int = field(default=None)
     status: str = field(default=None)
     ic: str = field(default=None)

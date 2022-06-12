@@ -1,4 +1,5 @@
 from dataclasses import asdict
+import datetime
 import logging
 import sqlite3
 
@@ -40,4 +41,30 @@ class SqlitePipeline:
         self.cur.execute("insert into zdroj values (?, ?)", (item.lic_id, item.zdroju))
         self.cur.executemany("insert into provozovna values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", facilities)
         self.cur.executemany("insert into vykon values (?, ?, ?, ?)", [list(asdict(vykon).values()) for vykon in item.vykony] )
+        return item
+
+
+class HoldersSqlitePipeline:
+
+    def __init__(self, sqlite_uri):
+        self.sqlite_uri = sqlite_uri
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            sqlite_uri=crawler.settings.get('SQLITE_URI'),
+        )
+
+    def open_spider(self, spider):
+        self.con = sqlite3.connect(self.sqlite_uri)
+        self.cur = self.con.cursor()
+        self.cur.execute('create table if not exists drzitel (lic_id integer primary key, verze integer, status text, ic text, nazev text, cislo_dom text, cislo_or text, ulice text, obec text, obec_cast text, psc text, okres text, kraj text, zeme text, den_opravneni text, den_zahajeni text, den_zaniku text, den_nabyti text, osoba text)')
+
+    def close_spider(self, spider):
+        self.con.commit()
+        self.con.close()
+
+    def process_item(self, item, spider):
+        holder = [v if not isinstance(v, datetime.datetime) else v.isoformat() for v in asdict(item).values()]
+        self.cur.execute("insert into drzitel values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", holder)
         return item
