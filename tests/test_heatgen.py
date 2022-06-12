@@ -14,8 +14,8 @@ def test_parse_license():
     lic_list = list(heatgen.HeatGenSpider().parse(response))
     lic = lic_list[0]
 
-    assert lic.cislo_licence == '310100053'
-    assert lic.pocet_zdroju == 11
+    assert lic.lic_id == '310100053'
+    assert lic.zdroju == 11
     assert len(lic.vykony) == 5
     assert len(lic.provozovny) == 2
 
@@ -29,7 +29,7 @@ def test_parse_license():
     assert lic.provozovny[0].nazev == 'TEPLÁRENSKÁ SPOLEČNOST HLINSKO, spol. s r.o.'
 
     assert lic.provozovny[1].nazev == 'Kotelna ČSA'
-    assert lic.provozovny[1].pocet_zdroju == 7
+    assert lic.provozovny[1].zdroju == 7
 
     assert lic.provozovny[1].vykony[-1].mw == 0.78
     assert len(lic.provozovny[1].vykony) == 2

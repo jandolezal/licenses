@@ -24,8 +24,8 @@ def test_parse_license():
     lic_list = list(electricitygen.ElectricityGenSpider().parse(response))
     lic = lic_list[0]
 
-    assert lic.cislo_licence == '110100129'
-    assert lic.pocet_zdroju == 11
+    assert lic.lic_id == '110100129'
+    assert lic.zdroju == 11
     assert len(lic.vykony) == 6
 
     assert lic.vykony[0].technologie == 'celkový'
@@ -44,7 +44,7 @@ def test_parse_license():
     assert lic.vykony[5].mw == 0.185
 
     assert len(lic.provozovny) == 5
-    assert lic.provozovny[4].id == '5'
+    assert lic.provozovny[4].ev == '5'
     assert lic.provozovny[4].nazev == 'ENERGETIKA - Motorgenerátory'
     assert lic.provozovny[4].psc == '30100'
     assert lic.provozovny[4].ulice == 'Tylova'
@@ -58,4 +58,4 @@ def test_parse_license():
     assert lic.provozovny[0].vykony[-1].druh == 'tepelný'
     assert lic.provozovny[0].vykony[-1].technologie == 'parní'
     assert lic.provozovny[0].vykony[-1].mw == 434.6
-    assert lic.provozovny[0].pocet_zdroju == 3
+    assert lic.provozovny[0].zdroju == 3
