@@ -14,7 +14,7 @@ def test_parse_license():
     lic_list = list(heatgen.HeatGenSpider().parse(response))
     lic = lic_list[0]
 
-    assert lic.lic_id == '310100053'
+    assert lic.lic_id == 310100053
     assert lic.zdroju == 11
     assert len(lic.vykony) == 5
     assert len(lic.provozovny) == 2

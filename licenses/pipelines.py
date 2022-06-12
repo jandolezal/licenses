@@ -2,6 +2,8 @@ from dataclasses import asdict
 import logging
 import sqlite3
 
+from scrapy.exceptions import CloseSpider
+
 from licenses.items import LicenseItem
 
 
@@ -33,20 +35,9 @@ class SqlitePipeline:
         for orig_fac in item.provozovny:
             fac = [v for k, v in asdict(orig_fac).items() if k != 'vykony']
             facilities.append(fac)
-            try:
-                self.cur.executemany("insert into provozovna_vykon values (?, ?, ?, ?, ?)", [list(asdict(vykon).values()) for vykon in orig_fac.vykony])
-            except sqlite3.IntegrityError as e:
-                logging.critical(e)
-        try:
-            self.cur.execute("insert into zdroj values (?, ?)", (item.lic_id, item.zdroju))
-        except sqlite3.IntegrityError as e:
-            logging.critical(e)
-        try:
-            self.cur.executemany("insert into provozovna values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", facilities)
-        except sqlite3.IntegrityError as e:
-            logging.critical(e)
-        try:
-            self.cur.executemany("insert into vykon values (?, ?, ?, ?)", [list(asdict(vykon).values()) for vykon in item.vykony] )
-        except sqlite3.IntegrityError as e:
-            logging.critical(e)
+            self.cur.executemany("insert into provozovna_vykon values (?, ?, ?, ?, ?)", [list(asdict(vykon).values()) for vykon in orig_fac.vykony])
+        
+        self.cur.execute("insert into zdroj values (?, ?)", (item.lic_id, item.zdroju))
+        self.cur.executemany("insert into provozovna values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", facilities)
+        self.cur.executemany("insert into vykon values (?, ?, ?, ?)", [list(asdict(vykon).values()) for vykon in item.vykony] )
         return item

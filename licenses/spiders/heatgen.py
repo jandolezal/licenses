@@ -122,7 +122,7 @@ class HeatGenSpider(scrapy.Spider):
         Yields:
             HeatGenItem: Item with scraped data for single license for heat generation.
         """
-        lic_id = response.url[-9:]
+        lic_id = int(response.url[-9:])
 
         lic = LicenseItem(lic_id=lic_id)
 
@@ -143,7 +143,7 @@ class HeatGenSpider(scrapy.Spider):
 
             # Zpracovat evidenční číslo, název a adresu provozovny
             raw_number, name, raw_address = header.xpath("tr/td/div/text()").getall()
-            number = raw_number.split(" ")[-1]
+            number = int(raw_number.split(" ")[-1])
             psc, obec, ulice, cp, okres, kraj = self._split_address(self._adjust_address(raw_address))
 
             facility = FacilityItem(
