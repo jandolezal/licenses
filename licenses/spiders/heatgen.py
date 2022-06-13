@@ -1,11 +1,10 @@
 """Spider for scraping licenses for heat generation (i.e. výroba tepelné energie).
 
-Expects json file with metadata about holders scraped with holders spider.
+Expects CSV file with metadata about holders scraped with holders spider.
 
 One of this metadata, license id (číslo licence), is used to prepare list of start urls.
 """
 
-import json
 import logging
 import re
 import sys
@@ -22,7 +21,7 @@ def prepare_start_urls(
     base_url: str = "http://licence.eru.cz/detail.php?lic-id=",
     filepath: str = "data/drzitel.csv",
 ) -> List:
-    """Prepare list of start urls from a json file with data about holders.
+    """Prepare list of start urls from a CSV file with data about holders.
 
     First run e.g. `scrapy crawl holders -O data/drzitel.csv` to obtain data about license holders
     to obtain license ids to construct start urls.
@@ -49,6 +48,9 @@ class HeatGenSpider(scrapy.Spider):
     name = "vyroba_tepla"
 
     start_urls = prepare_start_urls()
+
+    custom_settings = {'ITEM_PIPELINES': {'licenses.pipelines.SqlitePipeline': 300}}
+
 
     # Helper functions to parse address string
     @staticmethod
