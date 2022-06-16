@@ -28,20 +28,14 @@ jobs:
 
     - name: Scrape data from Energy Regulatory Office
       run: |-
-        scrapy crawl drzitel -O data/drzitel.csv
-        scrapy crawl vyroba_tepla -O data/vyroba_tepla.json
-        scrapy crawl vyroba_elektriny -O data/vyroba_elektriny.json
-
-    - name: Make .csv files sorted by cislo_licence
-      run: |-
-        python3 -m licenses.make_csvs drzitel
-        python3 -m licenses.make_csvs vyroba_tepla
-        python3 -m licenses.make_csvs vyroba_elektriny
+        scrapy crawl holder -O data/holder.csv
+        scrapy crawl heatgen
+        scrapy crawl electricitygen
+        csvs-to-sqlite data/druh.csv licenses.db
 
     - name: Push database to Heroku
       run: |-
-        csvs-to-sqlite data/*.csv licence.db
-        datasette publish heroku licence.db -n licence-eru
+        datasette publish heroku licenses.db -n licenses-ero
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
 

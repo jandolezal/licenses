@@ -19,7 +19,7 @@ from licenses.items import LicenseItem, CapacityItem, FacilityItem, LicenseItem,
 
 def prepare_start_urls(
     base_url: str = "http://licence.eru.cz/detail.php?lic-id=",
-    filepath: str = "data/drzitel.csv",
+    filepath: str = "data/holder.csv",
 ) -> List[str]:
     """Prepare list of start urls from a CSV file with data about holders.
 
@@ -45,7 +45,7 @@ def prepare_start_urls(
 class ElectricityGenSpider(scrapy.Spider):
     """Spider to crawl licenses for electricity generation (i.e. výroba elektřiny)."""
 
-    name = "vyroba_elektriny"
+    name = "electricitygen"
 
     start_urls = prepare_start_urls()
 

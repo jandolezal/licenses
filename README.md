@@ -2,7 +2,9 @@
 
 Python package written with Scrapy to get data about [licenses](http://licence.eru.cz/) for electricity and heat generation in Czechia and their [holders](https://www.eru.cz/o-drzitelich-licence) from the Czech Energy Regulatory Office website.
 
-Data are scraped every Friday and a Datasette app [licence-eru](https://licence-eru.herokuapp.com/) hosted at Heroku provides recent datasets.
+Data are scraped every Friday and a Datasette app [licenses-ero](https://licenses-ero.herokuapp.com/) hosted at Heroku provides recent datasets.
+
+It serves as a playground for me to learn web scraping.
 
 ## Use
 
@@ -20,47 +22,40 @@ Complete spider scraping .xml files about license holders (for any business like
 
 ```bash
 # Scrape data about license holders
-scrapy crawl drzitel -O data/drzitel.csv
+# Two following spiders depend on licenses numbers scraped during this step into data/holder.csv file
+scrapy crawl holder -O data/holder.csv
 
-# Sort the output .csv file by license id
-python3 -m licenses.make_csvs drzitel
+# Add license scope (electricity generation, heat generation, etc.) to the SQLite database
+csvs-to-sqlite data/druh.csv
 ```
 
 ### Licenses
 
-Initial spiders `vyroba_elektriny` and `vyroba_tepla` partially scraping data from licenses for electricity generation and heat generation.
+Initial spiders `electricitygen` and `heatgen` partially scraping data from licenses for electricity generation and heat generation.
 
-The scrapers are written with the assumption that Scrapy's json [feed export](https://docs.scrapy.org/en/latest/topics/feed-exports.html) will be used. Output is best in .json as some fields are lists of other items (one license can have many capacities and many facilities; facilities themselves can have many capacities).
+The scrapers were first written with the assumption that Scrapy's .json [feed export](https://docs.scrapy.org/en/latest/topics/feed-exports.html) will be used. Output is best in .json as some fields are lists of other items (one license can have many capacities and many facilities; facilities themselves can have many capacities). Now, there is pipeline to save the data to several tables in SQLite database, but the .json step can still be used (although some columns are duplicated).
 
 Scraping data about land registry and in case of hydro power plants river and river km is not implemented.
 
-These spiders depend on the licenses' numbers scraped by the `drzitel` spider for building urls to be scraped (filtering licenses numbers based on the business type, e.g. 11 for electricity generation or 31 for heat generation).
+These spiders depend on the licenses' numbers scraped by the `holder` spider for building urls to be scraped (filtering licenses numbers based on the business type, e.g. 11 for electricity generation or 31 for heat generation).
 
 ```bash
 # Scrape electricity generation data
-scrapy crawl vyroba_elektriny -O data/vyroba_elektriny.json
+scrapy crawl electricitygen
+
+# There is a pipeline to save the data to SQLite database. Best feed output is to json (although some cols are duplicated)
+scrapy crawl electricitygen -O data/electricitygen.json
 
 # Scrape heat generation data
-scrapy crawl vyroba_tepla -O data/vyroba_tepla.json
+scrapy crawl heatgen
 ```
 
-Once there are .json files, convert them to few .csv files for SQLite (Datasette). I think there must be a better way (than stand-alone module `licenses.make_csvs`) taking advantage of some Scrapy feature, but I did not find it.
-
-
 ```bash
-# Convert .json files to few .csv files
-python3 -m licenses.make_csvs vyroba_tepla
-
-python3 -m licenses.make_csvs vyroba_elektriny
-
-# Use csvs-to-sqlite to convert .csv files to sqlite database
-csvs-to-sqlite data/*.csv licence.db
-
 # Explore locally with Datasette
-datasette licence.db
+datasette licenses.db
 
 # Publish to Heroku with Datasette
-datasette publish heroku licence.db -n licence-eru
+datasette publish heroku licenses.db -n licenses-ero
 ```
 
 ## Test
@@ -71,6 +66,4 @@ python -m pytest tests/
 
 ## TODO
 
-- Refactor without the .json step with a view of using Datasette (and .csv files)
-- If possible take advantage of Scrapy features and remove stand-alone module `make_csvs`.
 - Add spiders for other types of businesses (electricity trade, etc.)

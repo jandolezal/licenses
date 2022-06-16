@@ -59,7 +59,7 @@ class HolderLoader(ItemLoader):
 
 
 class HoldersSpider(scrapy.Spider):
-    name = "drzitel"
+    name = "holders"
 
     start_urls = [
         BASE_URL + "/o-drzitelich-licence",
