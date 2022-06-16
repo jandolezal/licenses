@@ -3,7 +3,7 @@ from datetime import date
 
 from scrapy.http import HtmlResponse, XmlResponse
 
-from licenses.spiders import holders
+from licenses.spiders import holder
 
 
 def test_parse():
@@ -12,7 +12,7 @@ def test_parse():
         body=Path('tests/drzitele.html').read_bytes(),
     )
 
-    xml_urls_list = list(holders.HoldersSpider().parse_xml_links(response))
+    xml_urls_list = list(holder.HoldersSpider().parse_xml_links(response))
 
     first_url = xml_urls_list[0]
     assert (
@@ -33,7 +33,7 @@ def test_parse_license():
         body=Path('tests/LIC_31_2021-05-28-ver-1.xml').read_bytes(),
     )
 
-    heatgen_holders_list = list(holders.HoldersSpider().parse_xml(response))
+    heatgen_holders_list = list(holder.HoldersSpider().parse_xml(response))
 
     karlov = heatgen_holders_list[0]
 

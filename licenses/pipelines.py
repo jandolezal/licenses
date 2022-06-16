@@ -58,7 +58,7 @@ class HoldersSqlitePipeline:
     def open_spider(self, spider):
         self.con = sqlite3.connect(self.sqlite_uri)
         self.cur = self.con.cursor()
-        self.cur.execute('create table if not exists drzitel (lic_id integer primary key, verze integer, status text, ic text, nazev text, cislo_dom text, cislo_or text, ulice text, obec text, obec_cast text, psc text, okres text, kraj text, zeme text, den_opravneni text, den_zahajeni text, den_zaniku text, den_nabyti text, osoba text)')
+        self.cur.execute('create table if not exists drzitel (lic_id integer primary key, verze integer, status text, ic text, nazev text, cislo_dom text, cislo_or text, ulice text, obec text, obec_cast text, psc text, okres text, kraj text, zeme text, den_opravneni text, den_zahajeni text, den_zaniku text, den_nabyti text, osoba text, druh integer)')
 
     def close_spider(self, spider):
         self.con.commit()
@@ -66,5 +66,5 @@ class HoldersSqlitePipeline:
 
     def process_item(self, item, spider):
         holder = [v if not isinstance(v, datetime.datetime) else v.isoformat() for v in asdict(item).values()]
-        self.cur.execute("insert into drzitel values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", holder)
+        self.cur.execute("insert into drzitel values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", holder)
         return item

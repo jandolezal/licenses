@@ -37,6 +37,7 @@ class HolderItem:
     den_zaniku: date = field(default=None)
     den_nabyti: date = field(default=None)
     osoba: str = field(default=None)
+    druh: int = field(default=None)
 
 
 @dataclass

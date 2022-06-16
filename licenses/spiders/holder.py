@@ -56,10 +56,10 @@ class HolderLoader(ItemLoader):
     den_zaniku_in = MapCompose(convert_to_date)
     den_nabyti_in = MapCompose(convert_to_date)
     osoba_in = MapCompose(lambda x: x if x else None)
-
+    druh_in = MapCompose(lambda x: int(x[:2]))
 
 class HoldersSpider(scrapy.Spider):
-    name = "holders"
+    name = "holder"
 
     start_urls = [
         BASE_URL + "/o-drzitelich-licence",
@@ -142,5 +142,6 @@ class HoldersSpider(scrapy.Spider):
             l.add_value("den_zaniku", data_dict["subjekt_den_zaniku"])
             l.add_value("den_nabyti", data_dict["subjekt_den_nabyti_pravni_moci"])
             l.add_value("osoba", data_dict["odpovedny_zast"])
+            l.add_value("druh", data_dict["cislo_licence"])
 
             yield l.load_item()
