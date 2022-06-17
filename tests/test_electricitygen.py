@@ -5,16 +5,6 @@ from scrapy.http import HtmlResponse
 from licenses.spiders import electricitygen
 
 
-def test_prepare_start_urls():
-    # json_path = pathlib.Path('tests/sample_holders.json')
-
-    start_urls = electricitygen.prepare_start_urls(filepath="tests/test_drzitel.csv")
-
-    assert len(start_urls) == 4
-    assert start_urls[0] == 'http://licence.eru.cz/detail.php?lic-id=112137235'
-    assert start_urls[-1] == 'http://licence.eru.cz/detail.php?lic-id=112137250'
-
-
 def test_parse_license():
     response = HtmlResponse(
         'https://domain.com/something?lic-id=110100129',

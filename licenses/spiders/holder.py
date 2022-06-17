@@ -1,7 +1,6 @@
-import csv
 from datetime import date
-import pathlib
 import re
+import sqlite3
 
 import scrapy
 from itemloaders.processors import MapCompose, TakeFirst
@@ -38,7 +37,7 @@ class HolderLoader(ItemLoader):
 
     default_output_processor = TakeFirst()
 
-    id_in = MapCompose(lambda x: int(x) if x else None)
+    lic_id_in = MapCompose(lambda x: int(x) if x else None)
     version_in = MapCompose(lambda x: int(x) if x else None)
     ic_in = MapCompose(remove_fluff)
     nazev_in = MapCompose(remove_fluff)
@@ -58,6 +57,7 @@ class HolderLoader(ItemLoader):
     osoba_in = MapCompose(lambda x: x if x else None)
     druh_in = MapCompose(lambda x: int(x[:2]))
 
+
 class HoldersSpider(scrapy.Spider):
     name = "holder"
 
@@ -65,7 +65,9 @@ class HoldersSpider(scrapy.Spider):
         BASE_URL + "/o-drzitelich-licence",
     ]
 
-    custom_settings = {'ITEM_PIPELINES': {'licenses.pipelines.HoldersSqlitePipeline': 300}}
+    custom_settings = {
+        'ITEM_PIPELINES': {'licenses.pipelines.HoldersSqlitePipeline': 300}
+    }
 
     def parse(self, response):
         """Retrieve link to newest article which contains links to xml files with data and yield request."""
@@ -82,7 +84,7 @@ class HoldersSpider(scrapy.Spider):
         a_with_xml = response.xpath('//a[contains(@href, ".xml")]')
 
         # Get business types strings from filenames(urs)
-        business_list = []
+        scope_list = []
         xml_urls = []
 
         # Create vocabulary of codes and business descriptions and export them to csv
@@ -92,18 +94,13 @@ class HoldersSpider(scrapy.Spider):
                 code = extract_business_code(xml_href)
                 description = a.xpath('text()').get().lower()
                 # Gather list of business codes and the description
-                business_list.append({"kod": code, "predmet": description})
+                scope_list.append([code, description])
                 # Gather paths to the xml files
                 xml_urls.append(BASE_URL + xml_href)
 
-        # Save the businesses codes to a csv file
-        pathlib.Path('data').mkdir(exist_ok=True)
-
-        with pathlib.Path('data/druh.csv').open(mode='w') as csvf:
-            writer = csv.DictWriter(csvf, fieldnames=["kod", "predmet"])
-            writer.writeheader()
-            business_list.sort(key=lambda x: x['kod'])
-            writer.writerows(business_list)
+        with sqlite3.connect(self.settings["SQLITE_URI"]) as con:
+            cur = con.cursor()
+            cur.executemany('insert into druh values (?, ?)', scope_list)
 
         # Request xml files
         for url in xml_urls:

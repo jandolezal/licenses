@@ -5,11 +5,9 @@ Expects CSV file with metadata about holders scraped with holders spider.
 One of this metadata, license id (číslo licence), is used to prepare list of start urls.
 """
 
-import logging
 import re
-import sys
 import unicodedata
-import pathlib
+import sqlite3
 from typing import List, Tuple
 
 import scrapy
@@ -17,29 +15,8 @@ import scrapy
 from licenses.items import LicenseItem, CapacityItem, FacilityItem, FacilityCapacityItem
 
 
-def prepare_start_urls(
-    base_url: str = "http://licence.eru.cz/detail.php?lic-id=",
-    filepath: str = "data/holder.csv",
-) -> List:
-    """Prepare list of start urls from a CSV file with data about holders.
-
-    First run e.g. `scrapy crawl holders -O data/drzitel.csv` to obtain data about license holders
-    to obtain license ids to construct start urls.
-
-    Args:
-        filepath (str): CSV file with holders data. Defaults to 'data/drzitel.csv'.
-
-    Returns:
-        List: List of urls for licenses for heat generation.
-    """
-    try:
-        with open(filepath) as file:
-            return [
-                base_url + line.split(',')[0] for line in file.readlines()[1:] if line.split(',')[0][:2] == '31'
-            ]  # 31: výroba tepelné energie
-    except FileNotFoundError:
-        logging.critical("File {filepath} not found. Cannot build licenses urls to scrape.")
-        return []
+BASE_URL = 'http://licence.eru.cz/detail.php?lic-id='
+LICENSE_TYPE = 31
 
 
 class HeatGenSpider(scrapy.Spider):
@@ -47,10 +24,17 @@ class HeatGenSpider(scrapy.Spider):
 
     name = "heatgen"
 
-    start_urls = prepare_start_urls()
-
     custom_settings = {'ITEM_PIPELINES': {'licenses.pipelines.SqlitePipeline': 300}}
 
+    def start_requests(self) -> scrapy.Request:
+        with sqlite3.connect(self.settings["SQLITE_URI"]) as con:
+            cur = con.cursor()
+            lic_ids = cur.execute(
+                'SELECT lic_id FROM drzitel WHERE druh=:druh', {"druh": LICENSE_TYPE}
+            ).fetchall()
+
+        for row in lic_ids:
+            yield scrapy.Request(BASE_URL + str(row[0]))
 
     # Helper functions to parse address string
     @staticmethod
@@ -93,18 +77,48 @@ class HeatGenSpider(scrapy.Spider):
                 el = float(row_data[1].replace(" ", ""))
                 if el > 0:
                     if is_facility:
-                        entity.vykony.append(FacilityCapacityItem(lic_id=entity.lic_id, ev=entity.ev, druh="elektrický", technologie=tech, mw=el))
+                        entity.vykony.append(
+                            FacilityCapacityItem(
+                                lic_id=entity.lic_id,
+                                ev=entity.ev,
+                                druh="elektrický",
+                                technologie=tech,
+                                mw=el,
+                            )
+                        )
                     else:
-                        entity.vykony.append(CapacityItem(lic_id=entity.lic_id, druh="elektrický", technologie=tech, mw=el))
+                        entity.vykony.append(
+                            CapacityItem(
+                                lic_id=entity.lic_id,
+                                druh="elektrický",
+                                technologie=tech,
+                                mw=el,
+                            )
+                        )
             except ValueError:
                 pass
             try:
                 tep = float(row_data[2].replace(" ", ""))
                 if tep > 0:
                     if is_facility:
-                        entity.vykony.append(FacilityCapacityItem(lic_id=entity.lic_id, ev=entity.ev, druh="tepelný", technologie=tech, mw=tep))
+                        entity.vykony.append(
+                            FacilityCapacityItem(
+                                lic_id=entity.lic_id,
+                                ev=entity.ev,
+                                druh="tepelný",
+                                technologie=tech,
+                                mw=tep,
+                            )
+                        )
                     else:
-                        entity.vykony.append(CapacityItem(lic_id=entity.lic_id, druh="tepelný", technologie=tech, mw=tep))
+                        entity.vykony.append(
+                            CapacityItem(
+                                lic_id=entity.lic_id,
+                                druh="tepelný",
+                                technologie=tech,
+                                mw=tep,
+                            )
+                        )
             except ValueError:
                 pass
         # Dva sloupce má Počet zdrojů, Řícní tok a Říční km
@@ -146,7 +160,9 @@ class HeatGenSpider(scrapy.Spider):
             # Zpracovat evidenční číslo, název a adresu provozovny
             raw_number, name, raw_address = header.xpath("tr/td/div/text()").getall()
             number = int(raw_number.split(" ")[-1])
-            psc, obec, ulice, cp, okres, kraj = self._split_address(self._adjust_address(raw_address))
+            psc, obec, ulice, cp, okres, kraj = self._split_address(
+                self._adjust_address(raw_address)
+            )
 
             facility = FacilityItem(
                 lic_id=lic_id,

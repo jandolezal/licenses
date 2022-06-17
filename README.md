@@ -22,29 +22,18 @@ Complete spider scraping .xml files about license holders (for any business like
 
 ```bash
 # Scrape data about license holders
-# Two following spiders depend on licenses numbers scraped during this step into data/holder.csv file
-scrapy crawl holder -O data/holder.csv
-
-# Add license scope (electricity generation, heat generation, etc.) to the SQLite database
-csvs-to-sqlite data/druh.csv
+scrapy crawl holder
 ```
 
 ### Licenses
 
 Initial spiders `electricitygen` and `heatgen` partially scraping data from licenses for electricity generation and heat generation.
 
-The scrapers were first written with the assumption that Scrapy's .json [feed export](https://docs.scrapy.org/en/latest/topics/feed-exports.html) will be used. Output is best in .json as some fields are lists of other items (one license can have many capacities and many facilities; facilities themselves can have many capacities). Now, there is pipeline to save the data to several tables in SQLite database, but the .json step can still be used (although some columns are duplicated).
-
 Scraping data about land registry and in case of hydro power plants river and river km is not implemented.
-
-These spiders depend on the licenses' numbers scraped by the `holder` spider for building urls to be scraped (filtering licenses numbers based on the business type, e.g. 11 for electricity generation or 31 for heat generation).
 
 ```bash
 # Scrape electricity generation data
 scrapy crawl electricitygen
-
-# There is a pipeline to save the data to SQLite database. Best feed output is to json (although some cols are duplicated)
-scrapy crawl electricitygen -O data/electricitygen.json
 
 # Scrape heat generation data
 scrapy crawl heatgen
