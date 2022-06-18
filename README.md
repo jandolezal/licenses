@@ -29,6 +29,8 @@ scrapy crawl holder
 
 Initial spiders `electricitygen` and `heatgen` partially scraping data from licenses for electricity generation and heat generation.
 
+Spiders use license ids to prepare links to scrape. Run `scrapy crawl holder` before these spiders.
+
 Scraping data about land registry and in case of hydro power plants river and river km is not implemented.
 
 ```bash

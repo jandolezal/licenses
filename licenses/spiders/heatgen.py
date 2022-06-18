@@ -5,6 +5,7 @@ Expects CSV file with metadata about holders scraped with holders spider.
 One of this metadata, license id (číslo licence), is used to prepare list of start urls.
 """
 
+import logging
 import re
 import unicodedata
 import sqlite3
@@ -27,14 +28,17 @@ class HeatGenSpider(scrapy.Spider):
     custom_settings = {'ITEM_PIPELINES': {'licenses.pipelines.SqlitePipeline': 300}}
 
     def start_requests(self) -> scrapy.Request:
-        with sqlite3.connect(self.settings["SQLITE_URI"]) as con:
-            cur = con.cursor()
-            lic_ids = cur.execute(
-                'SELECT lic_id FROM drzitel WHERE druh=:druh', {"druh": LICENSE_TYPE}
-            ).fetchall()
+        try:
+            with sqlite3.connect(self.settings["SQLITE_URI"]) as con:
+                cur = con.cursor()
+                lic_ids = cur.execute(
+                    'SELECT lic_id FROM drzitel WHERE druh=:druh', {"druh": LICENSE_TYPE}
+                ).fetchall()
 
-        for row in lic_ids:
-            yield scrapy.Request(BASE_URL + str(row[0]))
+            for row in lic_ids:
+                yield scrapy.Request(BASE_URL + str(row[0]))
+        except sqlite3.OperationalError as e:
+            logging.critical(f'{e}. run scrapy crawl holder to obtain urls to scrape')
 
     # Helper functions to parse address string
     @staticmethod
