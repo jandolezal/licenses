@@ -11,17 +11,12 @@ from datetime import date
 
 @dataclass
 class HolderItem:
-    """Represents a holder of a licence (držitel licence).
+    """Represents a holder of a licence (držitel licence)."""
 
-    id is a licence number (číslo licence) and not ičo (ic)
-    because many of the holders are private citizens lacking ičo
-    and many other details.
-    """
-
-    lic_id: int = field(default=None)
+    lic_id: int = field(default=None)  # číslo licence
     verze: int = field(default=None)
     status: str = field(default=None)
-    ic: str = field(default=None)
+    ic: str = field(default=None)  # ičo. many holder are private citizens
     nazev: str = field(default=None)
     cislo_dom: str = field(default=None)
     cislo_or: str = field(default=None)
@@ -55,7 +50,7 @@ class FacilityCapacityItem:
     """Represents capacity for facility."""
 
     lic_id: int
-    ev: int
+    ev: int  # evidenční číslo
     druh: str
     technologie: str
     mw: float
@@ -64,7 +59,7 @@ class FacilityCapacityItem:
 @dataclass
 class FacilityItem:
     """Represents facility listed on the license."""
-    
+
     lic_id: int
     ev: int
     nazev: str

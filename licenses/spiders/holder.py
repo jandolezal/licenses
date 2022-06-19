@@ -1,5 +1,4 @@
 from datetime import date
-import re
 import sqlite3
 
 import scrapy
@@ -87,9 +86,12 @@ class HoldersSpider(scrapy.Spider):
         scope_list = []
         xml_urls = []
 
-        # Create vocabulary of codes and business descriptions and export them to csv
+        # Extract links to xml files. One xml file for a business scope
+        # Create vocabulary of codes and business descriptions and save to database
         for i, a in enumerate(a_with_xml):
-            if i % 2 == 0:  # there are two links to similar xml file. skip one of them
+            if (
+                i % 2 == 0
+            ):  # there are two links to the exact xml file. skip one of them
                 xml_href = a.xpath('@href').get()
                 code = extract_business_code(xml_href)
                 description = a.xpath('text()').get().lower()
@@ -98,6 +100,7 @@ class HoldersSpider(scrapy.Spider):
                 # Gather paths to the xml files
                 xml_urls.append(BASE_URL + xml_href)
 
+        # Table is created in the pipeline when spider starts
         with sqlite3.connect(self.settings["SQLITE_URI"]) as con:
             cur = con.cursor()
             cur.executemany('insert into druh values (?, ?)', scope_list)
@@ -110,10 +113,6 @@ class HoldersSpider(scrapy.Spider):
         """Parse single xml file with actual data about license holders."""
 
         data_list = response.xpath("*")
-
-        # Date of the file export is included in the filename
-        file_date_string = re.search(r"\d{4}-\d{2}-\d{2}", response.url).group(0)
-        pridano = convert_to_date(file_date_string)
 
         for data in data_list:
 
