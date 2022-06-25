@@ -74,57 +74,39 @@ class HeatGenSpider(scrapy.Spider):
 
     @staticmethod
     def _process_capacity_row(entity, row_data, is_facility=False):
-        # Tři sloupce mají výkony
+        # Tři sloupce mají výkony: technologie, elektrický, tepelný
         if len(row_data) == 3:
             tech = row_data[0].strip().lower()
-            try:
-                el = float(row_data[1].replace(" ", ""))
-                if el > 0:
-                    if is_facility:
-                        entity.vykony.append(
-                            FacilityCapacityItem(
-                                lic_id=entity.lic_id,
-                                ev=entity.ev,
-                                druh="elektrický",
-                                technologie=tech,
-                                mw=el,
+            druhy = {
+                1: 'elektrický',
+                2: 'tepelný',
+            }
+            for i, druh in druhy.items():
+                try:
+                    value = float(row_data[i].replace(" ", ""))
+                    if value > 0:
+                        if is_facility:
+                            entity.vykony.append(
+                                FacilityCapacityItem(
+                                    lic_id=entity.lic_id,
+                                    ev=entity.ev,
+                                    druh=druh,
+                                    technologie=tech,
+                                    mw=value,
+                                )
                             )
-                        )
-                    else:
-                        entity.vykony.append(
-                            CapacityItem(
-                                lic_id=entity.lic_id,
-                                druh="elektrický",
-                                technologie=tech,
-                                mw=el,
+                        else:
+                            entity.vykony.append(
+                                CapacityItem(
+                                    lic_id=entity.lic_id,
+                                    druh=druh,
+                                    technologie=tech,
+                                    mw=value,
+                                )
                             )
-                        )
-            except ValueError:
-                pass
-            try:
-                tep = float(row_data[2].replace(" ", ""))
-                if tep > 0:
-                    if is_facility:
-                        entity.vykony.append(
-                            FacilityCapacityItem(
-                                lic_id=entity.lic_id,
-                                ev=entity.ev,
-                                druh="tepelný",
-                                technologie=tech,
-                                mw=tep,
-                            )
-                        )
-                    else:
-                        entity.vykony.append(
-                            CapacityItem(
-                                lic_id=entity.lic_id,
-                                druh="tepelný",
-                                technologie=tech,
-                                mw=tep,
-                            )
-                        )
-            except ValueError:
-                pass
+                except ValueError:
+                    pass
+
         # Dva sloupce má Počet zdrojů, Řícní tok a Říční km
         elif len(row_data) == 2:
             if "počet zdrojů" in row_data[0].strip().lower():
