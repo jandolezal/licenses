@@ -70,6 +70,10 @@ class FacilityItem:
     okres: str
     kraj: str
     zdroju: int = None
+    kat_uz: str = None
+    kat_kod: str = None
+    kat_obec: str = None
+    kat_vym: str = None
     vykony: List[CapacityItem] = field(default_factory=list)
 
 

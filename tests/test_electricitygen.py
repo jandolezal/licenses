@@ -49,3 +49,8 @@ def test_parse_license():
     assert lic.provozovny[0].vykony[-1].technologie == 'parní'
     assert lic.provozovny[0].vykony[-1].mw == 434.6
     assert lic.provozovny[0].zdroju == 3
+
+    assert lic.provozovny[1].kat_uz == 'Chotíkov'
+    assert lic.provozovny[1].kat_kod == '653276'
+    assert lic.provozovny[1].kat_obec == 'Chotíkov'
+    assert lic.provozovny[1].kat_vym == '720/5'

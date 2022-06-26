@@ -23,7 +23,7 @@ class SqlitePipeline:
         self.con = sqlite3.connect(self.sqlite_uri)
         self.cur = self.con.cursor()
         self.cur.execute('create table if not exists zdroj (lic_id integer primary key, zdroju integer)')
-        self.cur.execute('create table if not exists provozovna (lic_id integer, ev integer, nazev text, psc text, obec text, ulice text, cp text, okres text, kraj text, zdroju integer, primary key (lic_id, ev))')
+        self.cur.execute('create table if not exists provozovna (lic_id integer, ev integer, nazev text, psc text, obec text, ulice text, cp text, okres text, kraj text, zdroju integer, kat_uz text, kat_kod text, kat_obec text, kat_vym text, primary key (lic_id, ev))')
         self.cur.execute('create table if not exists vykon (lic_id integer, druh text, technologie text, mw real)')
         self.cur.execute('create table if not exists provozovna_vykon (lic_id integer, ev integer, druh text, technologie text, mw real)')
 
@@ -39,7 +39,7 @@ class SqlitePipeline:
             self.cur.executemany("insert into provozovna_vykon values (?, ?, ?, ?, ?)", [list(asdict(vykon).values()) for vykon in orig_fac.vykony])
         
         self.cur.execute("insert into zdroj values (?, ?)", (item.lic_id, item.zdroju))
-        self.cur.executemany("insert into provozovna values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", facilities)
+        self.cur.executemany("insert into provozovna values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", facilities)
         self.cur.executemany("insert into vykon values (?, ?, ?, ?)", [list(asdict(vykon).values()) for vykon in item.vykony] )
         return item
 

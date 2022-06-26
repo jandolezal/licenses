@@ -7,6 +7,7 @@ One of this metadata, license id (číslo licence), is used to prepare list of s
 
 import logging
 import re
+import string
 import sqlite3
 import unicodedata
 from typing import List, Tuple
@@ -149,12 +150,22 @@ class ElectricityGenSpider(scrapy.Spider):
 
         for header, capacity in zip(facilities_headers, facilities_capacities):
 
-            # Zpracovat evidenční číslo, název a adresu provozovny
-            raw_number, name, raw_address = header.xpath("tr/td/div/text()").getall()
-            number = int(raw_number.split(" ")[-1])
-            psc, obec, ulice, cp, okres, kraj = self._split_address(
-                self._adjust_address(raw_address)
-            )
+            # Zpracovat evidenční číslo, název, adresu, katastr provozovny
+            first_row = header.xpath("tr/td/div/text()").getall()
+            if len(first_row) == 2: # schází adresa
+                raw_number, name = first_row
+                number = int(raw_number.split(" ")[-1])
+                psc, obec, ulice, cp, okres, kraj = [None for i in range(6)]
+            elif len(first_row) == 3:
+                raw_number, name, raw_address = first_row
+                number = int(raw_number.split(" ")[-1])
+                psc, obec, ulice, cp, okres, kraj = self._split_address(
+                    self._adjust_address(raw_address)
+                )
+
+            last_row = header.xpath('tr')[-1].xpath('td/text()').getall()
+            stripped_parcel = [cell.rstrip(string.whitespace + '\xa0') for cell in last_row]
+            kat_uz, kat_kod, kat_obec, kat_vym = [cell if cell else None for cell in stripped_parcel]
 
             facility = FacilityItem(
                 lic_id=lic_id,
@@ -166,6 +177,10 @@ class ElectricityGenSpider(scrapy.Spider):
                 cp=cp,
                 okres=okres,
                 kraj=kraj,
+                kat_uz=kat_uz,
+                kat_kod=kat_kod,
+                kat_obec=kat_obec,
+                kat_vym=kat_vym,
             )
 
             # Zpracovat tabulku s výkony pro provozovnu

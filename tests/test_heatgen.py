@@ -30,9 +30,15 @@ def test_parse_license():
     assert lic.provozovny[0].ev == 1
     assert lic.provozovny[0].nazev == 'TEPLÁRENSKÁ SPOLEČNOST HLINSKO, spol. s r.o.'
     assert lic.provozovny[0].zdroju == 4
+    assert lic.provozovny[0].kat_vym == 'St. 2616; St. 3922'
 
     assert lic.provozovny[1].nazev == 'Kotelna ČSA'
     assert lic.provozovny[1].zdroju == 7
 
+    assert lic.provozovny[1].kat_vym is None
+    assert lic.provozovny[1].kat_uz == 'Hlinsko v Čechách'
+    assert lic.provozovny[1].kat_kod == '639303'
+    assert lic.provozovny[1].kat_obec == 'Hlinsko'
+    
     assert lic.provozovny[1].vykony[-1].mw == 0.78
     assert len(lic.provozovny[1].vykony) == 2
