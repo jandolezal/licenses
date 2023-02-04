@@ -2,9 +2,7 @@
 
 Python package written with Scrapy to get data about [licenses](http://licence.eru.cz/) for electricity and heat generation in Czechia and their [holders](https://www.eru.cz/o-drzitelich-licence) from the Czech Energy Regulatory Office website.
 
-Data are scraped every Friday and a Datasette app [licenses-ero](https://licenses-ero.herokuapp.com/) hosted at Heroku provides recent datasets.
-
-It serves as a playground for me to learn web scraping.
+Little project which served as a playground for me to learn web scraping.
 
 ## Use
 
@@ -44,9 +42,6 @@ scrapy crawl heatgen
 ```bash
 # Explore locally with Datasette
 datasette licenses.db
-
-# Publish to Heroku with Datasette
-datasette publish heroku licenses.db -n licenses-ero
 ```
 
 ## Test
